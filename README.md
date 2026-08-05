@@ -1,18 +1,16 @@
 # DLUnire Dark
 
-> A modern high-contrast color theme for Visual Studio Code.
+**A modern high-contrast color theme for Visual Studio Code.**
 
-![Preview](./preview-01.webp)
+![DLUnire Dark](./dlunire-dark.webp)
 
 ---
 
-> 🇺🇸 **English** | 🇪🇸 **Español**
+DLUnire Dark is built for developers who want a clean, high-contrast editor without giving up semantic consistency.
 
-DLUnire Dark is a modern color theme designed for developers who prefer a clean, high-contrast coding experience without sacrificing semantic consistency.
+Instead of coloring tokens at random, the theme groups language constructs by their role in the code. That makes complex codebases easier to scan, understand, and navigate.
 
-Instead of assigning colors arbitrarily, the theme groups language constructs according to their role within the source code, making complex codebases easier to read and navigate.
-
-The theme has been carefully tuned using real-world projects developed within the **DLUnire Framework** ecosystem and supports a wide range of modern programming languages.
+It was refined against real projects in the **DLUnire Framework** ecosystem and works well across modern languages — with special care for PHP and TypeScript.
 
 ---
 
@@ -20,7 +18,6 @@ The theme has been carefully tuned using real-world projects developed within th
 
 - [DLUnire Dark](#dlunire-dark)
   - [Table of Contents](#table-of-contents)
-- [🇺🇸 English](#-english)
   - [Overview](#overview)
     - [Main goals](#main-goals)
   - [Gallery](#gallery)
@@ -42,39 +39,33 @@ The theme has been carefully tuned using real-world projects developed within th
 
 ---
 
-# 🇺🇸 English
-
 ## Overview
 
-DLUnire Dark is a high-contrast Visual Studio Code theme designed around a simple principle:
+DLUnire Dark follows one simple idea:
 
 > **Source code should communicate structure before syntax.**
 
-Instead of relying on random color assignments, the theme applies a semantic approach where each language construct belongs to a consistent visual category.
+Each construct belongs to a stable visual category. Keywords, types, functions, properties, and comments stay visually distinct, so patterns stand out faster and long sessions feel less tiring.
 
-This improves readability, accelerates visual recognition and reduces eye strain during long programming sessions.
-
-The theme was primarily designed for PHP development, although it has been extensively tested with modern frontend and systems programming languages.
+The theme started with PHP in mind, then was tested extensively with modern frontend stacks and systems languages.
 
 ### Main goals
 
-- Improve readability.
-- Increase semantic consistency.
-- Reduce visual fatigue.
-- Highlight important language constructs.
-- Maintain a clean and distraction-free interface.
+- Improve readability
+- Keep semantic coloring consistent
+- Reduce eye strain
+- Emphasize constructs that matter
+- Keep the UI clean and free of noise
 
 ---
 
 ## Gallery
 
-All screenshots shown below were taken from real-world projects developed within the **DLUnire** ecosystem.
-
-Rather than using artificial examples, every preview demonstrates how the theme behaves in production-quality source code.
+The screenshots below come from real projects in the **DLUnire** ecosystem — production code, not toy demos.
 
 ### TypeScript
 
-Core modules, imports, type declarations, functions and comments.
+Core modules, imports, type declarations, functions, and comments.
 
 ![TypeScript](./preview-01.webp)
 
@@ -82,7 +73,7 @@ Core modules, imports, type declarations, functions and comments.
 
 ### Svelte
 
-Components, layouts, embedded TypeScript and application structure.
+Components, layouts, embedded TypeScript, and application structure.
 
 ![Svelte](./preview-02.webp)
 
@@ -90,7 +81,7 @@ Components, layouts, embedded TypeScript and application structure.
 
 ### SCSS
 
-Variables, selectors, nested rules, properties and mixins.
+Variables, selectors, nested rules, properties, and mixins.
 
 ![SCSS](./preview-03.webp)
 
@@ -98,7 +89,7 @@ Variables, selectors, nested rules, properties and mixins.
 
 ### TypeScript — Routing Engine
 
-A larger TypeScript example showcasing routing, modules and application architecture.
+A larger TypeScript sample showing routing, modules, and application architecture.
 
 ![TypeScript Routing](./preview-04.webp)
 
@@ -106,7 +97,7 @@ A larger TypeScript example showcasing routing, modules and application architec
 
 ### Rust
 
-Traits, ownership, modules, macros and modern Rust syntax.
+Traits, ownership, modules, macros, and modern Rust syntax.
 
 ![Rust](./preview-05.webp)
 
@@ -114,7 +105,7 @@ Traits, ownership, modules, macros and modern Rust syntax.
 
 ### PHP
 
-Namespaces, classes, methods, attributes and modern PHP syntax.
+Namespaces, classes, methods, attributes, and modern PHP syntax.
 
 ![PHP](./preview-06.webp)
 
@@ -122,7 +113,7 @@ Namespaces, classes, methods, attributes and modern PHP syntax.
 
 ### PHP Controller
 
-A production-ready controller built using the DLUnire Framework.
+A production controller built with the DLUnire Framework.
 
 ![PHP Controller](./preview-07.webp)
 
@@ -130,16 +121,16 @@ A production-ready controller built using the DLUnire Framework.
 
 ## Features
 
-DLUnire Dark has been designed with a semantic color system instead of arbitrary syntax coloring.
+DLUnire Dark uses a semantic color system rather than arbitrary syntax highlighting.
 
 ### Highlights
 
 - Ultra-dark background (`#010305`)
 - High-contrast syntax highlighting
-- Carefully balanced color palette
+- Balanced, carefully tuned palette
 - Semantic syntax classification
-- Optimized for long development sessions
-- Distinct visual identities for:
+- Comfortable for long coding sessions
+- Clear visual identity for:
   - Keywords
   - Classes
   - Interfaces
@@ -155,9 +146,9 @@ DLUnire Dark has been designed with a semantic color system instead of arbitrary
   - Numeric literals
   - Comments
 - Comments without italics
-- Consistent editor interface
+- Consistent editor chrome
 - Minimal visual distractions
-- Designed for modern programming languages
+- Tuned for modern languages
 
 ---
 
@@ -168,8 +159,8 @@ DLUnire Dark has been designed with a semantic color system instead of arbitrary
 | Background      | `#010305` | Ultra-dark editor background               |
 | Default Text    | `#FFFFFF` | Strings and editor foreground              |
 | Keywords        | `#FF6D00` | Flow control and modifiers                 |
-| Declarations    | `#00D0FF` | Functions, namespaces and declarations     |
-| Classes         | `#00FF00` | Classes, interfaces, traits and namespaces |
+| Declarations    | `#00D0FF` | Functions, namespaces, and declarations    |
+| Classes         | `#00FF00` | Classes, interfaces, traits, and namespaces |
 | Functions       | `#A0E5FF` | Functions and methods                      |
 | Variables       | `#00E8FF` | Variables and parameters                   |
 | Properties      | `#FF9100` | Object properties                          |
@@ -184,7 +175,7 @@ DLUnire Dark has been designed with a semantic color system instead of arbitrary
 
 ## Supported Languages
 
-Although DLUnire Dark works with every language supported by Visual Studio Code, special attention has been given to the following technologies:
+DLUnire Dark works with every language Visual Studio Code supports. Extra attention went into:
 
 - PHP
 - TypeScript
@@ -197,7 +188,7 @@ Although DLUnire Dark works with every language supported by Visual Studio Code,
 - JSON
 - Markdown
 
-The screenshots presented in this README were captured from real projects developed within the **DLUnire** ecosystem.
+Gallery images were captured from real **DLUnire** projects.
 
 ---
 
@@ -211,7 +202,7 @@ The screenshots presented in this README were captured from real projects develo
 4. Open **Preferences → Color Theme**.
 5. Select **DLUnire Dark**.
 
-Or install directly from the terminal:
+Or install from the terminal:
 
 ```bash
 code --install-extension dlunire.dlunire-dark
@@ -221,26 +212,22 @@ code --install-extension dlunire.dlunire-dark
 
 ## Design Philosophy
 
-Programming languages are structured systems.
+Programming languages are structured systems. A theme should reinforce that structure, not hide it.
 
-A color theme should reinforce that structure rather than obscure it.
+DLUnire Dark maps colors to the semantic role of each construct. You spot patterns faster, understand code more easily, and keep a clean, consistent look across languages.
 
-DLUnire Dark classifies syntax according to the semantic role each construct plays within the language. This allows developers to recognize patterns more quickly, improving code comprehension while maintaining a clean and consistent visual experience.
-
-Rather than emphasizing every token equally, the theme focuses attention on language constructs that define the architecture and behavior of the source code.
+Instead of giving every token equal weight, the theme highlights what defines architecture and behavior.
 
 ---
 
 ## Repository
 
-Project website
+**Website:** [https://dlunire.dev](https://dlunire.dev)
 
-https://dlunire.dev
+**Source:** [https://github.com/dlunire/theme-dlunire-dark](https://github.com/dlunire/theme-dlunire-dark)
 
-Source code
-
-https://github.com/dlunire/theme-dlunire-dark
-
-Bug reports, feature requests and contributions are welcome.
+Bug reports, feature requests, and contributions are welcome.
 
 ---
+
+**License:** MIT · **Publisher:** [dlunire](https://dlunire.dev) · **Version:** 1.0.1

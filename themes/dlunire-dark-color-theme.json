@@ -24,7 +24,7 @@
         "titleBar.inactiveBackground": "#05080C",
         "titleBar.inactiveForeground": "#656565",
         "tab.activeBackground": "#0A1017",
-        "tab.activeForeground": "#FF00FF",
+        "tab.activeForeground": "#00e1ff",
         "tab.activeBorderTop": "#00E8FF",
         "tab.activeBorder": "#00E8FF",
         "tab.inactiveBackground": "#05080C",
@@ -42,130 +42,11 @@
     },
     "tokenColors": [
         {
-            "name": "0. Etiquetas Meta (como <?php)",
-            "scope": [
-                "punctuation.section.embedded",
-                "keyword.other.php",
-                "meta.embedded"
-            ],
-            "settings": {
-                "foreground": "#A1A1A1"
-            }
-        },
-        {
-            "name": "1a. Modificadores y Control de Flujo (Naranja Fuego)",
-            "scope": [
-                "keyword",
-                "keyword.control",
-                "storage.modifier",
-                "keyword.operator.new"
-            ],
-            "settings": {
-                "foreground": "#FF6D00"
-            }
-        },
-        {
-            "name": "1b. Estructura y Declaraciones (Azul Neón)",
-            "scope": [
-                "storage.type.function",
-                "storage.type.class",
-                "storage.type.enum",
-                "storage.type.interface",
-                "storage.type.trait",
-                "keyword.control.case",
-                "keyword.other.namespace",
-                "keyword.other.use"
-            ],
-            "settings": {
-                "foreground": "#00D0FF"
-            }
-        },
-        {
-            "name": "2. Cadenas de texto / Strings",
-            "scope": [
-                "string",
-                "string.quoted"
-            ],
-            "settings": {
-                "foreground": "#FFFFFF"
-            }
-        },
-        {
-            "name": "3. Namespaces y Clases (Verde Menta)",
-            "scope": [
-                "entity.name.type",
-                "entity.name.class",
-                "entity.name.namespace",
-                "support.class"
-            ],
-            "settings": {
-                "foreground": "#00FF00",
-                "fontStyle": ""
-            }
-        },
-        {
-            "name": "3b. Funciones y Métodos (Cian Eléctrico)",
-            "scope": [
-                "entity.name.function",
-                "meta.function-call",
-                "variable.function"
-            ],
-            "settings": {
-                "foreground": "#A0E5FF"
-            }
-        },
-        {
-            "name": "4. Variables (Cian Hielo)",
-            "scope": [
-                "variable",
-                "variable.other",
-                "variable.parameter"
-            ],
-            "settings": {
-                "foreground": "#00E8FF"
-            }
-        },
-        {
-            "name": "4b. Propiedades (Naranja Ámbar)",
-            "scope": [
-                "variable.other.property",
-                "support.type.property-name"
-            ],
-            "settings": {
-                "foreground": "#FF9100"
-            }
-        },
-        {
-            "name": "4c. Atributos (Rosa Neón)",
-            "scope": [
-                "entity.other.attribute-name"
-            ],
-            "settings": {
-                "foreground": "#F50057"
-            }
-        },
-        {
-            "name": "5a. Números",
-            "scope": [
-                "constant.numeric"
-            ],
-            "settings": {
-                "foreground": "#FAA859"
-            }
-        },
-        {
-            "name": "5b. Literales y Booleans (Azul Violáceo)",
-            "scope": [
-                "constant.language"
-            ],
-            "settings": {
-                "foreground": "#A0A0FF"
-            }
-        },
-        {
-            "name": "6. Comentarios (Gris Sin Cursiva)",
+            "name": "Comments",
             "scope": [
                 "comment",
+                "comment.block",
+                "comment.line",
                 "comment.block.documentation"
             ],
             "settings": {
@@ -174,25 +55,236 @@
             }
         },
         {
-            "name": "7a. Tipos Primitivos (Amarillo Neón)",
+            "name": "Keywords",
             "scope": [
-                "support.type.primitive",
-                "keyword.type",
-                "support.type"
+                "keyword",
+                "keyword.control",
+                "keyword.operator.word",
+                "storage.modifier",
+                "storage.type",
+                "storage"
             ],
             "settings": {
-                "foreground": "#FFC600",
-                "fontStyle": ""
+                "foreground": "#FF6D00"
             }
         },
         {
-            "name": "7b. Etiquetas HTML/XML (Turquesa Brillante)",
+            "name": "Primitive types",
+            "scope": [
+                "support.type",
+                "support.type.primitive",
+                "keyword.type",
+                "storage.type.primitive"
+            ],
+            "settings": {
+                "foreground": "#FFC600"
+            }
+        },
+        {
+            "name": "Strings",
+            "scope": [
+                "string",
+                "string.quoted",
+                "string.template",
+                "string.regexp"
+            ],
+            "settings": {
+                "foreground": "#FFFFFF"
+            }
+        },
+        {
+            "name": "Numbers",
+            "scope": [
+                "constant.numeric"
+            ],
+            "settings": {
+                "foreground": "#FAA859"
+            }
+        },
+        {
+            "name": "Constants",
+            "scope": [
+                "constant",
+                "constant.language",
+                "constant.character.escape"
+            ],
+            "settings": {
+                "foreground": "#A0A0FF"
+            }
+        },
+        {
+            "name": "Variables",
+            "scope": [
+                "variable",
+                "variable.parameter",
+                "variable.other",
+                "variable.language",
+                "variable.object"
+            ],
+            "settings": {
+                "foreground": "#00E8FF"
+            }
+        },
+        {
+            "name": "Properties",
+            "scope": [
+                "variable.other.property",
+                "support.type.property-name",
+                "meta.property-name",
+                "entity.name.variable"
+            ],
+            "settings": {
+                "foreground": "#FF9100"
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": [
+                "entity.name.function",
+                "support.function",
+                "meta.function-call",
+                "variable.function",
+                "entity.name.method"
+            ],
+            "settings": {
+                "foreground": "#A0E5FF"
+            }
+        },
+        {
+            "name": "Classes",
+            "scope": [
+                "entity.name.type",
+                "entity.name.class",
+                "entity.name.namespace",
+                "support.class",
+                "support.type.class",
+                "entity.name.struct",
+                "entity.name.interface",
+                "entity.name.enum",
+                "entity.name.trait"
+            ],
+            "settings": {
+                "foreground": "#00FF00"
+            }
+        },
+        {
+            "name": "Attributes / Decorators",
+            "scope": [
+                "entity.other.attribute-name",
+                "meta.annotation",
+                "storage.type.annotation"
+            ],
+            "settings": {
+                "foreground": "#F50057"
+            }
+        },
+        {
+            "name": "HTML/XML Tags",
             "scope": [
                 "entity.name.tag"
             ],
             "settings": {
                 "foreground": "#1DE9B6"
             }
+        },
+        {
+            "name": "HTML/XML Attributes",
+            "scope": [
+                "entity.other.attribute-name.html",
+                "entity.other.attribute-name.xml"
+            ],
+            "settings": {
+                "foreground": "#F50057"
+            }
+        },
+        {
+            "name": "Markdown Headings",
+            "scope": [
+                "markup.heading",
+                "markup.heading.markdown"
+            ],
+            "settings": {
+                "foreground": "#00D0FF"
+            }
+        },
+        {
+            "name": "Markdown Bold",
+            "scope": [
+                "markup.bold"
+            ],
+            "settings": {
+                "foreground": "#FFC600",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown Italic",
+            "scope": [
+                "markup.italic"
+            ],
+            "settings": {
+                "foreground": "#00E8FF",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Markdown Links",
+            "scope": [
+                "markup.underline.link",
+                "string.other.link"
+            ],
+            "settings": {
+                "foreground": "#00D0FF",
+                "fontStyle": "underline"
+            }
+        },
+        {
+            "name": "Markdown Lists",
+            "scope": [
+                "markup.list"
+            ],
+            "settings": {
+                "foreground": "#FF6D00"
+            }
+        },
+        {
+            "name": "Markdown Quotes",
+            "scope": [
+                "markup.quote"
+            ],
+            "settings": {
+                "foreground": "#656565"
+            }
+        },
+        {
+            "name": "Invalid",
+            "scope": [
+                "invalid",
+                "invalid.illegal"
+            ],
+            "settings": {
+                "foreground": "#FFFFFF",
+            }
         }
-    ]
+    ],
+    "semanticHighlighting": true,
+    "semanticTokenColors": {
+        "class": "#00FF00",
+        "interface": "#00FF00",
+        "struct": "#00FF00",
+        "enum": "#00FF00",
+        "enumMember": "#A0A0FF",
+        "function": "#A0E5FF",
+        "method": "#A0E5FF",
+        "variable": "#00E8FF",
+        "parameter": "#00E8FF",
+        "property": "#FF9100",
+        "namespace": "#00FF00",
+        "keyword": "#FF6D00",
+        "number": "#FAA859",
+        "string": "#FFFFFF",
+        "type": "#FFC600",
+        "comment": "#656565",
+        "decorator": "#F50057"
+    }
 }
