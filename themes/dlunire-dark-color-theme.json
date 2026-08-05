@@ -1,6 +1,6 @@
 {
     "$schema": "vscode://schemas/color-theme",
-    "name": "Dlunire Dark",
+    "name": "DLUnire Dark",
     "colors": {
         "editor.background": "#010305",
         "editor.foreground": "#FFFFFF",

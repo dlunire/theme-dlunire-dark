@@ -30,7 +30,7 @@ Desarrollado para optimizar la legibilidad en extensas jornadas de programación
 ### Visual Studio Code
 
 #### Desde el archivo `.vsix`
-1. Descarga la última versión de `dlunire-dark-1.0.0.vsix` desde los Releases de este repositorio.
+1. Descarga la última versión de `dlunire-dark-1.0.0.vsix` desde las *Releases* de este repositorio.
 2. Ejecuta el siguiente comando en la terminal:
    ```bash
    code --install-extension dlunire-dark-1.0.0.vsix
