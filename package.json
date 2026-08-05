@@ -1,27 +1,63 @@
 {
     "name": "dlunire-dark",
     "displayName": "DLUnire Dark",
-    "description": "Tema de alto contraste con fondo ultranegro y sintaxis vibrante, parte del ecosistema DLUnire.",
-    "version": "1.0.0",
+    "description": "A high-contrast Visual Studio Code theme featuring an ultra-dark background and vibrant semantic syntax highlighting.",
+    "version": "1.0.1",
     "publisher": "dlunire",
-    "icon": "dlunire-pallette.png",
     "license": "MIT",
+    "icon": "icon.png",
+
     "repository": {
         "type": "git",
         "url": "https://github.com/dlunire/theme-dlunire-dark"
     },
+
+    "homepage": "https://dlunire.dev",
+
+    "bugs": {
+        "url": "https://github.com/dlunire/theme-dlunire-dark/issues"
+    },
+
     "engines": {
         "vscode": "^1.80.0"
     },
+
     "categories": [
         "Themes"
     ],
+
+    "keywords": [
+        "theme",
+        "dark",
+        "high-contrast",
+        "black",
+        "color-theme",
+        "php",
+        "typescript",
+        "javascript",
+        "html",
+        "css",
+        "scss",
+        "semantic",
+        "syntax-highlighting",
+        "dlunire"
+    ],
+
+    "galleryBanner": {
+        "color": "#010305",
+        "theme": "dark"
+    },
+
+    "pricing": "Free",
+
     "files": [
         "themes/dlunire-dark-color-theme.json",
         "README.md",
         "LICENSE",
-        "dlunire-pallette.png"
+        "icon.png",
+        "preview.webp"
     ],
+
     "contributes": {
         "themes": [
             {
@@ -31,13 +67,15 @@
             }
         ]
     },
+
     "scripts": {
         "package": "vsce package --no-git-tag-version",
         "publish:vscode": "vsce publish",
         "publish:openvsx": "ovsx publish"
     },
+
     "devDependencies": {
         "@vscode/vsce": "^3.9.2",
-        "ovsx": "^0.9.1"
+        "ovsx": "^1.1.0"
     }
 }
