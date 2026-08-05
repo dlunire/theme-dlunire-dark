@@ -1,0 +1,22 @@
+{
+    "name": "dlunire-dark",
+    "displayName": "DLUnire Dark",
+    "description": "Tema de alto contraste con fondo ultranegro y sintaxis vibrante, parte de ecosistema DLUnire.",
+    "version": "1.0.0",
+    "publisher": "dlunire",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "DLUnire Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/dlunire-dark-color-theme.json"
+            }
+        ]
+    }
+}

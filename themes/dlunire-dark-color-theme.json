@@ -1,0 +1,191 @@
+{
+    "$schema": "vscode://schemas/color-theme",
+    "name": "Dlunire Dark",
+    "colors": {
+        "editor.background": "#010305",
+        "editor.foreground": "#FFFFFF",
+        "editorLineNumber.foreground": "#2A3846",
+        "editorLineNumber.activeForeground": "#FF6D00",
+        "editor.selectionBackground": "#FF6D0033",
+        "editor.lineHighlightBackground": "#0A1017",
+        "editorCursor.foreground": "#FF6D00",
+        "activityBar.background": "#05080C",
+        "activityBar.foreground": "#00E8FF",
+        "activityBar.inactiveForeground": "#656565",
+        "sideBar.background": "#030508",
+        "sideBar.foreground": "#A1A1A1",
+        "sideBarTitle.foreground": "#FFFFFF",
+        "sideBarSectionHeader.background": "#05080C",
+        "statusBar.background": "#010305",
+        "statusBar.foreground": "#A1A1A1",
+        "statusBar.noFolderBackground": "#010305",
+        "titleBar.activeBackground": "#010305",
+        "titleBar.activeForeground": "#FFFFFF",
+        "titleBar.inactiveBackground": "#010305",
+        "tab.activeBackground": "#010305",
+        "tab.activeForeground": "#FF6D00",
+        "tab.inactiveBackground": "#05080C",
+        "tab.inactiveForeground": "#656565",
+        "list.activeSelectionBackground": "#0D1B2A",
+        "list.activeSelectionForeground": "#00E8FF",
+        "list.hoverBackground": "#0A1017",
+        "input.background": "#080D14",
+        "input.foreground": "#FFFFFF",
+        "input.border": "#2A3846"
+    },
+    "tokenColors": [
+        {
+            "name": "0. Etiquetas Meta (como <?php)",
+            "scope": [
+                "punctuation.section.embedded",
+                "keyword.other.php",
+                "meta.embedded"
+            ],
+            "settings": {
+                "foreground": "#A1A1A1"
+            }
+        },
+        {
+            "name": "1a. Modificadores y Control de Flujo (Naranja Fuego)",
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "storage.modifier",
+                "keyword.operator.new"
+            ],
+            "settings": {
+                "foreground": "#FF6D00"
+            }
+        },
+        {
+            "name": "1b. Estructura y Declaraciones (Azul Neón)",
+            "scope": [
+                "storage.type.function",
+                "storage.type.class",
+                "storage.type.enum",
+                "storage.type.interface",
+                "storage.type.trait",
+                "keyword.control.case",
+                "keyword.other.namespace",
+                "keyword.other.use"
+            ],
+            "settings": {
+                "foreground": "#00D0FF"
+            }
+        },
+        {
+            "name": "2. Cadenas de texto / Strings",
+            "scope": [
+                "string",
+                "string.quoted"
+            ],
+            "settings": {
+                "foreground": "#FFFFFF"
+            }
+        },
+        {
+            "name": "3. Namespaces y Clases (Verde Menta)",
+            "scope": [
+                "entity.name.type",
+                "entity.name.class",
+                "entity.name.namespace",
+                "support.class"
+            ],
+            "settings": {
+                "foreground": "#00FF00",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "3b. Funciones y Métodos (Cian Eléctrico)",
+            "scope": [
+                "entity.name.function",
+                "meta.function-call",
+                "variable.function"
+            ],
+            "settings": {
+                "foreground": "#A0E5FF"
+            }
+        },
+        {
+            "name": "4. Variables (Cian Hielo)",
+            "scope": [
+                "variable",
+                "variable.other",
+                "variable.parameter"
+            ],
+            "settings": {
+                "foreground": "#00E8FF"
+            }
+        },
+        {
+            "name": "4b. Propiedades (Naranja Ámbar)",
+            "scope": [
+                "variable.other.property",
+                "support.type.property-name"
+            ],
+            "settings": {
+                "foreground": "#FF9100"
+            }
+        },
+        {
+            "name": "4c. Atributos (Rosa Neón)",
+            "scope": [
+                "entity.other.attribute-name"
+            ],
+            "settings": {
+                "foreground": "#F50057"
+            }
+        },
+        {
+            "name": "5a. Números",
+            "scope": [
+                "constant.numeric"
+            ],
+            "settings": {
+                "foreground": "#FAA859"
+            }
+        },
+        {
+            "name": "5b. Literales y Booleans (Azul Violáceo)",
+            "scope": [
+                "constant.language"
+            ],
+            "settings": {
+                "foreground": "#A0A0FF"
+            }
+        },
+        {
+            "name": "6. Comentarios (Gris Sin Cursiva)",
+            "scope": [
+                "comment",
+                "comment.block.documentation"
+            ],
+            "settings": {
+                "foreground": "#656565",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "7a. Tipos Primitivos (Amarillo Neón)",
+            "scope": [
+                "support.type.primitive",
+                "keyword.type",
+                "support.type"
+            ],
+            "settings": {
+                "foreground": "#FFC600",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "7b. Etiquetas HTML/XML (Turquesa Brillante)",
+            "scope": [
+                "entity.name.tag"
+            ],
+            "settings": {
+                "foreground": "#1DE9B6"
+            }
+        }
+    ]
+}
