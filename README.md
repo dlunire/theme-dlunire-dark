@@ -12,30 +12,24 @@ Instead of coloring tokens at random, the theme groups language constructs by th
 
 It was refined against real projects in the **DLUnire Framework** ecosystem and works well across modern languages — with special care for PHP and TypeScript.
 
+### Syntax types at a glance
+
+A compact grammar sample showing how variables, types, strings, numbers, booleans, and comments are distinguished:
+
+![DLUnire Dark — syntax types](./dlunire-dark-type.webp)
+
 ---
 
 ## Table of Contents
 
-- [DLUnire Dark](#dlunire-dark)
-  - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-    - [Main goals](#main-goals)
-  - [Gallery](#gallery)
-    - [TypeScript](#typescript)
-    - [Svelte](#svelte)
-    - [SCSS](#scss)
-    - [TypeScript — Routing Engine](#typescript--routing-engine)
-    - [Rust](#rust)
-    - [PHP](#php)
-    - [PHP Controller](#php-controller)
-  - [Features](#features)
-    - [Highlights](#highlights)
-  - [Color Palette](#color-palette)
-  - [Supported Languages](#supported-languages)
-  - [Installation](#installation)
-    - [Visual Studio Code Marketplace](#visual-studio-code-marketplace)
-  - [Design Philosophy](#design-philosophy)
-  - [Repository](#repository)
+- [Overview](#overview)
+- [Gallery](#gallery)
+- [Features](#features)
+- [Color Palette](#color-palette)
+- [Supported Languages](#supported-languages)
+- [Installation](#installation)
+- [Design Philosophy](#design-philosophy)
+- [Repository](#repository)
 
 ---
 

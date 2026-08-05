@@ -55,7 +55,8 @@
         "README.md",
         "LICENSE",
         "icon.png",
-        "dlunire-dark.webp"
+        "dlunire-dark.webp",
+        "dlunire-dark-type.webp"
     ],
 
     "contributes": {
