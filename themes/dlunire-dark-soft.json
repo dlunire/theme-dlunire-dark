@@ -8,6 +8,11 @@
         "editorLineNumber.activeForeground": "#00bbff",
         "editor.selectionBackground": "#0091ff33",
         "editor.lineHighlightBackground": "#0A1017",
+        // Widget del editor de código:
+        "editorWidget.background": "#081219",
+        "editorWidget.border": "#071c23",
+        "editorWidget.foreground": "#ffffff",
+        "editorWidget.resizeBorder": "#f0f0f026",
         "editorGroup.border": "#00bbff2d",
         "editorGroupHeader.border": "#00bbff2d",
         "editorGroupHeader.tabsBackground": "#070a0d",
@@ -61,6 +66,7 @@
         "minimapSlider.background": "#ffffff10",
         "minimapSlider.hoverBackground": "#ffffff10",
         "minimapSlider.activeBackground": "#00eaff18",
+        "minimap.background": "#131a2228",
         // Menús Contextuales (Diseño sutil)
         "menu.background": "#05080C",
         "menu.foreground": "#A1A1A1",

@@ -2,18 +2,19 @@
 
 all: build
 
-# build ya no borra por defecto; usa 'make clean build' si quieres empezar de cero
-build:
-    pnpm package
+# 'build' ahora depende de 'clean', así que siempre limpiará antes de empaquetar
+build: clean
+	pnpm package
 
-publish-vscode: build
-    pnpm run publish:vscode
+# Las tareas de publicación solo ejecutan su comando correspondiente
+publish-vscode:
+	pnpm run publish:vscode
 
-publish-openvsx: build
-    pnpm run publish:openvsx
+publish-openvsx:
+	pnpm run publish:openvsx
 
-# Forzamos que se limpie, construya y luego se publique en ambas plataformas de forma ordenada
-publish: clean build publish-vscode publish-openvsx
+# 'publish' ejecuta build una sola vez (que ya incluye el clean) y luego publica en ambos sitios
+publish: build publish-vscode publish-openvsx
 
 clean:
-    rm -vf dlunire-dark-*.vsix
+	rm -vf dlunire-dark-*.vsix
