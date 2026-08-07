@@ -51,7 +51,7 @@
     "pricing": "Free",
 
     "files": [
-        "themes/dlunire-dark-color-theme.json",
+        "themes/",
         "README.md",
         "LICENSE",
         "icon.png",
@@ -65,6 +65,11 @@
                 "label": "DLUnire Dark",
                 "uiTheme": "vs-dark",
                 "path": "themes/dlunire-dark-color-theme.json"
+            },
+            {
+                "label": "DLUnire Dark Soft",
+                "uiTheme": "vs-dark",
+                "path": "themes/dlunire-dark-soft.json"
             }
         ]
     },
