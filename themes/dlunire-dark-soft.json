@@ -82,7 +82,30 @@
         // Entradas de texto (Inputs y Paleta de comandos)
         "input.background": "#080D14",
         "input.foreground": "#FFFFFF",
-        "input.border": "#2A3846"
+        "input.border": "#2A3846",
+        // Contenedor general y bordes
+        "peekView.border": "#00bbff2d",
+        // Cabecera del título
+        "peekViewTitle.background": "#05080C",
+        "peekViewTitleLabel.foreground": "#FFFFFF",
+        "peekViewTitleDescription.foreground": "#71d2ffe6",
+        // Editor interno de la inspección
+        "peekViewEditor.background": "#010305",
+        "peekViewEditor.matchHighlightBackground": "#0091ff33",
+        // Panel lateral de resultados (la lista de referencias)
+        "peekViewResult.background": "#030508",
+        "peekViewResult.fileForeground": "#FFFFFF",
+        "peekViewResult.lineForeground": "#c8f9ff",
+        "peekViewResult.matchHighlightBackground": "#0091ff33",
+        "peekViewResult.selectionBackground": "#0A1017",
+        "peekViewResult.selectionForeground": "#00E8FF",
+        "gitDecoration.conflictingResourceForeground": "#FF6D00",
+        // --- GITLENS (Líneas de anotación y Blame) ---
+        "gitlens.lineHighlightBackgroundColor": "#0A101733",
+        // Colores para avatares, gráficas e indicadores de GitLens
+        "gitlens.decorations.branchAheadForegroundColor": "#1DE9B6",
+        "gitlens.decorations.branchBehindForegroundColor": "#FF9100",
+        "gitlens.decorations.branchUnpublishedForegroundColor": "#00E8FF",
     },
     "tokenColors": [
         {
