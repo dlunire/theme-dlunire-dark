@@ -1,17 +1,19 @@
-.PHONY: build publish-vscode publish-openvsx publish all
+.PHONY: build publish-vscode publish-openvsx publish clean all
 
 all: build
 
-build: clean
-	pnpm package
+# build ya no borra por defecto; usa 'make clean build' si quieres empezar de cero
+build:
+    pnpm package
 
-publish-vscode:
-	pnpm run publish:vscode
+publish-vscode: build
+    pnpm run publish:vscode
 
-publish-openvsx:
-	pnpm run publish:openvsx
+publish-openvsx: build
+    pnpm run publish:openvsx
 
-publish: publish-vscode publish-openvsx
+# Forzamos que se limpie, construya y luego se publique en ambas plataformas de forma ordenada
+publish: clean build publish-vscode publish-openvsx
 
 clean:
-	rm -vf dlunire-dark-*.vsix
+    rm -vf dlunire-dark-*.vsix
