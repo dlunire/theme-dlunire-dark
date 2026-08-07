@@ -2,7 +2,7 @@
 
 all: build
 
-build:
+build: clean
 	pnpm package
 
 publish-vscode:
@@ -12,3 +12,6 @@ publish-openvsx:
 	pnpm run publish:openvsx
 
 publish: publish-vscode publish-openvsx
+
+clean:
+	rm -vf dlunire-dark-*.vsix
