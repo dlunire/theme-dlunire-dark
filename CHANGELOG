@@ -1,0 +1,17 @@
+# Changelog
+
+All notable changes to the "DLUnire Dark" extension will be documented in this file.
+
+## [1.0.3] - 2026-08-07
+
+### Changed
+- **UI/UX Consistency & Polish:** Comprehensive visual overhaul of auxiliary IDE components to maintain strict alignment with the DLUnire ecosystem:
+  - **Peek View:** Complete thematic redesign of definition and reference panels (`peekViewTitle`, `peekViewEditor`, `peekViewResult`) to eliminate default blue/gray elements.
+  - **Git & GitLens:** Integrated native git decorations and GitLens inline blame annotations / status indicators directly into the ultra-dark palette.
+  - **Editor Widgets & Menus:** Refined search/replace widgets, context menus, and command palettes for seamless aesthetic continuity.
+- **Infrastructure:** Streamlined multi-platform release workflows using a dedicated `Makefile` for atomic builds and publishing.
+
+## [1.0.2] - 2026-08-05
+
+### Added
+- **New Variant:** Introduced **"DLUnire Dark Soft"**, featuring a slightly elevated graphite/slate background (`#07090b`) designed to reduce visual fatigue during long coding sessions while preserving strict dark-mode principles.
