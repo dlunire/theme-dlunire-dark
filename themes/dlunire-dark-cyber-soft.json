@@ -270,21 +270,35 @@
                 "entity.name.method"
             ],
             "settings": {
-                "foreground": "#FF7AC6"
+                "foreground": "#8afdff",
+            }
+        },
+        {
+            "name": "Inherited Classes",
+            "scope": [
+                "entity.other.inherited-class",
+                "entity.other.inherited-class.php",
+                "meta.other.inherited-class"
+            ],
+            "settings": {
+                "foreground": "#00F5FF"
             }
         },
         {
             "name": "Classes",
             "scope": [
-                "entity.name.type",
+                "entity.name.type.class",
                 "entity.name.class",
                 "entity.name.namespace",
                 "support.class",
                 "support.type.class",
+                "entity.name.struct",
+                "entity.name.interface",
+                "entity.name.enum",
                 "entity.name.trait"
             ],
             "settings": {
-                "foreground": "#00ffaa"
+                "foreground": "#00FF00"
             }
         },
         {
@@ -427,13 +441,12 @@
     ],
     "semanticHighlighting": true,
     "semanticTokenColors": {
-        "class": "#00FFAA",
         "interface": "#B983FF",
         "struct": "#FFD580",
         "enum": "#33EEFF",
         "enumMember": "#A0A0FF",
-        "function": "#FF7AC6",
-        "method": "#FF9CD6",
+        "function": "#8afdff",
+        "method": "#8afdff",
         "variable": "#00E8FF",
         "parameter": "#70F3FF",
         "property": "#FF9100",
@@ -443,6 +456,6 @@
         "string": "#FFFFFF",
         "type": "#1DE9B6",
         "comment": "#656565",
-        "decorator": "#F50057"
+        "decorator": "#F50057",
     }
 }
