@@ -2,6 +2,21 @@
 
 All notable changes to the "DLUnire Dark" extension will be documented in this file.
 
+## [1.0.4] - 2026-08-08
+
+### Added
+- **New Variant: "DLUnire Dark Cyber"** — a high-saturation cyberpunk take on the base palette, sharing the same ultra-dark `#010305` background but with a distinct accent system: cyan for variables, magenta for functions, green for classes, violet for interfaces, and amber for strings. Structs, enums, and interfaces each get their own color instead of collapsing into "Classes."
+- **New Variant: "DLUnire Dark Cyber Soft"** — the Cyber palette on a softer, blue-teal-tinted dark background, for long sessions where the full-contrast Cyber background feels too intense.
+- **Diagnostics coloring:** `editorError`/`editorWarning`/`editorInfo`/`editorHint` foreground and matching Problems panel icons, previously falling back to VS Code defaults in the Cyber variants.
+- **Bracket pair colorization:** `editorBracketHighlight.*` tuned to the palette instead of using default colors.
+- **Git decoration:** added missing `addedResourceForeground` and `renamedResourceForeground`.
+
+### Fixed
+- **Invalid syntax highlighting** was the same color as the editor foreground, making syntax errors effectively invisible in the Cyber variants. Now rendered in red with an underline.
+- **String literals** shared their color with the default editor foreground, reducing readability. Strings now have their own amber tone.
+- **Semantic differentiation:** `class`, `interface`, `struct`, and `enum` previously resolved to near-identical hues in Cyber. Each now has a distinct, consistent color.
+- **Editor chrome border consistency:** Activity Bar, Title Bar, Sidebar, and Status Bar borders now follow a single coherent hue-and-opacity system per variant, instead of mismatched one-off values.
+
 ## [1.0.3] - 2026-08-07
 
 ### Changed
