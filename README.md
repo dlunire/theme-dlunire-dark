@@ -2,7 +2,7 @@
 
 **A modern high-contrast color theme for Visual Studio Code.**
 
-![DLUnire Dark](./dlunire-dark.webp)
+![DLUnire Dark](./images/dlunire-dark.webp)
 
 ---
 
@@ -16,7 +16,7 @@ It was refined against real projects in the **DLUnire Framework** ecosystem and 
 
 A compact grammar sample showing how variables, types, strings, numbers, booleans, and comments are distinguished:
 
-![DLUnire Dark — syntax types](./dlunire-dark-type.webp)
+![DLUnire Dark — syntax types](./images/dlunire-dark-type.webp)
 
 ---
 
@@ -61,7 +61,7 @@ The screenshots below come from real projects in the **DLUnire** ecosystem — p
 
 Core modules, imports, type declarations, functions, and comments.
 
-![TypeScript](./preview-01.webp)
+![TypeScript](./images/preview-01.webp)
 
 ---
 
@@ -69,7 +69,7 @@ Core modules, imports, type declarations, functions, and comments.
 
 Components, layouts, embedded TypeScript, and application structure.
 
-![Svelte](./preview-02.webp)
+![Svelte](./images/preview-02.webp)
 
 ---
 
@@ -77,7 +77,7 @@ Components, layouts, embedded TypeScript, and application structure.
 
 Variables, selectors, nested rules, properties, and mixins.
 
-![SCSS](./preview-03.webp)
+![SCSS](./images/preview-03.webp)
 
 ---
 
@@ -85,7 +85,7 @@ Variables, selectors, nested rules, properties, and mixins.
 
 A larger TypeScript sample showing routing, modules, and application architecture.
 
-![TypeScript Routing](./preview-04.webp)
+![TypeScript Routing](./images/preview-04.webp)
 
 ---
 
@@ -93,7 +93,7 @@ A larger TypeScript sample showing routing, modules, and application architectur
 
 Traits, ownership, modules, macros, and modern Rust syntax.
 
-![Rust](./preview-05.webp)
+![Rust](./images/preview-05.webp)
 
 ---
 
@@ -101,7 +101,7 @@ Traits, ownership, modules, macros, and modern Rust syntax.
 
 Namespaces, classes, methods, attributes, and modern PHP syntax.
 
-![PHP](./preview-06.webp)
+![PHP](./images/preview-06.webp)
 
 ---
 
@@ -109,7 +109,7 @@ Namespaces, classes, methods, attributes, and modern PHP syntax.
 
 A production controller built with the DLUnire Framework.
 
-![PHP Controller](./preview-07.webp)
+![PHP Controller](./images/preview-07.webp)
 
 ---
 
