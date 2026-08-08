@@ -228,6 +228,4 @@ Bug reports, feature requests, and contributions are welcome.
 
 ## Test
 
-<p align="center">
-  <video src="images/test.mp4" width="100%" autoplay loop muted playsinline></video>
-</p>
+![Test](./images/test.webp) 
