@@ -34,6 +34,7 @@
         "activityBar.background": "#05080C",
         "activityBar.foreground": "#00E8FF",
         "activityBar.inactiveForeground": "#a0e1ff79",
+        "activityBar.border": "#00bbff3d",
         "sideBar.background": "#030508",
         "sideBar.foreground": "#c8f9ff",
         "sideBar.border": "#00bbff2d",
@@ -48,6 +49,7 @@
         "titleBar.activeForeground": "#FFFFFF",
         "titleBar.inactiveBackground": "#05080C",
         "titleBar.inactiveForeground": "#c8f9ff",
+        "titleBar.border": "#00bbff55",
         // Pestaña Activa (Con foco)
         "tab.activeBackground": "#0A1017",
         "tab.activeForeground": "#00bbff",
