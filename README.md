@@ -1,6 +1,6 @@
 # DLUnire Dark
 
-**A modern high-contrast color theme for Visual Studio Code.**
+ **A modern high-contrast color theme for Visual Studio Code.** 
 
 ![DLUnire Dark](./images/dlunire-dark.webp)
 
@@ -22,14 +22,14 @@ A compact grammar sample showing how variables, types, strings, numbers, boolean
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Gallery](#gallery)
-- [Features](#features)
-- [Color Palette](#color-palette)
-- [Supported Languages](#supported-languages)
-- [Installation](#installation)
-- [Design Philosophy](#design-philosophy)
-- [Repository](#repository)
+* [Overview](#overview)
+* [Gallery](#gallery)
+* [Features](#features)
+* [Color Palette](#color-palette)
+* [Supported Languages](#supported-languages)
+* [Installation](#installation)
+* [Design Philosophy](#design-philosophy)
+* [Repository](#repository)
 
 ---
 
@@ -37,7 +37,7 @@ A compact grammar sample showing how variables, types, strings, numbers, boolean
 
 DLUnire Dark follows one simple idea:
 
-> **Source code should communicate structure before syntax.**
+> **Source code should communicate structure before syntax.** 
 
 Each construct belongs to a stable visual category. Keywords, types, functions, properties, and comments stay visually distinct, so patterns stand out faster and long sessions feel less tiring.
 
@@ -45,11 +45,11 @@ The theme started with PHP in mind, then was tested extensively with modern fron
 
 ### Main goals
 
-- Improve readability
-- Keep semantic coloring consistent
-- Reduce eye strain
-- Emphasize constructs that matter
-- Keep the UI clean and free of noise
+* Improve readability
+* Keep semantic coloring consistent
+* Reduce eye strain
+* Emphasize constructs that matter
+* Keep the UI clean and free of noise
 
 ---
 
@@ -119,30 +119,30 @@ DLUnire Dark uses a semantic color system rather than arbitrary syntax highlight
 
 ### Highlights
 
-- Ultra-dark background (`#010305`)
-- High-contrast syntax highlighting
-- Balanced, carefully tuned palette
-- Semantic syntax classification
-- Comfortable for long coding sessions
-- Clear visual identity for:
-  - Keywords
-  - Classes
-  - Interfaces
-  - Traits
-  - Enums
-  - Functions
-  - Methods
-  - Variables
-  - Properties
-  - Attributes
-  - Primitive types
-  - Constants
-  - Numeric literals
-  - Comments
-- Comments without italics
-- Consistent editor chrome
-- Minimal visual distractions
-- Tuned for modern languages
+* Ultra-dark background (`#010305`)
+* High-contrast syntax highlighting
+* Balanced, carefully tuned palette
+* Semantic syntax classification
+* Comfortable for long coding sessions
+* Clear visual identity for:
+  + Keywords
+  + Classes
+  + Interfaces
+  + Traits
+  + Enums
+  + Functions
+  + Methods
+  + Variables
+  + Properties
+  + Attributes
+  + Primitive types
+  + Constants
+  + Numeric literals
+  + Comments
+* Comments without italics
+* Consistent editor chrome
+* Minimal visual distractions
+* Tuned for modern languages
 
 ---
 
@@ -171,16 +171,16 @@ DLUnire Dark uses a semantic color system rather than arbitrary syntax highlight
 
 DLUnire Dark works with every language Visual Studio Code supports. Extra attention went into:
 
-- PHP
-- TypeScript
-- JavaScript
-- Svelte
-- Rust
-- HTML
-- CSS
-- SCSS
-- JSON
-- Markdown
+* PHP
+* TypeScript
+* JavaScript
+* Svelte
+* Rust
+* HTML
+* CSS
+* SCSS
+* JSON
+* Markdown
 
 Gallery images were captured from real **DLUnire** projects.
 
@@ -191,10 +191,10 @@ Gallery images were captured from real **DLUnire** projects.
 ### Visual Studio Code Marketplace
 
 1. Open **Extensions** (`Ctrl + Shift + X`).
-2. Search for **DLUnire Dark**.
-3. Click **Install**.
-4. Open **Preferences → Color Theme**.
-5. Select **DLUnire Dark**.
+2. Search for **DLUnire Dark** .
+3. Click **Install** .
+4. Open **Preferences → Color Theme** .
+5. Select **DLUnire Dark** .
 
 Or install from the terminal:
 
@@ -216,12 +216,18 @@ Instead of giving every token equal weight, the theme highlights what defines ar
 
 ## Repository
 
-**Website:** [https://dlunire.dev](https://dlunire.dev)
+ **Website:** [https://dlunire.dev](https://dlunire.dev)
 
-**Source:** [https://github.com/dlunire/theme-dlunire-dark](https://github.com/dlunire/theme-dlunire-dark)
+ **Source:** [https://github.com/dlunire/theme-dlunire-dark](https://github.com/dlunire/theme-dlunire-dark)
 
 Bug reports, feature requests, and contributions are welcome.
 
 ---
 
-**License:** MIT · **Publisher:** [dlunire](https://dlunire.dev) · **Version:** 1.0.1
+ **License:** MIT · **Publisher:** [dlunire](https://dlunire.dev) · **Version:** 1.0.1
+
+## Test
+
+<p align="center">
+  <video src="images/test.mp4" width="100%" autoplay loop muted playsinline></video>
+</p>
