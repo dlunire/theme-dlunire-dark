@@ -2,14 +2,12 @@
 
  **A modern high-contrast color theme suite for Visual Studio Code.** 
 
-<p align="center">
-  <video autoplay loop muted playsinline poster="./images/dlunire-dark.webp" width="100%">
+<video autoplay loop muted playsinline poster="./images/dlunire-dark.webp" width="100%">
 
-    <source src="https://raw.githubusercontent.com/dlunire/theme-dlunire-dark/master/preview.mp4" type="video/mp4">
-    <img src="./images/dlunire-dark.webp" alt="DLUnire Dark Preview" width="100%">
+  <source src="https://raw.githubusercontent.com/dlunire/theme-dlunire-dark/master/preview.mp4" type="video/mp4">
+  <img src="./images/dlunire-dark.webp" alt="DLUnire Dark Preview" width="100%">
 
-  </video>
-</p>
+</video>
 
 ---
 
