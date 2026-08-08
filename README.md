@@ -7,9 +7,9 @@
   Navegador no soportado
 </video>
 
-Preview from `DLUnire Dark`
+<!-- Preview from `DLUnire Dark` -->
 
-![Vista previa](./images/dlunire-dark.webp "Vista previa")
+<!-- ![Vista previa](./images/dlunire-dark.webp "Vista previa") -->
 
 ---
 
