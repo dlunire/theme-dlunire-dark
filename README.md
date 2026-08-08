@@ -2,7 +2,7 @@
 
  **A modern high-contrast color theme suite for Visual Studio Code.** 
 
-<video autoplay loop muted playsinline width="100%">
+<video autoplay loop muted playsinline width="100%" src="https://raw.githubusercontent.com/dlunire/theme-dlunire-dark/master/preview.mp4">
   <source src="https://raw.githubusercontent.com/dlunire/theme-dlunire-dark/master/preview.mp4" type="video/mp4">
   Navegador no soportado
 </video>
