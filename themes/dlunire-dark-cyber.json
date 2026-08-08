@@ -1,28 +1,41 @@
 {
     "$schema": "vscode://schemas/color-theme",
-    "name": "DLUnire Dark Soft",
+    "name": "DLUnire Dark Cyber",
     "colors": {
-        "editor.background": "#07090b",
+        "editor.background": "#010305",
         "editor.foreground": "#FFFFFF",
         "editorLineNumber.foreground": "#c8f9ff",
         "editorLineNumber.activeForeground": "#00bbff",
         "editor.selectionBackground": "#0091ff33",
         "editor.lineHighlightBackground": "#0A1017",
-        // Widget del editor de código:
-        "editorWidget.background": "#081219",
-        "editorWidget.border": "#071c23",
-        "editorWidget.foreground": "#ffffff",
-        "editorWidget.resizeBorder": "#f0f0f026",
+        // Widget general y ventana flotante (Hover)
+        "editorWidget.background": "#030609",
+        "editorWidget.border": "#00bbff20",
+        "editorWidget.foreground": "#c8f9ff",
+        "editorWidget.resizeBorder": "#f0f0f01a",
+        // Especifico para el recuadro flotante de documentación
+        "editorHoverWidget.background": "#030609",
+        "editorHoverWidget.border": "#00bbff20",
+        "editorHoverWidget.foreground": "#c8f9ff",
+        "editorHoverWidget.statusBarBackground": "#05080C",
         "editorGroup.border": "#00bbff2d",
         "editorGroupHeader.border": "#00bbff2d",
-        "editorGroupHeader.tabsBackground": "#070a0d",
+        "editorGroupHeader.tabsBackground": "#030a0c2d",
         "editorGroupHeader.tabsBorder": "#f0f0f013",
-        "editorCursor.foreground": "#00b3ff",
+        "editorCursor.foreground": "#00E8FF",
+        // Diagnósticos (antes ausentes, usaban default de VS Code)
+        "editorError.foreground": "#FF2A5F",
+        "editorWarning.foreground": "#FFC600",
+        "editorInfo.foreground": "#00bbff",
+        "editorHint.foreground": "#00FFAA",
+        "problemsErrorIcon.foreground": "#FF2A5F",
+        "problemsWarningIcon.foreground": "#FFC600",
+        "problemsInfoIcon.foreground": "#00bbff",
         "activityBar.background": "#05080C",
         "activityBar.foreground": "#00E8FF",
         "activityBar.inactiveForeground": "#a0e1ff79",
-        "sideBar.background": "#070a0d",
-        "sideBar.foreground": "#ffffff",
+        "sideBar.background": "#030508",
+        "sideBar.foreground": "#c8f9ff",
         "sideBar.border": "#00bbff2d",
         "sideBarTitle.foreground": "#FFFFFF",
         "sideBarSectionHeader.background": "#05080C",
@@ -40,7 +53,7 @@
         "tab.activeForeground": "#00bbff",
         "tab.activeBorderTop": "#00E8FF",
         "tab.activeBorder": "#00E8FF",
-        // Pestaña Seleccionada pero NO Enfocada (Blanco 30% en bordes)
+        // Pestaña Seleccionada pero NO Enfocada
         "tab.unfocusedActiveBackground": "#0A1017",
         "tab.unfocusedActiveForeground": "#A1A1A1",
         "tab.unfocusedActiveBorderTop": "#00f2ff40",
@@ -57,17 +70,15 @@
         "list.activeSelectionBackground": "#0D1B2A",
         "list.activeSelectionForeground": "#00E8FF",
         "list.hoverBackground": "#0A1017",
-        // Archivo seleccionado pero NO enfocado (Sidebar perdiendo el foco)
         "list.inactiveSelectionBackground": "#0A1017",
         "list.inactiveSelectionForeground": "#A1A1A1",
-        // Recuadro blanco al 30% (Sustituto de VS Code para bordes top/bottom)
         "list.inactiveFocusOutline": "#FFFFFF4D",
         // Minimapa
-        "minimapSlider.background": "#ffffff10",
-        "minimapSlider.hoverBackground": "#ffffff10",
+        "minimapSlider.background": "#00c3ff10",
+        "minimapSlider.hoverBackground": "#00ff3c10",
         "minimapSlider.activeBackground": "#00eaff18",
         "minimap.background": "#131a2228",
-        // Menús Contextuales (Diseño sutil)
+        // Menús Contextuales
         "menu.background": "#05080C",
         "menu.foreground": "#A1A1A1",
         "menu.selectionBackground": "#0A1017",
@@ -75,31 +86,80 @@
         "menu.separatorBackground": "#FFFFFF1A",
         "menu.border": "#2A3846",
         // Decoración de Git
+        "gitDecoration.addedResourceForeground": "#00FFAA",
+        "gitDecoration.renamedResourceForeground": "#FFC600",
         "gitDecoration.modifiedResourceForeground": "#FFFFFF",
         "gitDecoration.untrackedResourceForeground": "#00E8FF",
-        "gitDecoration.deletedResourceForeground": "#F50057",
+        "gitDecoration.deletedResourceForeground": "#FF2A5F",
         "gitDecoration.ignoredResourceForeground": "#656565",
+        "gitDecoration.conflictingResourceForeground": "#FF6D00",
         // Entradas de texto (Inputs y Paleta de comandos)
         "input.background": "#080D14",
         "input.foreground": "#FFFFFF",
-        "input.border": "#2A3846",
-        // Contenedor general y bordes
+        "input.border": "#00bbff40",
+        "inputOption.activeBorder": "#00E8FF",
+        "inputOption.activeBackground": "#00E8FF22",
+        "inputOption.activeForeground": "#00E8FF",
+        "inputValidation.errorBackground": "#1A030A",
+        "inputValidation.errorBorder": "#F50057",
+        "inputValidation.errorForeground": "#FF5588",
+        // Contenedor general de inspección (Peek View)
         "peekView.border": "#00bbff2d",
-        // Cabecera del título
         "peekViewTitle.background": "#05080C",
         "peekViewTitleLabel.foreground": "#FFFFFF",
         "peekViewTitleDescription.foreground": "#71d2ffe6",
-        // Editor interno de la inspección
         "peekViewEditor.background": "#010305",
         "peekViewEditor.matchHighlightBackground": "#0091ff33",
-        // Panel lateral de resultados (la lista de referencias)
         "peekViewResult.background": "#030508",
         "peekViewResult.fileForeground": "#FFFFFF",
         "peekViewResult.lineForeground": "#c8f9ff",
         "peekViewResult.matchHighlightBackground": "#0091ff33",
         "peekViewResult.selectionBackground": "#0A1017",
         "peekViewResult.selectionForeground": "#00E8FF",
-        "gitDecoration.conflictingResourceForeground": "#FF6D00",
+        // Terminal integrada (Matriz ANSI de 16 colores Cyber)
+        "terminal.background": "#010305",
+        "terminal.foreground": "#FFFFFF",
+        "terminalCursor.foreground": "#00E8FF",
+        "terminal.selectionBackground": "#0091ff40",
+        "terminal.ansiBlack": "#101A24",
+        "terminal.ansiBrightBlack": "#50687F",
+        "terminal.ansiRed": "#FF2A5F",
+        "terminal.ansiBrightRed": "#FF5588",
+        "terminal.ansiGreen": "#00FFAA",
+        "terminal.ansiBrightGreen": "#00FFD5",
+        "terminal.ansiYellow": "#FFC600",
+        "terminal.ansiBrightYellow": "#FFE066",
+        "terminal.ansiBlue": "#00E8FF",
+        "terminal.ansiBrightBlue": "#33EEFF",
+        "terminal.ansiMagenta": "#F50057",
+        "terminal.ansiBrightMagenta": "#FF2A85",
+        "terminal.ansiCyan": "#00FFCC",
+        "terminal.ansiBrightCyan": "#70F3FF",
+        "terminal.ansiWhite": "#E0F8FF",
+        "terminal.ansiBrightWhite": "#FFFFFF",
+        // Búsqueda y resaltado de palabras
+        "editor.findMatchBackground": "#00bbff40",
+        "editor.findMatchHighlightBackground": "#00E8FF25",
+        "editor.wordHighlightBackground": "#0091ff20",
+        "editor.selectionHighlightBackground": "#0091ff20",
+        // Breadcrumbs
+        "breadcrumb.foreground": "#71d2ffe6",
+        "breadcrumb.focusForeground": "#00E8FF",
+        "breadcrumb.activeSelectionForeground": "#FFFFFF",
+        "breadcrumbPicker.background": "#05080C",
+        // Activity Bar Badge
+        "activityBarBadge.background": "#00E8FF",
+        "activityBarBadge.foreground": "#05080C",
+        // Bracket pair colorization (antes ausente, usaba colores default)
+        "editorBracketHighlight.foreground1": "#00E8FF",
+        "editorBracketHighlight.foreground2": "#FF7AC6",
+        "editorBracketHighlight.foreground3": "#FFC600",
+        "editorBracketHighlight.foreground4": "#00FFAA",
+        "editorBracketHighlight.foreground5": "#FF6D00",
+        "editorBracketHighlight.foreground6": "#A0A0FF",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#FF2A5F",
+        "editorIndentGuide.background1": "#00bbff14",
+        "editorIndentGuide.activeBackground1": "#00bbff40"
     },
     "tokenColors": [
         {
@@ -138,7 +198,7 @@
                 "storage.type.primitive"
             ],
             "settings": {
-                "foreground": "#FFC600"
+                "foreground": "#1DE9B6"
             }
         },
         {
@@ -150,7 +210,7 @@
                 "string.regexp"
             ],
             "settings": {
-                "foreground": "#FFFFFF"
+                "foreground": "#FFD580"
             }
         },
         {
@@ -208,7 +268,7 @@
                 "entity.name.method"
             ],
             "settings": {
-                "foreground": "#A0E5FF"
+                "foreground": "#FF7AC6"
             }
         },
         {
@@ -219,13 +279,37 @@
                 "entity.name.namespace",
                 "support.class",
                 "support.type.class",
-                "entity.name.struct",
-                "entity.name.interface",
-                "entity.name.enum",
                 "entity.name.trait"
             ],
             "settings": {
-                "foreground": "#00FF00"
+                "foreground": "#00ffaa"
+            }
+        },
+        {
+            "name": "Interfaces",
+            "scope": [
+                "entity.name.interface"
+            ],
+            "settings": {
+                "foreground": "#B983FF"
+            }
+        },
+        {
+            "name": "Structs",
+            "scope": [
+                "entity.name.struct"
+            ],
+            "settings": {
+                "foreground": "#FFD580"
+            }
+        },
+        {
+            "name": "Enums",
+            "scope": [
+                "entity.name.enum"
+            ],
+            "settings": {
+                "foreground": "#33EEFF"
             }
         },
         {
@@ -324,27 +408,38 @@
                 "invalid.illegal"
             ],
             "settings": {
-                "foreground": "#FFFFFF",
+                "foreground": "#FF2A5F",
+                "fontStyle": "underline"
+            }
+        },
+        {
+            "name": "Operators & Punctuation",
+            "scope": [
+                "keyword.operator",
+                "storage.type.function.arrow"
+            ],
+            "settings": {
+                "foreground": "#5C7A88"
             }
         }
     ],
     "semanticHighlighting": true,
     "semanticTokenColors": {
-        "class": "#00FF00",
-        "interface": "#00FF00",
-        "struct": "#00FF00",
-        "enum": "#00FF00",
+        "class": "#00FFAA",
+        "interface": "#B983FF",
+        "struct": "#FFD580",
+        "enum": "#33EEFF",
         "enumMember": "#A0A0FF",
-        "function": "#A0E5FF",
-        "method": "#A0E5FF",
+        "function": "#FF7AC6",
+        "method": "#FF9CD6",
         "variable": "#00E8FF",
-        "parameter": "#00E8FF",
+        "parameter": "#70F3FF",
         "property": "#FF9100",
-        "namespace": "#00FF00",
+        "namespace": "#00E5D8",
         "keyword": "#FF6D00",
         "number": "#FAA859",
         "string": "#FFFFFF",
-        "type": "#FFC600",
+        "type": "#1DE9B6",
         "comment": "#656565",
         "decorator": "#F50057"
     }

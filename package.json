@@ -2,7 +2,7 @@
     "name": "dlunire-dark",
     "displayName": "DLUnire Dark",
     "description": "A high-contrast Visual Studio Code theme featuring an ultra-dark background and vibrant semantic syntax highlighting.",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "dlunire",
     "license": "MIT",
     "icon": "icon.png",
@@ -70,6 +70,16 @@
                 "label": "DLUnire Dark Soft",
                 "uiTheme": "vs-dark",
                 "path": "themes/dlunire-dark-soft.json"
+            },
+            {
+                "label": "DLUnire Dark Cyber",
+                "uiTheme": "vs-dark",
+                "path": "themes/dlunire-dark-cyber.json"
+            },
+            {
+                "label": "DLUnire Dark Cyber Soft",
+                "uiTheme": "vs-dark",
+                "path": "themes/dlunire-dark-cyber-soft.json"
             }
         ]
     },

@@ -100,12 +100,6 @@
         "peekViewResult.selectionBackground": "#0A1017",
         "peekViewResult.selectionForeground": "#00E8FF",
         "gitDecoration.conflictingResourceForeground": "#FF6D00",
-        // --- GITLENS (Líneas de anotación y Blame) ---
-        "gitlens.lineHighlightBackgroundColor": "#0A101733",
-        // Colores para avatares, gráficas e indicadores de GitLens
-        "gitlens.decorations.branchAheadForegroundColor": "#1DE9B6",
-        "gitlens.decorations.branchBehindForegroundColor": "#FF9100",
-        "gitlens.decorations.branchUnpublishedForegroundColor": "#00E8FF",
     },
     "tokenColors": [
         {
