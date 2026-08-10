@@ -518,7 +518,16 @@
         "textCodeBlock.background": "#030609",
         "textPreformat.foreground": "#00E8FF",
         "textSeparator.foreground": "#00b3ff50",
-        "welcomePage.background": "#010305",
+        "welcomePage.background": "#020407",
+        "welcomePage.tileBorder": "#00b3ff50",
+        "welcomePage.tileBackground": "#081019",
+        "welcomePage.progress.background": "#00E8FF",
+        "welcomePage.progress.foreground": "#00E8FF",
+        "welcomePage.tileHoverBackground": "#0d1b2a77",
+        "editor.wordHighlightTextBackground": "#0091ff2c",
+        "editor.inactiveLineHighlightBackground": "#0091ff17",
+        "terminalOverviewRuler.border": "#00b3ff10",
+        "settings.sashBorder": "#00b3ff50",
         // -----------------------------------------------------------------
         // 26. Explorador de Pruebas (Testing)
         // -----------------------------------------------------------------
