@@ -100,6 +100,9 @@
         "peekViewResult.selectionBackground": "#0A1017",
         "peekViewResult.selectionForeground": "#00E8FF",
         "gitDecoration.conflictingResourceForeground": "#FF6D00",
+        // Guía de identación:
+        "editorIndentGuide.background1": "#00b3ff49",
+        "editorIndentGuide.activeBackground1": "#00b3ffb2"
     },
     "tokenColors": [
         {

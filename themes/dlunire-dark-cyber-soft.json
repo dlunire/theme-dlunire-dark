@@ -75,6 +75,7 @@
         "list.inactiveSelectionBackground": "#0D151E",
         "list.inactiveSelectionForeground": "#A1A1A1",
         "list.inactiveFocusOutline": "#FFFFFF4D",
+        "list.focusOutline": "#00bbff40",
         // Minimapa
         "minimapSlider.background": "#00c3ff10",
         "minimapSlider.hoverBackground": "#00ff3c10",
@@ -82,11 +83,11 @@
         "minimap.background": "#161F2928",
         // Menús Contextuales
         "menu.background": "#080D13",
-        "menu.foreground": "#A1A1A1",
+        "menu.foreground": "#ffffffc4",
         "menu.selectionBackground": "#0D151E",
         "menu.selectionForeground": "#FFFFFF",
         "menu.separatorBackground": "#FFFFFF1A",
-        "menu.border": "#2A3846",
+        "menu.border": "#0080ff5a",
         // Decoración de Git
         "gitDecoration.addedResourceForeground": "#00FFAA",
         "gitDecoration.renamedResourceForeground": "#FFC600",
@@ -160,8 +161,9 @@
         "editorBracketHighlight.foreground5": "#FF6D00",
         "editorBracketHighlight.foreground6": "#A0A0FF",
         "editorBracketHighlight.unexpectedBracket.foreground": "#FF2A5F",
-        "editorIndentGuide.background1": "#00bbff14",
-        "editorIndentGuide.activeBackground1": "#00bbff40"
+        // Guía de identación:
+        "editorIndentGuide.background1": "#00b3ff49",
+        "editorIndentGuide.activeBackground1": "#00b3ffb2"
     },
     "tokenColors": [
         {
