@@ -5,13 +5,19 @@
         // -----------------------------------------------------------------
         // 1. Enfoque Global, Canvas Base y Elementos Generales
         // -----------------------------------------------------------------
-        "focusBorder": "#00E8FF50",
+        "focusBorder": "#00b3FF50",
+        "foreground": "#ffffff",
+        "disabledForeground": "#ffff90",
+        "errorForeground": "#ff0050",
+        "editorError.background": "#ff005010",
         "selection.background": "#0091ff40",
         "progressBar.background": "#00E8FF",
         "icon.foreground": "#FFFFFF",
-        "widget.border": "#00b3ff2c",
+        "widget.border": "#00e8ff40",
+        "widget.shadow": "#ffffff20",
         "browser.border": "#00b3ff50",
         "sash.hoverBorder": "#00b3ff50",
+        "contrastActiveBorder": "#00e8ff30",
         // -----------------------------------------------------------------
         // 2. Lienzo del Editor, Cursor y Resaltados de Texto
         // -----------------------------------------------------------------
@@ -114,10 +120,18 @@
         "activityBar.border": "#00b3ff50",
         "activityBar.activeBorder": "#00E8FF",
         "activityBar.dropBorder": "#00E8FF",
+        "activityBar.activeFocusBorder": "#ff0000",
         "activityBar.activeBackground": "#00b3ff20",
+        "activityWarningBadge.background": "#ff500010",
+        "activityWarningBadge.foreground": "#ff5000",
+        "activityBarTop.foreground": "#ffffff",
         "activityBarTop.activeBorder": "#00E8FF",
         "activityBarTop.background": "#00100f",
         "activityBarTop.activeBackground": "#00eaff20",
+        "activityBarTop.inactiveForeground": "#ffffffa0",
+        "activityBarTop.dropBorder": "#00E8FF",
+        "activityErrorBadge.background": "#ff0050",
+        "activityErrorBadge.foreground": "#ffffff",
         "activityBarBadge.background": "#00E8FF",
         "activityBarBadge.foreground": "#05080C",
         "badge.background": "#00E8FF20",
@@ -300,14 +314,18 @@
         "inputOption.activeBackground": "#00E8FF22",
         "inputOption.activeForeground": "#00E8FF",
         "inputValidation.errorBackground": "#1A030A",
-        "inputValidation.errorBorder": "#F50057",
-        "inputValidation.errorForeground": "#FF5588",
+        "inputValidation.errorBorder": "#ff0050a0",
+        "inputValidation.errorForeground": "#ffffff",
         "inputValidation.warningBackground": "#1A1503",
         "inputValidation.warningBorder": "#FFC600",
         "inputValidation.warningForeground": "#FFE066",
         "inputValidation.infoBackground": "#03141A",
         "inputValidation.infoBorder": "#00b3ff",
         "inputValidation.infoForeground": "#70F3FF",
+        // Conjunto de colores para todos los widgets
+        // desplegables, como los del Terminal integrado
+        // o el panel de salida. Tenga en cuenta que el
+        // control desplegable no se utiliza actualmente en macOS.
         "dropdown.background": "#010305",
         "dropdown.foreground": "#FFFFFF",
         "dropdown.border": "#00b3ff50",
@@ -569,14 +587,18 @@
         "agentsChatInput.background": "#080d14",
         "panelTitleBadge.background": "#00E8FF",
         "panelTitleBadge.foreground": "#001012",
-        
         // Nota: la transparencia aquí no la toma, por eso se tomó
         // el color oscuro.
         // Esto es Toggle File Blame
         "gitlens.gutterBackgroundColor": "#00090d",
         "window.activeBorder": "#00b3ff50",
-        
-        
+        "editorGhostText.foreground": "#00eaff90",
+        "agentsGradient.tintColor": "#001824",
+        "agentsUpdateButton.downloadedBackground": "#00ffaa20",
+        "agentsUpdateButton.downloadingBackground": "#00e8ff50",
+        "statusBarItem.offlineBackground": "#b00020",
+        "statusBarItem.offlineForeground": "#ffffff",
+        // TODO: probando las propieades:
     },
     "tokenColors": [
         {
