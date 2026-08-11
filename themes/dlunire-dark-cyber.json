@@ -19,18 +19,18 @@
         "editor.foreground": "#FFFFFF",
         "editorCursor.foreground": "#00E8FF",
         "editorLineNumber.foreground": "#c8f9ff",
-        "editorLineNumber.activeForeground": "#00bbff",
+        "editorLineNumber.activeForeground": "#00b3ff",
         "editor.selectionBackground": "#0091ff20",
         "editor.selectionHighlightBackground": "#0091ff20",
         "editor.inactiveSelectionBackground": "#0A101710",
         "editor.lineHighlightBackground": "#0A1017",
-        "editor.lineHighlightBorder": "#00bbff15",
-        "editor.compositionBorder": "#00bbff2d",
-        "editor.findMatchBackground": "#00bbff22",
+        "editor.lineHighlightBorder": "#00b3ff15",
+        "editor.compositionBorder": "#00b3ff2d",
+        "editor.findMatchBackground": "#00b3ff22",
         "editor.findMatchBorder": "#00eaff3f",
         "editor.findMatchHighlightBackground": "#00eaff0c",
-        "editor.findMatchHighlightBorder": "#00bbff3d",
-        "editor.findRangeHighlightBorder": "#00bbff3d",
+        "editor.findMatchHighlightBorder": "#00b3ff3d",
+        "editor.findRangeHighlightBorder": "#00b3ff3d",
         "editor.wordHighlightBackground": "#0091ff20",
         "editor.wordHighlightStrongBackground": "#0091ff35",
         // -----------------------------------------------------------------
@@ -58,21 +58,21 @@
         "editorBracketHighlight.foreground5": "#FF6D00",
         "editorBracketHighlight.foreground6": "#A0A0FF",
         "editorBracketHighlight.unexpectedBracket.foreground": "#FF2A5F",
-        "editorBracketMatch.background": "#00bbff20",
+        "editorBracketMatch.background": "#00b3ff20",
         "editorBracketMatch.border": "#00E8FF50",
         // -----------------------------------------------------------------
         // 5. Widgets del Editor, Ventanas Flotantes (Hover) y Autocompletado
         // -----------------------------------------------------------------
-        "editorWidget.background": "#030609",
-        "editorWidget.border": "#00bbff3d",
+        "editorWidget.background": "#0e1c29",
+        "editorWidget.border": "#00b3ff3d",
         "editorWidget.foreground": "#c8f9ff",
-        "editorWidget.resizeBorder": "#00bbff3d",
+        "editorWidget.resizeBorder": "#00b3ff3d",
         "editorHoverWidget.background": "#030609",
-        "editorHoverWidget.border": "#00bbff3d",
+        "editorHoverWidget.border": "#00b3ff3d",
         "editorHoverWidget.foreground": "#c8f9ff",
         "editorHoverWidget.statusBarBackground": "#05080C",
         "editorSuggestWidget.background": "#030609",
-        "editorSuggestWidget.border": "#00bbff3d",
+        "editorSuggestWidget.border": "#00b3ff3d",
         "editorSuggestWidget.foreground": "#c8f9ff",
         "editorSuggestWidget.highlightForeground": "#00E8FF",
         "editorSuggestWidget.selectedBackground": "#0D1B2A",
@@ -89,7 +89,7 @@
         "sideBarStickyScroll.background": "#030508",
         "sideBarStickyScroll.border": "#00b3ff50",
         "sideBarStickyScroll.shadow": "#0080d420",
-        "panelStickyScroll.background": "#00bbff40",
+        "panelStickyScroll.background": "#00b3ff40",
         "panelStickyScroll.border": "#00b3ff50",
         // -----------------------------------------------------------------
         // 7. Diagnósticos, Errores y Lista de Problemas
@@ -98,13 +98,13 @@
         "editorError.border": "#FF2A5F90",
         "editorWarning.foreground": "#FFC600",
         "editorWarning.border": "#FFC60080",
-        "editorInfo.foreground": "#00bbff",
-        "editorInfo.border": "#00bbff80",
+        "editorInfo.foreground": "#00b3ff",
+        "editorInfo.border": "#00b3ff80",
         "editorHint.foreground": "#00FFAA",
         "editorHint.border": "#00FFAA80",
         "problemsErrorIcon.foreground": "#FF2A5F",
         "problemsWarningIcon.foreground": "#FFC600",
-        "problemsInfoIcon.foreground": "#00bbff",
+        "problemsInfoIcon.foreground": "#00b3ff",
         // -----------------------------------------------------------------
         // 8. Barra de Actividades (Activity Bar) y Badges
         // -----------------------------------------------------------------
@@ -114,10 +114,14 @@
         "activityBar.border": "#00b3ff50",
         "activityBar.activeBorder": "#00E8FF",
         "activityBar.dropBorder": "#00E8FF",
+        "activityBar.activeBackground": "#00b3ff20",
+        "activityBarTop.activeBorder": "#00E8FF",
+        "activityBarTop.background": "#00100f",
+        "activityBarTop.activeBackground": "#00eaff20",
         "activityBarBadge.background": "#00E8FF",
         "activityBarBadge.foreground": "#05080C",
-        "badge.background": "#00E8FF",
-        "badge.foreground": "#010305",
+        "badge.background": "#00E8FF20",
+        "badge.foreground": "#00E8FF",
         // -----------------------------------------------------------------
         // 9. Barra Lateral (Sidebar), Árboles y Listas
         // -----------------------------------------------------------------
@@ -127,7 +131,7 @@
         "sideBar.dropBackground": "#0091ff20",
         "sideBarTitle.background": "#070c13",
         "sideBarTitle.foreground": "#FFFFFF",
-        "sideBarTitle.border": "#00bbff2f",
+        "sideBarTitle.border": "#00b3ff2f",
         "sideBarSectionHeader.background": "#05080C",
         "sideBarSectionHeader.foreground": "#FFFFFF",
         "sideBarSectionHeader.border": "#00b3ff3d",
@@ -144,7 +148,7 @@
         "list.filterMatchBorder": "#00b3ff50",
         "list.focusBackground": "#0A1017",
         "list.focusForeground": "#FFFFFF",
-        "list.hoverBackground": "#00E8FF14",
+        "list.hoverBackground": "#00b3ff20",
         "list.hoverForeground": "#FFFFFF",
         "list.dropBackground": "#0091ff30",
         "list.highlightForeground": "#00E8FF",
@@ -154,12 +158,13 @@
         // -----------------------------------------------------------------
         // 10. Barra de Estado (Status Bar)
         // -----------------------------------------------------------------
-        "statusBar.background": "#010305",
-        "statusBar.foreground": "#c8f9ff",
+        "statusBar.background": "#001828",
+        "statusBar.foreground": "#ffffffe0",
+        "statusBar.focusBorder": "#00b3ff50",
         "statusBar.border": "#00b3ff50",
         "statusBar.noFolderBackground": "#010305",
-        "statusBar.debuggingBackground": "#05080C",
-        "statusBar.debuggingForeground": "#FFC600",
+        "statusBar.debuggingBackground": "#100800",
+        "statusBar.debuggingForeground": "#FF8000",
         "statusBar.debuggingBorder": "#00b3ff50",
         "statusBarItem.activeBackground": "#00E8FF33",
         "statusBarItem.hoverBackground": "#00E8FF22",
@@ -167,10 +172,10 @@
         "statusBarItem.prominentHoverBackground": "#00E8FF33",
         "statusBarItem.remoteBackground": "#05080C",
         "statusBarItem.remoteForeground": "#00E8FF",
-        "statusBarItem.errorBackground": "#FF2A5F",
-        "statusBarItem.errorForeground": "#FFFFFF",
-        "statusBarItem.warningBackground": "#FFC600",
-        "statusBarItem.warningForeground": "#010305",
+        "statusBarItem.errorBackground": "#FF2A5F20",
+        "statusBarItem.errorForeground": "#ff0000",
+        "statusBarItem.warningBackground": "#100800",
+        "statusBarItem.warningForeground": "#FF8000",
         // -----------------------------------------------------------------
         // 11. Barra de Título (Title Bar) y Command Center
         // -----------------------------------------------------------------
@@ -185,7 +190,7 @@
         "commandCenter.activeForeground": "#FFFFFF",
         "commandCenter.border": "#00b3ff50",
         "commandCenter.activeBorder": "#00E8FF50",
-        "commandCenter.inactiveBorder": "#00bbff20",
+        "commandCenter.inactiveBorder": "#00b3ff20",
         // -----------------------------------------------------------------
         // 12. Pestañas (Tabs) y Grupos de Editores
         // -----------------------------------------------------------------
@@ -197,27 +202,27 @@
         "tab.activeBackground": "#010305",
         "tab.activeForeground": "#00E8FF",
         "tab.activeBorder": "#010305",
-        "tab.activeBorderTop": "#00E8FF",
-        "tab.selectedBorderTop": "#00E8FF",
+        "tab.activeBorderTop": "#00b3ff",
+        "tab.selectedBorderTop": "#00b3ff",
         "tab.selectedBackground": "#010305",
         "tab.selectedForeground": "#65f2ff",
         "tab.activeModifiedBorder": "#00FFAA",
         "tab.unfocusedActiveBackground": "#010305",
         "tab.unfocusedActiveForeground": "#ffffffc0",
         "tab.unfocusedActiveBorder": "#010305",
-        "tab.unfocusedActiveBorderTop": "#00E8FF80",
+        "tab.unfocusedActiveBorderTop": "#00b3ff",
         "tab.inactiveBackground": "#030508",
         "tab.inactiveForeground": "#ffffffc0",
         "tab.unfocusedInactiveBackground": "#030508",
         "tab.unfocusedInactiveForeground": "#ffffffc0",
-        "tab.border": "#00b3ff50",
+        "tab.border": "#00b3ff",
         "tab.hoverBackground": "#0A1017",
-        "tab.hoverForeground": "#00E8FF",
-        "tab.hoverBorder": "#00E8FF60",
+        "tab.hoverForeground": "#c4faff",
+        "tab.hoverBorder": "#010305",
         "tab.unfocusedHoverBackground": "#070C12",
-        "tab.unfocusedHoverForeground": "#00E8FF",
-        "tab.unfocusedHoverBorder": "#00bbff80",
-        "tab.lastPinnedBorder": "#00bbff50",
+        "tab.unfocusedHoverForeground": "#c4faff",
+        "tab.unfocusedHoverBorder": "#00b3ff80",
+        "tab.lastPinnedBorder": "#00b3ff50",
         // -----------------------------------------------------------------
         // 13. Paneles Inferiores (Terminal, Output, Debug Console) y Toolbars
         // -----------------------------------------------------------------
@@ -235,7 +240,7 @@
         "panelInput.border": "#00b3ff50",
         "toolbar.hoverBackground": "#00E8FF18",
         "toolbar.activeBackground": "#00E8FF30",
-        "toolbar.hoverOutline": "#00bbff50",
+        "toolbar.hoverOutline": "#00b3ff50",
         // -----------------------------------------------------------------
         // 14. Terminal Integrada y Paleta ANSI
         // -----------------------------------------------------------------
@@ -301,7 +306,7 @@
         "inputValidation.warningBorder": "#FFC600",
         "inputValidation.warningForeground": "#FFE066",
         "inputValidation.infoBackground": "#03141A",
-        "inputValidation.infoBorder": "#00bbff",
+        "inputValidation.infoBorder": "#00b3ff",
         "inputValidation.infoForeground": "#70F3FF",
         "dropdown.background": "#010305",
         "dropdown.foreground": "#FFFFFF",
@@ -309,12 +314,12 @@
         "dropdown.listBackground": "#030609",
         "button.background": "#001824",
         "button.foreground": "#FFFFFF",
-        "button.border": "#00bbff50",
-        "button.hoverBackground": "#002838",
-        "button.separator": "#00bbff50",
+        "button.border": "#00b3ff50",
+        "button.hoverBackground": "#00b3ff40",
+        "button.separator": "#00b3ff50",
         "button.secondaryBackground": "#030609",
         "button.secondaryForeground": "#c8f9ff",
-        "button.secondaryBorder": "#00bbff3d",
+        "button.secondaryBorder": "#00b3ff3d",
         "button.secondaryHoverBackground": "#081018",
         "checkbox.background": "#010305",
         "checkbox.foreground": "#00E8FF",
@@ -326,20 +331,20 @@
         "menu.foreground": "#ffffffcd",
         "menu.selectionBackground": "#0091ff20",
         "menu.selectionForeground": "#FFFFFF",
-        "menu.separatorBackground": "#00bbff40",
-        "menu.border": "#00bbff40",
-        "menubar.selectionBorder": "#00bbff40",
+        "menu.separatorBackground": "#00b3ff40",
+        "menu.border": "#00b3ff40",
+        "menubar.selectionBorder": "#00b3ff40",
         "quickInput.background": "#05080C",
         "quickInput.foreground": "#FFFFFF",
         "quickInputList.focusBackground": "#0D1B2A",
         "quickInputList.focusForeground": "#00E8FF",
         "quickInputTitle.background": "#030508",
-        "pickerGroup.border": "#00b3ff50",
+        "pickerGroup.border": "#00d5ff24",
         "pickerGroup.foreground": "#00E8FF",
         "keybindingLabel.background": "#05080C",
         "keybindingLabel.foreground": "#00E8FF",
-        "keybindingLabel.border": "#00bbff3d",
-        "keybindingLabel.bottomBorder": "#00bbff3d",
+        "keybindingLabel.border": "#00b3ff3d",
+        "keybindingLabel.bottomBorder": "#00b3ff3d",
         "keybindingTable.headerBackground": "#02070a",
         "keybindingTable.rowsBackground": "#00bfff07",
         // -----------------------------------------------------------------
@@ -354,7 +359,7 @@
         "notificationCenterHeader.foreground": "#FFFFFF",
         "notificationsErrorIcon.foreground": "#FF2A5F",
         "notificationsWarningIcon.foreground": "#FFC600",
-        "notificationsInfoIcon.foreground": "#00bbff",
+        "notificationsInfoIcon.foreground": "#00b3ff",
         // -----------------------------------------------------------------
         // 19. Minimapa y Barras de Desplazamiento (Scrollbars)
         // -----------------------------------------------------------------
@@ -363,8 +368,8 @@
         "minimapSlider.hoverBackground": "#00ff3c10",
         "minimapSlider.activeBackground": "#00eaff18",
         "scrollbar.shadow": "#0080d420",
-        "scrollbarSlider.background": "#00bbff71",
-        "scrollbarSlider.hoverBackground": "#00bbff40",
+        "scrollbarSlider.background": "#00b3ff71",
+        "scrollbarSlider.hoverBackground": "#00b3ff40",
         "scrollbarSlider.activeBackground": "#00E8FF80",
         // -----------------------------------------------------------------
         // 20. Control de Versiones (Git Decorators, Diff Editor & Merge)
@@ -381,7 +386,7 @@
         "diffEditor.removedTextBackground": "#FF2A5F18",
         "diffEditor.removedLineBackground": "#FF2A5F12",
         "diffEditor.border": "#00b3ff50",
-        "diffEditor.diagonalFill": "#00bbff15",
+        "diffEditor.diagonalFill": "#00b3ff15",
         "merge.currentHeaderBackground": "#00FFAA35",
         "merge.currentContentBackground": "#00FFAA15",
         "merge.incomingHeaderBackground": "#00E8FF35",
@@ -395,15 +400,15 @@
         "editorGutter.deletedBackground": "#FF2A5F",
         "editorGutter.commentRangeForeground": "#ffffff80",
         "editorGutter.foldingControlForeground": "#00E8FF",
-        "editorOverviewRuler.border": "#00bbff20",
+        "editorOverviewRuler.border": "#00b3ff20",
         "editorOverviewRuler.findMatchForeground": "#00E8FF80",
         "editorOverviewRuler.rangeHighlightForeground": "#0091ff40",
         "editorOverviewRuler.selectionHighlightForeground": "#0091ff40",
         "editorOverviewRuler.wordHighlightForeground": "#0091ff40",
         "editorOverviewRuler.errorForeground": "#FF2A5F",
         "editorOverviewRuler.warningForeground": "#FFC600",
-        "editorOverviewRuler.infoForeground": "#00bbff",
-        "editorOverviewRuler.bracketMatchForeground": "#00bbff80",
+        "editorOverviewRuler.infoForeground": "#00b3ff",
+        "editorOverviewRuler.bracketMatchForeground": "#00b3ff80",
         "editorOverviewRuler.addedForeground": "#00FFAA",
         "editorOverviewRuler.modifiedForeground": "#FFFFFF",
         "editorOverviewRuler.deletedForeground": "#FF2A5F",
@@ -412,7 +417,7 @@
         // -----------------------------------------------------------------
         // 22. Inspección Rápida (Peek View) y Breadcrumbs (Migas de Pan)
         // -----------------------------------------------------------------
-        "peekView.border": "#00bbff2d",
+        "peekView.border": "#00b3ff2d",
         "peekViewTitle.background": "#05080C",
         "peekViewTitleLabel.foreground": "#FFFFFF",
         "peekViewTitleDescription.foreground": "#71d2ffe6",
@@ -479,7 +484,7 @@
         "debugIcon.stepIntoForeground": "#00E8FF",
         "debugIcon.stepOutForeground": "#00E8FF",
         "debugIcon.continueForeground": "#00FFAA",
-        "editor.stackFrameHighlightBackground": "#00bbff25",
+        "editor.stackFrameHighlightBackground": "#00b3ff25",
         "editor.focusedStackFrameHighlightBackground": "#00E8FF35",
         // -----------------------------------------------------------------
         // 25. Configuración (Settings), Extensiones, Webviews y Welcome Page
@@ -505,10 +510,8 @@
         "extensionButton.background": "#001824",
         "extensionButton.foreground": "#FFFFFF",
         "extensionButton.hoverBackground": "#002838",
-        "extensionButton.separator": "#00bbff50",
         "extensionBadge.remoteBackground": "#05080C",
         "extensionBadge.remoteForeground": "#00E8FF",
-        "extensionIcon.starForeground": "#FFC600",
         "extensionIcon.verifiedForeground": "#00FFAA",
         "extensionIcon.preReleaseForeground": "#FF6D00",
         "textLink.foreground": "#00E8FF",
@@ -517,7 +520,7 @@
         "textBlockQuote.border": "#00b3ff50",
         "textCodeBlock.background": "#030609",
         "textPreformat.foreground": "#00E8FF",
-        "textSeparator.foreground": "#00b3ff50",
+        "textSeparator.foreground": "#00b3ff30",
         "welcomePage.background": "#020407",
         "welcomePage.tileBorder": "#00b3ff50",
         "welcomePage.tileBackground": "#081019",
@@ -528,6 +531,7 @@
         "editor.inactiveLineHighlightBackground": "#0091ff17",
         "terminalOverviewRuler.border": "#00b3ff10",
         "settings.sashBorder": "#00b3ff50",
+        "settings.settingsHeaderHoverForeground": "#00E8FF",
         // -----------------------------------------------------------------
         // 26. Explorador de Pruebas (Testing)
         // -----------------------------------------------------------------
@@ -537,7 +541,42 @@
         "testing.iconQueued": "#FFC600",
         "testing.iconUnset": "#656565",
         "testing.iconSkipped": "#71d2ffe6",
-        "testing.message.info.decorationForeground": "#00bbff"
+        "testing.message.info.decorationForeground": "#00b3ff",
+        "breadcrumb.background": "#010305",
+        // Otras áreas:
+        "editor.foldBackground": "#00112080",
+        "surface.border": "#00b3ff20",
+        // Zona de soltar al arrastrar pestañas entre grupos de editores
+        "editorGroup.dropBackground": "#00b3ff20",
+        "extensionButton.border": "#00b3ff20",
+        "extensionButton.separator": "#00b3ff20",
+        "extensionIcon.starForeground": "#00FFAA",
+        "list.inactiveFocusBackground": "#00b3ff15",
+        "list.inactiveSelectionIconForeground": "#00FFAA",
+        "editorOverviewRuler.background": "#00b3ff15",
+        "menubar.selectionBackground": "#00b3ff30",
+        "menubar.selectionForeground": "#ffffff",
+        "menu.selectionBorder": "#00b3ff50",
+        "terminal.findMatchBorder": "#00b3ffb7",
+        "terminal.findMatchBackground": "#0a2e3cd0",
+        "simpleFindWidget.sashBorder": "#00b3ff50",
+        "tree.inactiveIndentGuidesStroke": "#3dc1f960",
+        "tree.indentGuidesStroke": "#00b3ffa0",
+        "tab.dragAndDropBorder": "#00b3ff",
+        // Agente de Inteligencia artificial:
+        "agentsPanel.background": "#010305",
+        "agentsChatInput.border": "#00ffaa50",
+        "agentsChatInput.background": "#080d14",
+        "panelTitleBadge.background": "#00E8FF",
+        "panelTitleBadge.foreground": "#001012",
+        
+        // Nota: la transparencia aquí no la toma, por eso se tomó
+        // el color oscuro.
+        // Esto es Toggle File Blame
+        "gitlens.gutterBackgroundColor": "#00090d",
+        "window.activeBorder": "#00b3ff50",
+        
+        
     },
     "tokenColors": [
         {
