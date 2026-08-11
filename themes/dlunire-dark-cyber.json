@@ -7,7 +7,7 @@
         // -----------------------------------------------------------------
         "focusBorder": "#00b3FF50",
         "foreground": "#ffffff",
-        "disabledForeground": "#ffff90",
+        "disabledForeground": "#ffffff50",
         "errorForeground": "#ff0050",
         "editorError.background": "#ff005010",
         "selection.background": "#0091ff40",
@@ -17,7 +17,6 @@
         "widget.shadow": "#ffffff20",
         "browser.border": "#00b3ff50",
         "sash.hoverBorder": "#00b3ff50",
-        "contrastActiveBorder": "#00e8ff30",
         // -----------------------------------------------------------------
         // 2. Lienzo del Editor, Cursor y Resaltados de Texto
         // -----------------------------------------------------------------
