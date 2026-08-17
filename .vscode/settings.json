@@ -1,4 +1,5 @@
 {
     "editor.formatOnSave": false,
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "js/ts.experimental.useTsgo": false
 }
