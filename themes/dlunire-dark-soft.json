@@ -984,7 +984,7 @@
         "walkthrough.stepTitle.foreground": "#81f4ff", // Título de paso en guías de bienvenida
         // TODO: Probar algunas claves:
     },
-                    "tokenColors": [
+                        "tokenColors": [
         // =========================================================================
         // 1. COMENTARIOS (Contraste 7.93:1 — AAA)
         // =========================================================================
@@ -996,7 +996,6 @@
                 "comment.line",
                 "comment.line.double-slash",
                 "comment.line.number-sign",
-                "comment.block.documentation",
                 "comment.block.documentation.phpdoc",
                 "comment.block.documentation.phpdoc.php",
                 "comment.block.documentation.js",
@@ -1028,7 +1027,7 @@
             }
         },
         // =========================================================================
-        // 2. PALABRAS CLAVE Y CONTROL DE FLUJO (Grupo A — Keywords y Modificadores)
+        // 2. PALABRAS CLAVE Y CONTROL DE FLUJO (Keywords y Modificadores)
         // =========================================================================
         {
             "name": "Keywords (Base y declaraciones)",
@@ -1178,7 +1177,7 @@
                 "keyword.control.default"
             ],
             "settings": {
-                "foreground": "#FF8A3D"
+                "foreground": "#FF8538"
             }
         },
         {
@@ -1197,14 +1196,13 @@
                 "keyword.operator.sizeof"
             ],
             "settings": {
-                "foreground": "#FF8F47"
+                "foreground": "#FF8538"
             }
         },
         {
             "name": "Operadores sintácticos (+, -, =, =>, ->, ::, ;, :)",
             "scope": [
                 "keyword.operator",
-                "keyword.operator.assignment",
                 "keyword.operator.assignment.php",
                 "keyword.operator.assignment.ts",
                 "keyword.operator.assignment.js",
@@ -1264,7 +1262,7 @@
                 "meta.constructor"
             ],
             "settings": {
-                "foreground": "#2EC5FF",
+                "foreground": "#85A8FF",
                 "fontStyle": ""
             }
         },
@@ -1338,7 +1336,7 @@
                 "support.function.any-method.builtin"
             ],
             "settings": {
-                "foreground": "#2EC5FF"
+                "foreground": "#B599FE"
             }
         },
         {
@@ -1479,7 +1477,30 @@
         // 7. CONSTANTES Y VALORES (Grupo E)
         // =========================================================================
         {
-            "name": "Constantes reservadas / lenguaje (true, false, null, None, nil, escapes)",
+            "name": "Constantes booleanas (Universal: true, false, True, False, TRUE, FALSE)",
+            "scope": [
+                "constant.language.boolean",
+                "constant.language.boolean.true",
+                "constant.language.boolean.false",
+                "constant.language.bool",
+                "constant.language.boolean.php",
+                "constant.language.boolean.ts",
+                "constant.language.boolean.js",
+                "constant.language.boolean.python",
+                "constant.language.boolean.rust",
+                "constant.language.boolean.go",
+                "constant.language.boolean.c",
+                "constant.language.boolean.cpp",
+                "constant.language.boolean.java",
+                "constant.language.boolean.cs",
+                "keyword.other.unit.boolean"
+            ],
+            "settings": {
+                "foreground": "#20a0ff"
+            }
+        },
+        {
+            "name": "Constantes reservadas / lenguaje (null, None, nil, undefined, escapes)",
             "scope": [
                 "constant",
                 "constant.language",
@@ -1491,7 +1512,6 @@
                 "constant.language.cpp",
                 "constant.language.cs",
                 "constant.language.java",
-                "constant.language.boolean",
                 "constant.language.null",
                 "constant.language.undefined",
                 "constant.character.escape"
@@ -1788,7 +1808,7 @@
                 "dlunire.heredoc"
             ],
             "settings": {
-                "foreground": "#ffffe0",
+                "foreground": "#fffffff0",
                 "fontStyle": ""
             }
         },
@@ -1853,7 +1873,7 @@
         "type": "#00FFAA",
         "enum.defaultLibrary": "#1AEB94",
         "enum": "#8FFFD1",
-        "function.defaultLibrary": "#2EC5FF",
+        "function.defaultLibrary": "#B599FE",
         "function": "#85A8FF",
         "method": "#85A8FF",
         "variable.defaultLibrary": "#67E8F9",
