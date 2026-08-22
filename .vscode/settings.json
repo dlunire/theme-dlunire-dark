@@ -1,5 +1,164 @@
 {
     "editor.formatOnSave": false,
     "editor.inlineSuggest.enabled": true,
-    "js/ts.experimental.useTsgo": false
+    "js/ts.experimental.useTsgo": false,
+    "editor.tokenColorCustomizations": {
+        "keywords": "#FF8538",
+        "types": "#00ff00", // Temporalmente, tendrá este color
+        "comments": "#ffffff60",
+        "variables": "#20c0ff",
+        "functions": "#00ffff",
+        "strings": "#ffffffd0",
+        "numbers": "#ff6030",
+        "textMateRules": [
+            {
+                "name": "UNIVERSAL - Palabras reservadas | Keywords",
+                "scope": [
+                    "keyword"
+                ],
+                "settings": {
+                    "foreground": "#FF8538"
+                }
+            },
+            {
+                "name": "UNIVERSAL - Tokens que alteran el orden secuencial del programa",
+                "scope": [
+                    "keyword.control",
+                    "support.function.construct.output.php",
+                    "keyword.control.rust"
+                ],
+                "settings": {
+                    "foreground": "#FFBD00"
+                }
+            },
+            {
+                "name": "UNIVERSAL - Estructura condicionales",
+                "scope": [
+                    "keyword.control.conditional",
+                    "keyword.control.if",
+                    "keyword.control.switch"
+                ],
+                "settings": {
+                    "foreground": "#FFE500"
+                }
+            },
+            {
+                "name": "UNIVERSAL - Modificadores de lo que ya fue declarado",
+                "scope": [
+                    "storage",
+                    "storage.modifier",
+                ],
+                "settings": {
+                    "foreground": "#FF9D00"
+                }
+            },
+            {
+                "name": "UNIVERSAL- Declaradores de variables, funciones y/o clases",
+                "scope": [
+                    "storage.type",
+                    "support.function.constructor.php"
+                ],
+                "settings": {
+                    "foreground": "#FF4B00"
+                }
+            },
+            {
+                "name": "UNIVERSAL - Tipos definido por el usuario",
+                "scope": [
+                    "entity.name.type.rust",
+                    "entity.name.type.class",
+                    "new.expr",
+                    "support.class.php",
+                    "entity"
+                ],
+                "settings": {
+                    "foreground": "#00ffaa"
+                }
+            },
+            {
+                "name": "UNIVERSAL - Primitivas",
+                "scope": [
+                    "support.type.primitive",
+                    "storage.type.primitive"
+                ],
+                "settings": {
+                    "foreground": "#00ff00"
+                }
+            },
+            {
+                "name": "UNIVERSAL - Decoradores",
+                "scope": [
+                    "meta.annotation",
+                    "meta.attribute",
+                    "name.decorator"
+                ],
+                "settings": {
+                    "foreground": "#FFE500"
+                }
+            },
+            // ------------------ MARKDOWN ----------------------
+            // Colores textos markdown
+            // --------------------------------------------------
+            {
+                "name": "Markdown - Encabezados",
+                "scope": [
+                    "markup.heading",
+                    "markup.heading.markdown",
+                    "entity.name.section.markdown"
+                ],
+                "settings": {
+                    "foreground": "#ff6000"
+                }
+            },
+            {
+                "name": "Markdown - Negrita",
+                "scope": [
+                    "markup.bold"
+                ],
+                "settings": {
+                    "foreground": "#00ffaa",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "name": "Markdown - Cursiva",
+                "scope": [
+                    "markup.italic"
+                ],
+                "settings": {
+                    "foreground": "#00ff00",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Markdown - Enlaces",
+                "scope": [
+                    "string.other.link",
+                    "markup.underline.link"
+                ],
+                "settings": {
+                    "foreground": "#00b0ff"
+                }
+            },
+            {
+                "name": "Markdown - Listas",
+                "scope": [
+                    "markup.list"
+                ],
+                "settings": {
+                    "foreground": "#a0ffff"
+                }
+            },
+            {
+                "name": "Markdown - Citas",
+                "scope": [
+                    "markup.quote",
+                ],
+                "settings": {
+                    "foreground": "#8CA3BA",
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    }
 }
