@@ -2,6 +2,19 @@
 
 All notable changes to the "DLUnire Dark" extension will be documented in this file.
 
+## [1.0.5] - 2026-08-22
+
+### Added
+- **DL Typed Environment Support:** Full, dedicated token colorization and grammar rules for the DL Typed Environment (`dlunire.type`, `dlunire.varname`, `dlunire.colon`, `dlunire.operator.assign`, `dlunire.value.numeric`, `dlunire.value.boolean`, `dlunire.value.email`, `dlunire.value.uuid`, and block/documentation comments).
+- **In-Depth Syntax Documentation:** Added comprehensive chromatic hierarchy and scope documentation directly inside `DLUnire Dark Cyber`.
+
+### Changed
+- **Unified Syntax Highlighting Architecture:** Overhauled and synchronized `tokenColors` and `semanticTokenColors` across all 4 theme variants (`DLUnire Dark`, `DLUnire Dark Soft`, `DLUnire Dark Cyber`, `DLUnire Dark Cyber Soft`), removing obsolete legacy token structures.
+- **Universal Scopes & Semantics:** Standardized universal token mappings for keywords, sequential control flow, conditionals, storage modifiers/declarators, native/user variables & properties, namespaces, native/user functions, primitives, user types, and decorators.
+- **Markdown Highlighting:** Refined Markdown tokens including headings, bold, italic, links, lists, and quotes.
+- **Build System & Tooling:** Migrated build and publishing workflows in `Makefile` to use **Bun** (`bun run package`, `bun run publish:*`).
+- **Formatting & Sanitation:** Cleaned trailing commas and strict JSON formatting across all theme files and workspace configuration.
+
 ## [1.0.4] - 2026-08-08
 
 ### Added

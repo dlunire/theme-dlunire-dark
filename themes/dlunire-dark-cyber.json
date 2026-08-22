@@ -975,10 +975,443 @@
         "textPreformat.foreground": "#00e8ff", // Texto preformateado
         "textSeparator.foreground": "#00b3ff30", // Separadores de texto
         "walkThrough.embeddedEditorBackground": "#00000066", // Editor incrustado en guías paso a paso
-        "walkthrough.stepTitle.foreground": "#81f4ff", // Título de paso en guías de bienvenida
+        "walkthrough.stepTitle.foreground": "#81f4ff" // Título de paso en guías de bienvenida
         // TODO: Probar algunas claves:
     },
-    "tokenColors": [],
+    "tokenColors": [
+        // =========================================================================
+        // 1. COMENTARIOS
+        //    Color: Blanco translúcido (#ffffff60) — baja saliencia visual
+        // =========================================================================
+        {
+            "name": "Comentarios",
+            "scope": [
+                "comment",
+                "comment.line",
+                "comment.line.double-slash",
+                "comment.line.number-sign",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": "#ffffff60",
+                "fontStyle": ""
+            }
+        },
+        // =========================================================================
+        // 2. PALABRAS RESERVADAS DEL LENGUAJE (Base Cromática: Cálidos)
+        //    Rango en rueda de color: Rojo Bermellón (#FF4B00) → Amarillo (#FFE500)
+        //    Uso: Controlan la estructura, flujo y declaración del programa
+        // =========================================================================
+        {
+            "name": "UNIVERSAL - Palabras reservadas | Keywords",
+            "scope": [
+                "keyword"
+            ],
+            "settings": {
+                "foreground": "#FF8538"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Tokens que alteran el orden secuencial del programa",
+            "scope": [
+                "keyword.control",
+                "support.function.construct.output.php",
+                "keyword.control.rust"
+            ],
+            "settings": {
+                "foreground": "#FFBD00"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Estructura condicionales",
+            "scope": [
+                "keyword.control.conditional",
+                "keyword.control.if",
+                "keyword.control.switch"
+            ],
+            "settings": {
+                "foreground": "#FFE500"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Modificadores de lo que ya fue declarado",
+            "scope": [
+                "storage",
+                "storage.modifier"
+            ],
+            "settings": {
+                "foreground": "#c0ff00"
+            }
+        },
+        {
+            "name": "UNIVERSAL- Declaradores de variables, funciones y/o clases",
+            "scope": [
+                "storage.type",
+                "support.function.constructor.php"
+            ],
+            "settings": {
+                "foreground": "#FF4B00"
+            }
+        },
+        // =========================================================================
+        // 3. VARIABLES E IDENTIFICADORES (Base Cromática: Fríos / Cian)
+        //    Rango: Cian Pastel (#a0ffff) → Celeste (#20c0ff)
+        //    Uso: Datos almacenados y referenciados por el programador
+        // =========================================================================
+        {
+            "name": "UNIVERSAL- Variables nativas",
+            "scope": [
+                "variable.language",
+                "variable.other.object"
+            ],
+            "settings": {
+                "foreground": "#a0ffff"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Palabra reservada this",
+            "scope": [
+                "variable.language.this"
+            ],
+            "settings": {
+                "foreground": "#ffa000"
+            }
+        },
+        {
+            "name": "UNIVERSAL- Variables definidas por el usuario",
+            "scope": [
+                "variable.other",
+                "variable"
+            ],
+            "settings": {
+                "foreground": "#20c0ff"
+            }
+        },
+        {
+            "name": "UNIVERSAL- Propiedades definidas por el usuario",
+            "scope": [
+                "variable.other.property"
+            ],
+            "settings": {
+                "foreground": "#20c0ff"
+            }
+        },
+        // =========================================================================
+        // 4. NAMESPACES, FUNCIONES NATIVAS Y SOPORTE
+        //    Funciones nativas: Magenta (#ff00ff)
+        //    Soporte/Namespace: Azul (#00afff)
+        // =========================================================================
+        {
+            "name": "UNIVERSAL - Nombre de espacios",
+            "scope": [
+                "entity.name.type.namespace",
+                "keyword.control.import",
+                "keyword.control.export.ts"
+            ],
+            "settings": {
+                "foreground": "#ff4f00ff"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Funciones nativas del lenguaje",
+            "scope": [
+                "support.function",
+                "support.function.rust"
+            ],
+            "settings": {
+                "foreground": "#ff00ff"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Nombre de espacios, namespace e instancias nativas",
+            "scope": [
+                "support",
+                "keyword.other.namespace"
+            ],
+            "settings": {
+                "foreground": "#00afff"
+            }
+        },
+        // =========================================================================
+        // 5. TIPOS Y CONTRATOS (Base Cromática: Verdes / Esmeralda)
+        //    Nativo/Primitivo: Verde Lima (#00ff00)
+        //    Definido por usuario: Verde Menta (#00ffaa)
+        // =========================================================================
+        {
+            "name": "UNIVERSAL - Primitivas",
+            "scope": [
+                "support.type.primitive",
+                "storage.type.primitive"
+            ],
+            "settings": {
+                "foreground": "#00ff00"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Tipos definido por el usuario",
+            "scope": [
+                "entity.name.type.rust",
+                "entity.name.type.class",
+                "new.expr",
+                "support.class.php",
+                "entity"
+            ],
+            "settings": {
+                "foreground": "#00ffaa"
+            }
+        },
+        // =========================================================================
+        // 6. DECORADORES Y ANOTACIONES
+        //    Color: Amarillo (#FFE500)
+        // =========================================================================
+        {
+            "name": "UNIVERSAL - Decoradores",
+            "scope": [
+                "meta.annotation",
+                "meta.attribute",
+                "name.decorator"
+            ],
+            "settings": {
+                "foreground": "#FFE500"
+            }
+        },
+        // =========================================================================
+        // 7. VALORES LITERALES
+        //    Strings: Blanco semi-opaco (#ffffffd0)
+        //    Números: Naranja coral (#ff6030)
+        // =========================================================================
+        {
+            "name": "Cadenas de texto (Strings)",
+            "scope": [
+                "string",
+                "string.quoted",
+                "string.quoted.double",
+                "string.quoted.single",
+                "string.template",
+                "string.regexp"
+            ],
+            "settings": {
+                "foreground": "#ffffffd0"
+            }
+        },
+        {
+            "name": "Números (Decimal, Hex, Float, Bin)",
+            "scope": [
+                "constant.numeric",
+                "constant.numeric.integer",
+                "constant.numeric.float",
+                "constant.numeric.hex",
+                "constant.numeric.octal",
+                "constant.numeric.binary"
+            ],
+            "settings": {
+                "foreground": "#ff6030"
+            }
+        },
+        // =========================================================================
+        // 8. MARKDOWN
+        //    Encabezados: Naranja (#ff6000) | Negrita: Verde Menta (#00ffaa)
+        //    Cursiva: Verde Lima (#00ff00) | Enlaces: Azul (#00b0ff)
+        //    Listas: Cian Pastel (#a0ffff) | Citas: Gris Pizarra (#8CA3BA)
+        // =========================================================================
+        {
+            "name": "Markdown - Encabezados",
+            "scope": [
+                "markup.heading",
+                "markup.heading.markdown",
+                "entity.name.section.markdown"
+            ],
+            "settings": {
+                "foreground": "#ff6000"
+            }
+        },
+        {
+            "name": "Markdown - Negrita",
+            "scope": [
+                "markup.bold"
+            ],
+            "settings": {
+                "foreground": "#00ffaa",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Markdown - Cursiva",
+            "scope": [
+                "markup.italic"
+            ],
+            "settings": {
+                "foreground": "#00ff00",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Markdown - Enlaces",
+            "scope": [
+                "string.other.link",
+                "markup.underline.link"
+            ],
+            "settings": {
+                "foreground": "#00b0ff"
+            }
+        },
+        {
+            "name": "Markdown - Listas",
+            "scope": [
+                "markup.list"
+            ],
+            "settings": {
+                "foreground": "#a0ffff"
+            }
+        },
+        {
+            "name": "Markdown - Citas",
+            "scope": [
+                "markup.quote"
+            ],
+            "settings": {
+                "foreground": "#8CA3BA",
+                "fontStyle": "italic"
+            }
+        },
+        // ------------ DLUNIRE DL TYPED ENVIRONMENT -------------
+        // Color específico para DL Typed Environment
+        // -------------------------------------------------------
+        {
+            "name": "DLUnire - Error de sintaxis",
+            "scope": [
+                "invalid.illegal",
+                "dlunire.illegal"
+            ],
+            "settings": {
+                "foreground": "#ff0050",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "DLUnire - Nombre de variables",
+            "scope": [
+                "dlunire.varname",
+                "punctuation"
+            ],
+            "settings": {
+                "foreground": "#20c0ff",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "DLUnire - Separador de tipo (:)",
+            "scope": [
+                "punctuation.separator.key-value",
+                "dlunire.colon"
+            ],
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "DLUnire - Tipos primitivos",
+            "scope": "dlunire.type",
+            "settings": {
+                "foreground": "#00ff00",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "DLUnire - Operador de asignación (=)",
+            "scope": [
+                "dlunire.operator.assign",
+                "keyword.operator.assignment"
+            ],
+            "settings": {
+                "foreground": "#ffffa0"
+            }
+        },
+        {
+            "name": "DLUnire - Cadenas de texto",
+            "scope": [
+                "dlunire.quoted-double",
+                "dlunire.quoted-single",
+                "dlunire.quoted-backtick",
+                "dlunire.heredoc"
+            ],
+            "settings": {
+                "foreground": "#fffffff0",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "DLUnire - Números",
+            "scope": "dlunire.value.numeric",
+            "settings": {
+                "foreground": "#ff6030",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "DLUnire - Booleanos",
+            "scope": [
+                "dlunire.value.boolean",
+                "constant.language"
+            ],
+            "settings": {
+                "foreground": "#FF8538",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "DLUnire - Correos e identificadores",
+            "scope": [
+                "dlunire.value.email",
+                "dlunire.value.uuid",
+                "constant.other.uuid"
+            ],
+            "settings": {
+                "foreground": "#00ffff",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "DLUnire - Comentarios de bloques y documentación",
+            "scope": [
+                "comment.block.documentation",
+                "dlunire.block-documentation"
+            ],
+            "settings": {
+                "foreground": "#90ffff70",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Otros comentarios",
+            "scope": [
+                "dlunire.double-slash",
+                "dlunire.line-number-sign",
+                "dlunire.block-comment",
+                "comment.block"
+            ],
+            "settings": {
+                "foreground": "#ffffff60"
+            }
+        }
+    ],
     "semanticHighlighting": true,
-    "semanticTokenColors": {}
+    "semanticTokenColors": {
+        "class.defaultLibrary": "#00ff00",
+        "class": "#00ffaa",
+        "type.defaultLibrary": "#00ff00",
+        "type": "#00ffaa",
+        "enum": "#00ffaa",
+        "interface": "#00ffaa",
+        "function.defaultLibrary": "#ff00ff",
+        "function": "#00ffff",
+        "method": "#00ffff",
+        "variable.defaultLibrary": "#a0ffff",
+        "variable": "#20c0ff",
+        "variable.local": "#20c0ff",
+        "variable.readonly": "#20c0ff",
+        "variable.declaration": "#20c0ff",
+        "parameter": "#20c0ff",
+        "property": "#20c0ff"
+    }
 }

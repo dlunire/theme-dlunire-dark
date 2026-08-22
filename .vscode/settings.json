@@ -2,233 +2,352 @@
     "editor.formatOnSave": false,
     "editor.inlineSuggest.enabled": true,
     "js/ts.experimental.useTsgo": false,
-    "editor.tokenColorCustomizations": {
-        "keywords": "#FF8538",
-        "types": "#00ff00", // Temporalmente, tendrá este color
-        "comments": "#ffffff60",
-        "variables": "#20c0ff",
-        "functions": "#00ffff",
-        "strings": "#ffffffd0",
-        "numbers": "#ff6030",
-        "textMateRules": [
-            {
-                "name": "UNIVERSAL - Palabras reservadas | Keywords",
-                "scope": [
-                    "keyword"
-                ],
-                "settings": {
-                    "foreground": "#FF8538"
-                }
-            },
-            {
-                "name": "UNIVERSAL - Tokens que alteran el orden secuencial del programa",
-                "scope": [
-                    "keyword.control",
-                    "support.function.construct.output.php",
-                    "keyword.control.rust"
-                ],
-                "settings": {
-                    "foreground": "#FFBD00"
-                }
-            },
-            {
-                "name": "UNIVERSAL - Estructura condicionales",
-                "scope": [
-                    "keyword.control.conditional",
-                    "keyword.control.if",
-                    "keyword.control.switch"
-                ],
-                "settings": {
-                    "foreground": "#FFE500"
-                }
-            },
-            {
-                "name": "UNIVERSAL - Modificadores de lo que ya fue declarado",
-                "scope": [
-                    "storage",
-                    "storage.modifier",
-                ],
-                "settings": {
-                    "foreground": "#FF9D00"
-                }
-            },
-            {
-                "name": "UNIVERSAL- Declaradores de variables, funciones y/o clases",
-                "scope": [
-                    "storage.type",
-                    "support.function.constructor.php"
-                ],
-                "settings": {
-                    "foreground": "#FF4B00"
-                }
-            },
-            {
-                "name": "UNIVERSAL- Variables nativas",
-                "scope": [
-                    "variable.language",
-                    "variable.other.object"
-                ],
-                "settings": {
-                    "foreground": "#a0ffff"
-                }
-            },
-            {
-                "name": "UNIVERSAL - Palabra reservada this",
-                "scope": [
-                    "variable.language.this"
-                ],
-                "settings": {
-                    "foreground": "#2090ff"
-                }
-            },
-            {
-                "name": "UNIVERSAL- Variables definidas por el usuario",
-                "scope": [
-                    "variable.other",
-                    "variable"
-                ],
-                "settings": {
-                    "foreground": "#20c0ff"
-                }
-            },
-            {
-                "name": "UNIVERSAL- Propiedades definidas por el usuario",
-                "scope": [
-                    "variable.other.property"
-                ],
-                "settings": {
-                    "foreground": "#00ffaab0"
-                }
-            },
-            {
-                "name": "UNIVERSAL - Nombre de espacios",
-                "scope": [
-                    "entity.name.type.namespace",
-                    "keyword.control.import",
-                    "keyword.control.export.ts"
-                ],
-                "settings": {
-                    "foreground": "#ff4f00ff"
-                }
-            },
-            {
-                "name": "UNIVERSAL - Funciones nativas del lenguaje",
-                "scope": [
-                    "support.function",
-                    "support.function.rust"
-                ],
-                "settings": {
-                    "foreground": "#ff00ff"
-                }
-            },
-            {
-                "name": "UNIVERSAL - Nombre de espacios, namespace e instancias nativas",
-                "scope": [
-                    "support",
-                    "keyword.other.namespace",
-                ],
-                "settings": {
-                    "foreground": "#00afff"
-                }
-            },
-            {
-                "name": "UNIVERSAL - Tipos definido por el usuario",
-                "scope": [
-                    "entity.name.type.rust",
-                    "entity.name.type.class",
-                    // "meta.class.ts",
-                    "new.expr",
-                    "support.class.php",
-                    "entity"
-                ],
-                "settings": {
-                    "foreground": "#00ffaa"
-                }
-            },
-            {
-                "name": "UNIVERSAL - Primitivas",
-                "scope": [
-                    "support.type.primitive",
-                    "storage.type.primitive"
-                ],
-                "settings": {
-                    "foreground": "#00ff00"
-                }
-            },
-            {
-                "name": "UNIVERSAL - Decoradores",
-                "scope": [
-                    "meta.annotation",
-                    "meta.attribute",
-                    "name.decorator"
-                ],
-                "settings": {
-                    "foreground": "#FFE500"
-                }
-            },
-            // ------------------ MARKDOWN ----------------------
-            // Colores textos markdown
-            // --------------------------------------------------
-            {
-                "name": "Markdown - Encabezados",
-                "scope": [
-                    "markup.heading",
-                    "markup.heading.markdown",
-                    "entity.name.section.markdown"
-                ],
-                "settings": {
-                    "foreground": "#ff6000"
-                }
-            },
-            {
-                "name": "Markdown - Negrita",
-                "scope": [
-                    "markup.bold"
-                ],
-                "settings": {
-                    "foreground": "#00ffaa",
-                    "fontStyle": "bold"
-                }
-            },
-            {
-                "name": "Markdown - Cursiva",
-                "scope": [
-                    "markup.italic"
-                ],
-                "settings": {
-                    "foreground": "#00ff00",
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "name": "Markdown - Enlaces",
-                "scope": [
-                    "string.other.link",
-                    "markup.underline.link"
-                ],
-                "settings": {
-                    "foreground": "#00b0ff"
-                }
-            },
-            {
-                "name": "Markdown - Listas",
-                "scope": [
-                    "markup.list"
-                ],
-                "settings": {
-                    "foreground": "#a0ffff"
-                }
-            },
-            {
-                "name": "Markdown - Citas",
-                "scope": [
-                    "markup.quote",
-                ],
-                "settings": {
-                    "foreground": "#8CA3BA",
-                    "fontStyle": "italic"
-                }
-            }
-        ]
-    }
+    // "editor.tokenColorCustomizations": {
+    //     "keywords": "#FF8538",
+    //     "types": "#00ff00", // Temporalmente, tendrá este color
+    //     "comments": "#ffffff60",
+    //     "variables": "#20c0ff",
+    //     "functions": "#00ffff",
+    //     "strings": "#ffffffd0",
+    //     "numbers": "#ff6030",
+    //     "textMateRules": [
+    //         {
+    //             "name": "UNIVERSAL - Palabras reservadas | Keywords",
+    //             "scope": [
+    //                 "keyword"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#FF8538"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Tokens que alteran el orden secuencial del programa",
+    //             "scope": [
+    //                 "keyword.control",
+    //                 "support.function.construct.output.php",
+    //                 "keyword.control.rust"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#FFBD00"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Estructura condicionales",
+    //             "scope": [
+    //                 "keyword.control.conditional",
+    //                 "keyword.control.if",
+    //                 "keyword.control.switch"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#FFE500"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Modificadores de lo que ya fue declarado",
+    //             "scope": [
+    //                 "storage",
+    //                 "storage.modifier"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#c0ff00"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL- Declaradores de variables, funciones y/o clases",
+    //             "scope": [
+    //                 "storage.type",
+    //                 "support.function.constructor.php"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#FF4B00"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL- Variables nativas",
+    //             "scope": [
+    //                 "variable.language",
+    //                 "variable.other.object"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#a0ffff"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Palabra reservada this",
+    //             "scope": [
+    //                 "variable.language.this"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#ffa000"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL- Variables definidas por el usuario",
+    //             "scope": [
+    //                 "variable.other",
+    //                 "variable"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#20c0ff"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL- Propiedades definidas por el usuario",
+    //             "scope": [
+    //                 "variable.other.property"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#20c0ff"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Nombre de espacios",
+    //             "scope": [
+    //                 "entity.name.type.namespace",
+    //                 "keyword.control.import",
+    //                 "keyword.control.export.ts"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#ff4f00ff"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Funciones nativas del lenguaje",
+    //             "scope": [
+    //                 "support.function",
+    //                 "support.function.rust"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#ff00ff"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Nombre de espacios, namespace e instancias nativas",
+    //             "scope": [
+    //                 "support",
+    //                 "keyword.other.namespace"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#00afff"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Primitivas",
+    //             "scope": [
+    //                 "support.type.primitive",
+    //                 "storage.type.primitive"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#00ff00"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Tipos definido por el usuario",
+    //             "scope": [
+    //                 "entity.name.type.rust",
+    //                 "entity.name.type.class",
+    //                 "new.expr",
+    //                 "support.class.php",
+    //                 "entity"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#00ffaa"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Decoradores",
+    //             "scope": [
+    //                 "meta.annotation",
+    //                 "meta.attribute",
+    //                 "name.decorator"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#FFE500"
+    //             }
+    //         },
+    //         // ------------------ MARKDOWN ----------------------
+    //         // Colores textos markdown
+    //         // --------------------------------------------------
+    //         {
+    //             "name": "Markdown - Encabezados",
+    //             "scope": [
+    //                 "markup.heading",
+    //                 "markup.heading.markdown",
+    //                 "entity.name.section.markdown"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#ff6000"
+    //             }
+    //         },
+    //         {
+    //             "name": "Markdown - Negrita",
+    //             "scope": [
+    //                 "markup.bold"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#00ffaa",
+    //                 "fontStyle": "bold"
+    //             }
+    //         },
+    //         {
+    //             "name": "Markdown - Cursiva",
+    //             "scope": [
+    //                 "markup.italic"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#00ff00",
+    //                 "fontStyle": "italic"
+    //             }
+    //         },
+    //         {
+    //             "name": "Markdown - Enlaces",
+    //             "scope": [
+    //                 "string.other.link",
+    //                 "markup.underline.link"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#00b0ff"
+    //             }
+    //         },
+    //         {
+    //             "name": "Markdown - Listas",
+    //             "scope": [
+    //                 "markup.list"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#a0ffff"
+    //             }
+    //         },
+    //         {
+    //             "name": "Markdown - Citas",
+    //             "scope": [
+    //                 "markup.quote"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#8CA3BA",
+    //                 "fontStyle": "italic"
+    //             }
+    //         },
+    //         // ------------ DLUNIRE DL TYPED ENVIRONMENT -------------
+    //         // Color específico para DL Typed Environment
+    //         // -------------------------------------------------------
+    //         {
+    //             "name": "DLUnire - Error de sintaxis",
+    //             "scope": [
+    //                 "invalid.illegal",
+    //                 "dlunire.illegal"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#ff0050",
+    //                 "fontStyle": ""
+    //             }
+    //         },
+    //         {
+    //             "name": "DLUnire - Nombre de variables",
+    //             "scope": [
+    //                 "dlunire.varname",
+    //                 "punctuation"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#20c0ff",
+    //                 "fontStyle": ""
+    //             }
+    //         },
+    //         {
+    //             "name": "DLUnire - Separador de tipo (:)",
+    //             "scope": [
+    //                 "punctuation.separator.key-value",
+    //                 "dlunire.colon"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#ffffff"
+    //             }
+    //         },
+    //         {
+    //             "name": "DLUnire - Tipos primitivos",
+    //             "scope": "dlunire.type",
+    //             "settings": {
+    //                 "foreground": "#00ff00",
+    //                 "fontStyle": ""
+    //             }
+    //         },
+    //         {
+    //             "name": "DLUnire - Operador de asignación (=)",
+    //             "scope": [
+    //                 "dlunire.operator.assign",
+    //                 "keyword.operator.assignment"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#ffffa0"
+    //             }
+    //         },
+    //         {
+    //             "name": "DLUnire - Cadenas de texto",
+    //             "scope": [
+    //                 "dlunire.quoted-double",
+    //                 "dlunire.quoted-single",
+    //                 "dlunire.quoted-backtick",
+    //                 "dlunire.heredoc"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#fffffff0",
+    //                 "fontStyle": ""
+    //             }
+    //         },
+    //         {
+    //             "name": "DLUnire - Números",
+    //             "scope": "dlunire.value.numeric",
+    //             "settings": {
+    //                 "foreground": "#ff6030",
+    //                 "fontStyle": ""
+    //             }
+    //         },
+    //         {
+    //             "name": "DLUnire - Booleanos",
+    //             "scope": [
+    //                 "dlunire.value.boolean",
+    //                 "constant.language"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#FF8538",
+    //                 "fontStyle": ""
+    //             }
+    //         },
+    //         {
+    //             "name": "DLUnire - Correos e identificadores",
+    //             "scope": [
+    //                 "dlunire.value.email",
+    //                 "dlunire.value.uuid",
+    //                 "constant.other.uuid"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#00ffff",
+    //                 "fontStyle": ""
+    //             }
+    //         },
+    //         {
+    //             "name": "DLUnire - Comentarios de bloques y documentación",
+    //             "scope": [
+    //                 "comment.block.documentation",
+    //                 "dlunire.block-documentation"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#90ffff70",
+    //                 "fontStyle": ""
+    //             }
+    //         },
+    //         {
+    //             "name": "Otros comentarios",
+    //             "scope": [
+    //                 "dlunire.double-slash",
+    //                 "dlunire.line-number-sign",
+    //                 "dlunire.block-comment",
+    //                 "comment.block"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#ffffff60"
+    //             }
+    //         }
+    //     ]
+    // }
 }

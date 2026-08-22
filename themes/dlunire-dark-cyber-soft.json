@@ -981,557 +981,190 @@
         "textPreformat.foreground": "#00e8ff", // Texto preformateado
         "textSeparator.foreground": "#00b3ff30", // Separadores de texto
         "walkThrough.embeddedEditorBackground": "#00000066", // Editor incrustado en guías paso a paso
-        "walkthrough.stepTitle.foreground": "#81f4ff", // Título de paso en guías de bienvenida
+        "walkthrough.stepTitle.foreground": "#81f4ff" // Título de paso en guías de bienvenida
         // TODO: Probar algunas claves:
     },
-                        "tokenColors": [
-        // =========================================================================
-        // 1. COMENTARIOS (Contraste 7.93:1 — AAA)
-        // =========================================================================
+    "tokenColors": [
         {
             "name": "Comentarios",
             "scope": [
                 "comment",
-                "comment.block",
                 "comment.line",
                 "comment.line.double-slash",
                 "comment.line.number-sign",
-                "comment.block.documentation.phpdoc",
-                "comment.block.documentation.phpdoc.php",
-                "comment.block.documentation.js",
-                "comment.block.documentation.ts",
-                "comment.block.documentation.rust",
-                "comment.block.documentation.python",
-                "comment.block.documentation.c",
-                "comment.block.documentation.cpp",
-                "comment.block.documentation.go",
                 "punctuation.definition.comment"
             ],
             "settings": {
-                "foreground": "#8CA3BA",
+                "foreground": "#ffffff60",
                 "fontStyle": ""
             }
         },
         {
-            "name": "Clase nativa",
+            "name": "UNIVERSAL - Palabras reservadas | Keywords",
             "scope": [
-                "support.class",
-                "support.class.builtin",
-                "support.class.builtin.php",
-                "meta.class",
-                "entity.name.type.rust"
-            ],
-            "settings": {
-                "foreground": "#00ff00",
-                "fontStyle": ""
-            }
-        },
-        // =========================================================================
-        // 2. PALABRAS CLAVE Y CONTROL DE FLUJO (Keywords y Modificadores)
-        // =========================================================================
-        {
-            "name": "Keywords (Base y declaraciones)",
-            "scope": [
-                "keyword",
-                "keyword.other.use",
-                "keyword.other.namespace",
-                "keyword.other.import",
-                "keyword.other.package",
-                "storage.type.interface",
-                "storage.type.enum",
-                "storage.type.trait"
+                "keyword"
             ],
             "settings": {
                 "foreground": "#FF8538"
             }
         },
         {
-            "name": "Keywords - Declaración de variables (let, const, var, val, auto)",
-            "scope": [
-                "storage.type.var",
-                "storage.type.let",
-                "storage.type.const",
-                "storage.type.val",
-                "storage.type.auto",
-                "storage.type.ts",
-                "storage.type.js",
-                "storage.modifier.variable",
-                "keyword.declaration.variable",
-                "keyword.other.var",
-                "keyword.other.let",
-                "keyword.other.const",
-                "keyword.var",
-                "keyword.let",
-                "keyword.const",
-                "meta.var.expr storage.type",
-                "meta.var.expr.ts storage.type.ts",
-                "meta.var.expr.js storage.type.js",
-                "meta.var.expr.ts storage.type",
-                "meta.var.expr.js storage.type",
-                "meta.var-single.expr storage.type",
-                "meta.var-single.expr.ts storage.type.ts",
-                "meta.var-single.expr.js storage.type.js",
-                "meta.var-single.expr.ts storage.type",
-                "meta.var-single.expr.js storage.type",
-                "meta.block.ts meta.var.expr.ts storage.type.ts",
-                "meta.block.js meta.var.expr.js storage.type.js",
-                "meta.method.declaration.ts meta.var.expr.ts storage.type.ts",
-                "meta.method.declaration.js meta.var.expr.js storage.type.js",
-                "meta.function.ts meta.var.expr.ts storage.type.ts",
-                "meta.function.js meta.var.expr.js storage.type.js",
-                "meta.class.ts meta.method.declaration.ts meta.block.ts meta.var.expr.ts storage.type.ts",
-                "meta.class.js meta.method.declaration.js meta.block.js meta.var.expr.js storage.type.js"
-            ],
-            "settings": {
-                "foreground": "#FF9D5C",
-                "fontStyle": ""
-            }
-        },
-        {
-            "name": "Keywords - Modificadores (final, abstract, public, private, static, readonly, extends, implements, mut)",
-            "scope": [
-                "storage.modifier",
-                "storage.modifier.abstract",
-                "storage.modifier.final",
-                "storage.modifier.access",
-                "storage.modifier.inheritance",
-                "storage.modifier.inheritance.final.php",
-                "storage.modifier.extends",
-                "storage.modifier.extends.php",
-                "storage.modifier.implements",
-                "storage.modifier.implements.php",
-                "storage.modifier.visibility",
-                "storage.modifier.visibility.public.php",
-                "storage.modifier.visibility.private.php",
-                "storage.modifier.visibility.protected.php",
-                "storage.modifier.static",
-                "storage.modifier.readonly",
-                "storage.modifier.mut.rust",
-                "storage.modifier.async",
-                "storage.modifier.php",
-                "storage.modifier.ts",
-                "storage.modifier.js",
-                "storage.modifier.c",
-                "storage.modifier.cpp",
-                "storage.modifier.cs",
-                "storage.modifier.java",
-                "keyword.other.final",
-                "keyword.other.abstract",
-                "keyword.other.mut.rust"
-            ],
-            "settings": {
-                "foreground": "#FF8538"
-            }
-        },
-        {
-            "name": "Declaración de clase (class)",
-            "scope": [
-                "storage.type.class",
-                "storage.type.class.php",
-                "storage.type.class.ts",
-                "storage.type.class.js",
-                "storage.type.class.python",
-                "storage.type.class.java",
-                "storage.type.class.cs",
-                "storage.type.class.cpp",
-                "storage.type.class.swift",
-                "storage.type.class.kotlin",
-                "keyword.other.class.ruby",
-                "keyword.declaration.class"
-            ],
-            "settings": {
-                "foreground": "#50c8ff",
-                "fontStyle": ""
-            }
-        },
-        {
-            "name": "Keywords - Control de flujo (if, else, return, for, while, match, try, catch)",
+            "name": "UNIVERSAL - Tokens que alteran el orden secuencial del programa",
             "scope": [
                 "keyword.control",
+                "support.function.construct.output.php",
+                "keyword.control.rust"
+            ],
+            "settings": {
+                "foreground": "#FFBD00"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Estructura condicionales",
+            "scope": [
                 "keyword.control.conditional",
-                "keyword.control.conditional.php",
-                "keyword.control.conditional.js",
-                "keyword.control.conditional.ts",
-                "keyword.control.conditional.python",
-                "keyword.control.repeat",
-                "keyword.control.flow",
-                "keyword.control.flow.python",
-                "keyword.control.flow.rust",
-                "keyword.control.return",
-                "keyword.control.return.php",
-                "keyword.control.return.ts",
-                "keyword.control.return.js",
-                "keyword.control.return.python",
-                "keyword.control.trycatch",
-                "keyword.control.exception",
-                "keyword.control.import",
-                "keyword.control.import.php",
-                "keyword.control.import.ts",
-                "keyword.control.import.js",
-                "keyword.control.import.python",
-                "keyword.control.import.rust",
-                "keyword.control.export",
-                "keyword.control.export.ts",
-                "keyword.control.export.js",
-                "keyword.control.from",
-                "keyword.control.default"
+                "keyword.control.if",
+                "keyword.control.switch"
             ],
             "settings": {
-                "foreground": "#FF8538"
+                "foreground": "#FFE500"
             }
         },
         {
-            "name": "Keywords - Operadores de palabra (new, instanceof, typeof, as, is, in, del)",
+            "name": "UNIVERSAL - Modificadores de lo que ya fue declarado",
             "scope": [
-                "keyword.operator.word",
-                "keyword.operator.new",
-                "keyword.operator.new.ts",
-                "keyword.operator.new.js",
-                "keyword.other.new.php",
-                "keyword.operator.instanceof",
-                "keyword.operator.typeof",
-                "keyword.operator.logical.python",
-                "keyword.operator.expression",
-                "keyword.operator.cast",
-                "keyword.operator.sizeof"
+                "storage",
+                "storage.modifier"
             ],
             "settings": {
-                "foreground": "#FF8538"
+                "foreground": "#c0ff00"
             }
         },
         {
-            "name": "Operadores sintácticos (+, -, =, =>, ->, ::, ;, :)",
+            "name": "UNIVERSAL- Declaradores de variables, funciones y/o clases",
             "scope": [
-                "keyword.operator",
-                "keyword.operator.assignment.php",
-                "keyword.operator.assignment.ts",
-                "keyword.operator.assignment.js",
-                "keyword.operator.assignment.equal.rust",
-                "keyword.operator.arithmetic",
-                "keyword.operator.comparison",
-                "keyword.operator.logical",
-                "keyword.operator.return-value",
-                "keyword.operator.return-value.php",
-                "keyword.operator.type.annotation",
-                "keyword.operator.type.annotation.ts",
-                "keyword.operator.key-value",
-                "keyword.operator.key-value.rust",
-                "keyword.operator.borrow",
-                "keyword.operator.borrow.and.rust",
-                "keyword.operator.namespace",
-                "keyword.operator.namespace.rust",
-                "keyword.operator.namespace.php",
-                "keyword.operator.accessor",
-                "punctuation.accessor",
-                "punctuation.separator.pointer-access",
-                "punctuation.separator.types.php",
-                "storage.type.function.arrow"
+                "storage.type",
+                "support.function.constructor.php"
             ],
             "settings": {
-                "foreground": "#A0B2C6"
-            }
-        },
-        // =========================================================================
-        // 3. ALMACENAMIENTO Y DECLARACIÓN DE FUNCIONES (Storage Type)
-        // =========================================================================
-        {
-            "name": "Declaración de funciones (Universal: function, fn, def, func, sub, lambda)",
-            "scope": [
-                "storage.type.function",
-                "keyword.other.fn",
-                "keyword.declaration.function",
-                "storage.type.def",
-                "storage.type.func",
-                "storage.type.lambda",
-                "storage.type.sub"
-            ],
-            "settings": {
-                "foreground": "#FF78C6",
-                "fontStyle": ""
+                "foreground": "#FF4B00"
             }
         },
         {
-            "name": "Constructor de clase (Universal: constructor, __construct, __init__, init)",
+            "name": "UNIVERSAL- Variables nativas",
             "scope": [
-                "support.function.constructor",
-                "support.function.construct",
-                "entity.name.function.constructor",
-                "meta.constructor.declaration.ts storage.type.ts",
-                "meta.constructor.declaration.js storage.type.js",
-                "meta.constructor.declaration",
-                "meta.constructor"
+                "variable.language",
+                "variable.other.object"
             ],
             "settings": {
-                "foreground": "#85A8FF",
-                "fontStyle": ""
-            }
-        },
-        // =========================================================================
-        // 4. TIPOS, CLASES E INTERFACES (Grupo B)
-        // =========================================================================
-        {
-            "name": "Tipos primitivos del lenguaje (Universal: string, int, bool, number, void, any, float, char)",
-            "scope": [
-                "support.type.primitive",
-                "support.type.builtin",
-                "support.type.core",
-                "support.type",
-                "storage.type.primitive",
-                "storage.type.built-in",
-                "keyword.type",
-                "keyword.other.type",
-                "entity.name.type.primitive",
-                "entity.name.type.numeric"
-            ],
-            "settings": {
-                "foreground": "#00ff00",
-                "fontStyle": ""
+                "foreground": "#a0ffff"
             }
         },
         {
-            "name": "Palabras clave de definición de tipos (Universal: type, typedef, alias)",
+            "name": "UNIVERSAL - Palabra reservada this",
             "scope": [
-                "storage.type.type",
-                "storage.type.typedef",
-                "keyword.declaration.type",
-                "keyword.other.typedef",
-                "keyword.other.type.alias"
+                "variable.language.this"
             ],
             "settings": {
-                "foreground": "#FF8538",
-                "fontStyle": ""
+                "foreground": "#ffa000"
             }
         },
         {
-            "name": "Nombres y alias de tipo de usuario (Universal: entity.name.type)",
+            "name": "UNIVERSAL- Variables definidas por el usuario",
             "scope": [
-                "entity.name.type.alias",
-                "entity.name.type",
-                "meta.other.type.phpdoc",
-                "storage.type.annotation"
-            ],
-            "settings": {
-                "foreground": "#00ffaa",
-                "fontStyle": ""
-            }
-        },
-        // =========================================================================
-        // 5. FUNCIONES Y MÉTODOS (Grupo C)
-        // =========================================================================
-        {
-            "name": "Funciones nativas / built-in del lenguaje",
-            "scope": [
-                "support.function",
-                "support.function.builtin",
-                "support.function.builtin.php",
-                "support.function.builtin.python",
-                "support.function.builtin.go",
-                "support.function.builtin.rust",
-                "support.function.builtin.c",
-                "support.function.builtin.cpp",
-                "support.function.std",
-                "support.function.console",
-                "support.function.magic",
-                "support.function.php",
-                "support.function.any-method.builtin"
-            ],
-            "settings": {
-                "foreground": "#B599FE"
-            }
-        },
-        {
-            "name": "Funciones y métodos (Usuario)",
-            "scope": [
-                "entity.name.function",
-                "entity.name.function.php",
-                "entity.name.function.ts",
-                "entity.name.function.js",
-                "entity.name.function.python",
-                "entity.name.function.rust",
-                "entity.name.function.go",
-                "entity.name.function.c",
-                "entity.name.function.cpp",
-                "entity.name.function.java",
-                "entity.name.function.cs",
-                "variable.function",
-                "entity.name.method",
-                "meta.definition.method",
-                "meta.function-call.generic",
-                "support.function.any-method"
-            ],
-            "settings": {
-                "foreground": "#85A8FF"
-            }
-        },
-        // =========================================================================
-        // 6. VARIABLES Y PROPIEDADES (Grupo D)
-        // =========================================================================
-        {
-            "name": "Variables globales / superglobales (Nativo)",
-            "scope": [
-                "support.variable",
-                "variable.other.global",
-                "variable.other.global.php",
-                "variable.other.global.safer.php",
-                "variable.other.global.python",
-                "support.variable.magic"
-            ],
-            "settings": {
-                "foreground": "#67E8F9"
-            }
-        },
-        {
-            "name": "Variables (Usuario)",
-            "scope": [
-                "variable",
-                "variable.name",
-                "variable.parameter",
-                "variable.parameter.ts",
-                "variable.parameter.js",
-                "variable.parameter.php",
-                "variable.parameter.python",
-                "variable.parameter.rust",
-                "variable.parameter.go",
-                "variable.parameter.c",
-                "variable.parameter.cpp",
                 "variable.other",
-                "variable.other.readwrite",
-                "variable.other.readwrite.ts",
-                "variable.other.readwrite.js",
-                "variable.other.php",
-                "variable.other.rust",
-                "variable.other.python",
-                "variable.other.local",
-                "variable.other.declaration",
-                "punctuation.definition.variable",
-                "punctuation.definition.variable.php"
+                "variable"
             ],
             "settings": {
                 "foreground": "#20c0ff"
             }
         },
         {
-            "name": "Variables del lenguaje (this, self, super, parent, cls)",
+            "name": "UNIVERSAL- Propiedades definidas por el usuario",
             "scope": [
-                "variable.language",
-                "variable.language.this",
-                "variable.language.this.php",
-                "variable.language.this.ts",
-                "variable.language.this.js",
-                "variable.language.self",
-                "variable.language.self.php",
-                "variable.language.self.rust",
-                "variable.language.special.self.python",
-                "variable.language.special.cls.python",
-                "variable.language.super",
-                "variable.language.super.ts",
-                "variable.language.super.js",
-                "variable.language.parent",
-                "variable.language.parent.php"
+                "variable.other.property"
             ],
             "settings": {
-                "foreground": "#00C8FF"
+                "foreground": "#20c0ff"
             }
         },
         {
-            "name": "Propiedades de objetos nativas / built-in (DOM / length / prototype)",
+            "name": "UNIVERSAL - Nombre de espacios",
             "scope": [
-                "support.variable.property",
-                "support.variable.property.dom",
-                "support.type.property-name"
+                "entity.name.type.namespace",
+                "keyword.control.import",
+                "keyword.control.export.ts"
             ],
             "settings": {
-                "foreground": "#EAB308"
+                "foreground": "#ff4f00ff"
             }
         },
         {
-            "name": "Propiedades de objetos JSON / YAML / TOML",
+            "name": "UNIVERSAL - Funciones nativas del lenguaje",
             "scope": [
-                "support.type.property-name.json",
-                "entity.name.tag.yaml",
-                "support.type.property-name.toml"
+                "support.function",
+                "support.function.rust"
             ],
             "settings": {
-                "foreground": "#00FF90"
+                "foreground": "#ff00ff"
             }
         },
         {
-            "name": "Propiedades de objetos (Usuario)",
+            "name": "UNIVERSAL - Nombre de espacios, namespace e instancias nativas",
             "scope": [
-                "variable.other.property",
-                "variable.other.property.php",
-                "variable.other.property.ts",
-                "variable.other.property.js",
-                "variable.other.property.rust",
-                "variable.other.property.python",
-                "variable.other.object.property",
-                "meta.property-name",
-                "meta.object-literal.key",
-                "entity.name.variable.property"
+                "support",
+                "keyword.other.namespace"
             ],
             "settings": {
-                "foreground": "#FFD000"
-            }
-        },
-        // =========================================================================
-        // 7. CONSTANTES Y VALORES (Grupo E)
-        // =========================================================================
-        {
-            "name": "Constantes booleanas (Universal: true, false, True, False, TRUE, FALSE)",
-            "scope": [
-                "constant.language.boolean",
-                "constant.language.boolean.true",
-                "constant.language.boolean.false",
-                "constant.language.bool",
-                "constant.language.boolean.php",
-                "constant.language.boolean.ts",
-                "constant.language.boolean.js",
-                "constant.language.boolean.python",
-                "constant.language.boolean.rust",
-                "constant.language.boolean.go",
-                "constant.language.boolean.c",
-                "constant.language.boolean.cpp",
-                "constant.language.boolean.java",
-                "constant.language.boolean.cs",
-                "keyword.other.unit.boolean"
-            ],
-            "settings": {
-                "foreground": "#20a0ff"
+                "foreground": "#00afff"
             }
         },
         {
-            "name": "Constantes reservadas / lenguaje (null, None, nil, undefined, escapes)",
+            "name": "UNIVERSAL - Primitivas",
             "scope": [
-                "constant",
-                "constant.language",
-                "constant.language.php",
-                "constant.language.python",
-                "constant.language.rust",
-                "constant.language.go",
-                "constant.language.c",
-                "constant.language.cpp",
-                "constant.language.cs",
-                "constant.language.java",
-                "constant.language.null",
-                "constant.language.undefined",
-                "constant.character.escape"
+                "support.type.primitive",
+                "storage.type.primitive"
             ],
             "settings": {
-                "foreground": "#FF7D99"
+                "foreground": "#00ff00"
             }
         },
         {
-            "name": "Constantes del usuario",
+            "name": "UNIVERSAL - Tipos definido por el usuario",
             "scope": [
-                "constant.other",
-                "constant.other.php",
-                "constant.other.caps",
-                "entity.name.constant",
-                "entity.name.constant.rust",
-                "variable.other.constant"
+                "entity.name.type.rust",
+                "entity.name.type.class",
+                "new.expr",
+                "support.class.php",
+                "entity"
             ],
             "settings": {
-                "foreground": "#FF7D99"
+                "foreground": "#00ffaa"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Decoradores",
+            "scope": [
+                "meta.annotation",
+                "meta.attribute",
+                "name.decorator"
+            ],
+            "settings": {
+                "foreground": "#FFE500"
+            }
+        },
+        {
+            "name": "Cadenas de texto (Strings)",
+            "scope": [
+                "string",
+                "string.quoted",
+                "string.quoted.double",
+                "string.quoted.single",
+                "string.template",
+                "string.regexp"
+            ],
+            "settings": {
+                "foreground": "#ffffffd0"
             }
         },
         {
@@ -1545,120 +1178,7 @@
                 "constant.numeric.binary"
             ],
             "settings": {
-                "foreground": "#FFB347"
-            }
-        },
-        {
-            "name": "Cadenas de texto (Strings)",
-            "scope": [
-                "string",
-                "string.quoted",
-                "string.quoted.double",
-                "string.quoted.double.php",
-                "string.quoted.double.ts",
-                "string.quoted.double.js",
-                "string.quoted.double.rust",
-                "string.quoted.double.python",
-                "string.quoted.double.go",
-                "string.quoted.double.c",
-                "string.quoted.double.cpp",
-                "string.quoted.single",
-                "string.quoted.single.php",
-                "string.quoted.single.ts",
-                "string.quoted.single.js",
-                "string.quoted.single.python",
-                "string.quoted.single.rust",
-                "string.template",
-                "string.template.ts",
-                "string.template.js",
-                "string.regexp"
-            ],
-            "settings": {
-                "foreground": "#FFFFFF"
-            }
-        },
-        // =========================================================================
-        // 8. MARKUP HTML/XML (Grupo H) Y MARKDOWN (Grupo I)
-        // =========================================================================
-        {
-            "name": "Etiquetas HTML/XML/SVG/JSX",
-            "scope": [
-                "entity.name.tag",
-                "entity.name.tag.html",
-                "entity.name.tag.xml",
-                "entity.name.tag.svg",
-                "entity.name.tag.tsx",
-                "entity.name.tag.jsx"
-            ],
-            "settings": {
-                "foreground": "#C6FF00"
-            }
-        },
-        {
-            "name": "Strings HTML (string.html)",
-            "scope": [
-                "string.html",
-                "string.quoted.html",
-                "text.html string"
-            ],
-            "settings": {
-                "foreground": "#C6FF00"
-            }
-        },
-        {
-            "name": "Atributos de etiquetas HTML/XML/JSX",
-            "scope": [
-                "entity.other.attribute-name",
-                "entity.other.attribute-name.html",
-                "entity.other.attribute-name.xml",
-                "entity.other.attribute-name.tsx",
-                "entity.other.attribute-name.jsx"
-            ],
-            "settings": {
-                "foreground": "#00C8FF"
-            }
-        },
-        {
-            "name": "Anotaciones y decoradores (@decorator, #[derive], @param)",
-            "scope": [
-                "meta.annotation",
-                "meta.annotation.python",
-                "meta.annotation.rust",
-                "meta.annotation.java",
-                "entity.other.attribute-name.decorator",
-                "meta.decorator",
-                "keyword.other.phpdoc",
-                "keyword.other.phpdoc.php",
-                "keyword.other.documentation"
-            ],
-            "settings": {
-                "foreground": "#40ffe0"
-            }
-        },
-        {
-            "name": "CSS / SCSS / SASS / Less - Propiedades y Selectores",
-            "scope": [
-                "support.type.property-name.css",
-                "support.type.property-name.scss",
-                "support.type.property-name.less",
-                "entity.other.attribute-name.class.css",
-                "entity.other.attribute-name.id.css",
-                "entity.name.tag.css"
-            ],
-            "settings": {
-                "foreground": "#FFD000"
-            }
-        },
-        {
-            "name": "CSS / SCSS / SASS / Less - Valores y Unidades",
-            "scope": [
-                "support.constant.property-value.css",
-                "support.constant.color.w3c-standard-color-name.css",
-                "keyword.other.unit.css",
-                "keyword.other.unit.scss"
-            ],
-            "settings": {
-                "foreground": "#FFFFFF"
+                "foreground": "#ff6030"
             }
         },
         {
@@ -1669,7 +1189,7 @@
                 "entity.name.section.markdown"
             ],
             "settings": {
-                "foreground": "#00D0FF"
+                "foreground": "#ff6000"
             }
         },
         {
@@ -1678,8 +1198,8 @@
                 "markup.bold"
             ],
             "settings": {
-                "foreground": "#FFC600",
-                "fontStyle": ""
+                "foreground": "#00ffaa",
+                "fontStyle": "bold"
             }
         },
         {
@@ -1688,19 +1208,18 @@
                 "markup.italic"
             ],
             "settings": {
-                "foreground": "#C4B5FD",
-                "fontStyle": ""
+                "foreground": "#00ff00",
+                "fontStyle": "italic"
             }
         },
         {
             "name": "Markdown - Enlaces",
             "scope": [
-                "markup.underline.link",
-                "string.other.link"
+                "string.other.link",
+                "markup.underline.link"
             ],
             "settings": {
-                "foreground": "#00D0FF",
-                "fontStyle": "underline"
+                "foreground": "#00b0ff"
             }
         },
         {
@@ -1709,7 +1228,7 @@
                 "markup.list"
             ],
             "settings": {
-                "foreground": "#FF8F3D"
+                "foreground": "#a0ffff"
             }
         },
         {
@@ -1718,55 +1237,30 @@
                 "markup.quote"
             ],
             "settings": {
-                "foreground": "#8CA3BA"
+                "foreground": "#8CA3BA",
+                "fontStyle": "italic"
             }
         },
-        // =========================================================================
-        // 9. ERRORES Y DIAGNÓSTICOS (severidad estándar, fuera del sistema semántico)
-        // =========================================================================
+        // ------------ DLUNIRE DL TYPED ENVIRONMENT -------------
+        // Color específico para DL Typed Environment
+        // -------------------------------------------------------
         {
-            "name": "Código inválido o ilegal",
+            "name": "DLUnire - Error de sintaxis",
             "scope": [
-                "invalid",
                 "invalid.illegal",
-                "invalid.illegal.missing-asterisk.phpdoc.php"
+                "dlunire.illegal"
             ],
             "settings": {
-                "foreground": "#FF808C",
+                "foreground": "#ff0050",
                 "fontStyle": ""
             }
         },
         {
-            "scope": "token.info-token",
-            "settings": {
-                "foreground": "#2EC5FF"
-            }
-        },
-        {
-            "scope": "token.warn-token",
-            "settings": {
-                "foreground": "#FBBF24"
-            }
-        },
-        {
-            "scope": "token.error-token",
-            "settings": {
-                "foreground": "#FF808C"
-            }
-        },
-        {
-            "scope": "token.debug-token",
-            "settings": {
-                "foreground": "#CB94FF"
-            }
-        },
-
-        // ------------ DLUNIRE TYPED ENVIRONMENT -------------
-        // Color específico para DL Typed Environment
-        // ----------------------------------------------------
-        {
-            "name": "DLUnire - Variables",
-            "scope": "dlunire.varname",
+            "name": "DLUnire - Nombre de variables",
+            "scope": [
+                "dlunire.varname",
+                "punctuation"
+            ],
             "settings": {
                 "foreground": "#20c0ff",
                 "fontStyle": ""
@@ -1774,14 +1268,16 @@
         },
         {
             "name": "DLUnire - Separador de tipo (:)",
-            "scope": "dlunire.colon",
+            "scope": [
+                "punctuation.separator.key-value",
+                "dlunire.colon"
+            ],
             "settings": {
-                "foreground": "#ffffff",
-                "fontStyle": ""
+                "foreground": "#ffffff"
             }
         },
         {
-            "name": "DLUnire - tipos o primitivas",
+            "name": "DLUnire - Tipos primitivos",
             "scope": "dlunire.type",
             "settings": {
                 "foreground": "#00ff00",
@@ -1789,18 +1285,17 @@
             }
         },
         {
-            "name": "DLUnire - Asignación de valor (=)",
+            "name": "DLUnire - Operador de asignación (=)",
             "scope": [
                 "dlunire.operator.assign",
                 "keyword.operator.assignment"
             ],
             "settings": {
-                "foreground": "#ffffa0",
-                "fontStyle": ""
+                "foreground": "#ffffa0"
             }
         },
         {
-            "name": "DLUnire - String",
+            "name": "DLUnire - Cadenas de texto",
             "scope": [
                 "dlunire.quoted-double",
                 "dlunire.quoted-single",
@@ -1814,7 +1309,7 @@
         },
         {
             "name": "DLUnire - Números",
-            "scope": "dlunire.numeric",
+            "scope": "dlunire.value.numeric",
             "settings": {
                 "foreground": "#ff6030",
                 "fontStyle": ""
@@ -1822,17 +1317,20 @@
         },
         {
             "name": "DLUnire - Booleanos",
-            "scope": "dlunire.boolean",
+            "scope": [
+                "dlunire.value.boolean",
+                "constant.language"
+            ],
             "settings": {
-                "foreground": "#20a0ff",
+                "foreground": "#FF8538",
                 "fontStyle": ""
             }
         },
         {
             "name": "DLUnire - Correos e identificadores",
             "scope": [
-                "dlunire.email",
-                "dlunire.uuid",
+                "dlunire.value.email",
+                "dlunire.value.uuid",
                 "constant.other.uuid"
             ],
             "settings": {
@@ -1841,49 +1339,46 @@
             }
         },
         {
-            "name": "DLUnire - Error de sintaxis",
-            "scope": [
-                "invalid.illegal",
-                "dlunire.illegal"
-            ],
-            "settings": {
-                "foreground": "#ff0050",
-                "fontStyle": ""
-            }
-        },
-        {
-            "name": "DLUnire - Comentarios",
+            "name": "DLUnire - Comentarios de bloques y documentación",
             "scope": [
                 "comment.block.documentation",
                 "dlunire.block-documentation"
             ],
             "settings": {
-                "foreground": "#90ffff99", 
+                "foreground": "#90ffff70",
                 "fontStyle": ""
+            }
+        },
+        {
+            "name": "Otros comentarios",
+            "scope": [
+                "dlunire.double-slash",
+                "dlunire.line-number-sign",
+                "dlunire.block-comment",
+                "comment.block"
+            ],
+            "settings": {
+                "foreground": "#ffffff60"
             }
         }
     ],
     "semanticHighlighting": true,
     "semanticTokenColors": {
-        "class.defaultLibrary": "#00FF00",
-        "class": "#00FFAA",
-        "interface.defaultLibrary": "#CB94FF",
-        "interface": "#D8B4FE",
-        "type.defaultLibrary": "#00FF00",
-        "type": "#00FFAA",
-        "enum.defaultLibrary": "#1AEB94",
-        "enum": "#8FFFD1",
-        "function.defaultLibrary": "#B599FE",
-        "function": "#85A8FF",
-        "method": "#85A8FF",
-        "variable.defaultLibrary": "#67E8F9",
+        "class.defaultLibrary": "#00ff00",
+        "class": "#00ffaa",
+        "type.defaultLibrary": "#00ff00",
+        "type": "#00ffaa",
+        "enum": "#00ffaa",
+        "interface": "#00ffaa",
+        "function.defaultLibrary": "#ff00ff",
+        "function": "#00ffff",
+        "method": "#00ffff",
+        "variable.defaultLibrary": "#a0ffff",
         "variable": "#20c0ff",
         "variable.local": "#20c0ff",
         "variable.readonly": "#20c0ff",
         "variable.declaration": "#20c0ff",
         "parameter": "#20c0ff",
-        "property.defaultLibrary": "#EAB308",
-        "property": "#FFD000",
-        "property.readonly": "#FFD000"
+        "property": "#20c0ff"
     }
 }
