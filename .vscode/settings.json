@@ -63,6 +63,44 @@
                 }
             },
             {
+                "name": "UNIVERSAL- Variables nativas",
+                "scope": [
+                    "variable.language",
+                    "variable.other.object"
+                ],
+                "settings": {
+                    "foreground": "#a0ffff"
+                }
+            },
+            {
+                "name": "UNIVERSAL - Palabra reservada this",
+                "scope": [
+                    "variable.language.this"
+                ],
+                "settings": {
+                    "foreground": "#2090ff"
+                }
+            },
+            {
+                "name": "UNIVERSAL- Variables",
+                "scope": [
+                    "variable.other",
+                    "variable"
+                ],
+                "settings": {
+                    "foreground": "#20c0ff"
+                }
+            },
+            {
+                "name": "UNIVERSAL- Propiedades",
+                "scope": [
+                    "variable.other.property"
+                ],
+                "settings": {
+                    "foreground": "#00ffaab0"
+                }
+            },
+            {
                 "name": "UNIVERSAL - Tipos definido por el usuario",
                 "scope": [
                     "entity.name.type.rust",
