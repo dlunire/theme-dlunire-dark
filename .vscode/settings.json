@@ -82,7 +82,7 @@
                 }
             },
             {
-                "name": "UNIVERSAL- Variables",
+                "name": "UNIVERSAL- Variables definidas por el usuario",
                 "scope": [
                     "variable.other",
                     "variable"
@@ -92,7 +92,7 @@
                 }
             },
             {
-                "name": "UNIVERSAL- Propiedades",
+                "name": "UNIVERSAL- Propiedades definidas por el usuario",
                 "scope": [
                     "variable.other.property"
                 ],
@@ -101,10 +101,42 @@
                 }
             },
             {
+                "name": "UNIVERSAL - Nombre de espacios",
+                "scope": [
+                    "entity.name.type.namespace",
+                    "keyword.control.import",
+                    "keyword.control.export.ts"
+                ],
+                "settings": {
+                    "foreground": "#ff4f00ff"
+                }
+            },
+            {
+                "name": "UNIVERSAL - Funciones nativas del lenguaje",
+                "scope": [
+                    "support.function",
+                    "support.function.rust"
+                ],
+                "settings": {
+                    "foreground": "#ff00ff"
+                }
+            },
+            {
+                "name": "UNIVERSAL - Nombre de espacios, namespace e instancias nativas",
+                "scope": [
+                    "support",
+                    "keyword.other.namespace",
+                ],
+                "settings": {
+                    "foreground": "#00afff"
+                }
+            },
+            {
                 "name": "UNIVERSAL - Tipos definido por el usuario",
                 "scope": [
                     "entity.name.type.rust",
                     "entity.name.type.class",
+                    // "meta.class.ts",
                     "new.expr",
                     "support.class.php",
                     "entity"
