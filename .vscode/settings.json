@@ -1,7 +1,7 @@
 {
     "editor.formatOnSave": false,
     "editor.inlineSuggest.enabled": true,
-    "js/ts.experimental.useTsgo": false,
+    "js/ts.experimental.useTsgo": false
     // "editor.tokenColorCustomizations": {
     //     "keywords": "#FF8538",
     //     "types": "#00ff00", // Temporalmente, tendrá este color
@@ -163,6 +163,27 @@
     //             ],
     //             "settings": {
     //                 "foreground": "#FFE500"
+    //             }
+    //         },
+    //         {
+    //             "name": "JSON - Cadenas de texto / Strings",
+    //             "scope": [
+    //                 "string.json",
+    //                 "string.quoted.double.json",
+    //                 "string.quoted.single.json"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#ffc000"
+    //             }
+    //         },
+    //         {
+    //             "name": "UNIVERSAL - Propiedades de tipos y JSON / Object Keys",
+    //             "scope": [
+    //                 "support.type.property-name",
+    //                 "support.type.property-name.json"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#00ff00"
     //             }
     //         },
     //         // ------------------ MARKDOWN ----------------------

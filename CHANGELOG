@@ -11,6 +11,8 @@ All notable changes to the "DLUnire Dark" extension will be documented in this f
 ### Changed
 - **Unified Syntax Highlighting Architecture:** Overhauled and synchronized `tokenColors` and `semanticTokenColors` across all 4 theme variants (`DLUnire Dark`, `DLUnire Dark Soft`, `DLUnire Dark Cyber`, `DLUnire Dark Cyber Soft`), removing obsolete legacy token structures.
 - **Universal Scopes & Semantics:** Standardized universal token mappings for keywords, sequential control flow, conditionals, storage modifiers/declarators, native/user variables & properties, namespaces, native/user functions, primitives, user types, and decorators.
+- **JSON Highlighting Enhancements:** Dedicated scope rules for JSON keys (`#00ff00`) and JSON string values (`#ffc000`).
+- **Parameter Inlay Hints:** Tuned `editorInlayHint.parameterForeground` (`#00ffaa60`) and `editorInlayHint.parameterBackground` (`#00ffaa08`) for subtle, distraction-free inline parameter hints.
 - **Markdown Highlighting:** Refined Markdown tokens including headings, bold, italic, links, lists, and quotes.
 - **Build System & Tooling:** Migrated build and publishing workflows in `Makefile` to use **Bun** (`bun run package`, `bun run publish:*`).
 - **Formatting & Sanitation:** Cleaned trailing commas and strict JSON formatting across all theme files and workspace configuration.

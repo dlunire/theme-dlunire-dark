@@ -427,8 +427,8 @@
         "editorHoverWidget.statusBarBackground": "#05080c", // Barra de estado dentro del cuadro hover
         "editorInlayHint.background": "#00e8ff08", // Fondo de pistas en línea (tipos/parámetros)
         "editorInlayHint.foreground": "#70C8FF", // Texto de pistas en línea
-        "editorInlayHint.parameterBackground": "#00b8ff00", // Fondo de pistas para parámetros
-        "editorInlayHint.parameterForeground": "#ffffff90", // Texto de pistas para parámetros
+        "editorInlayHint.parameterBackground": "#00ffaa08", // Fondo de pistas para parámetros
+        "editorInlayHint.parameterForeground": "#00ffaa60", // Texto de pistas para parámetros
         "editorInlayHint.typeBackground": "#00e8ff08", // Fondo de pistas para tipos implícitos
         "editorInlayHint.typeForeground": "#2684FF", // Texto de pistas para tipos implícitos
         "editorLink.activeForeground": "#38A9FF", // Color de enlaces activos dentro del código
@@ -1168,6 +1168,27 @@
             }
         },
         {
+            "name": "JSON - Cadenas de texto / Strings",
+            "scope": [
+                "string.json",
+                "string.quoted.double.json",
+                "string.quoted.single.json"
+            ],
+            "settings": {
+                "foreground": "#ffc000"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Propiedades de tipos y JSON / Object Keys",
+            "scope": [
+                "support.type.property-name",
+                "support.type.property-name.json"
+            ],
+            "settings": {
+                "foreground": "#00ff00"
+            }
+        },
+        {
             "name": "Números (Decimal, Hex, Float, Bin)",
             "scope": [
                 "constant.numeric",
@@ -1378,7 +1399,6 @@
         "variable.local": "#20c0ff",
         "variable.readonly": "#20c0ff",
         "variable.declaration": "#20c0ff",
-        "parameter": "#20c0ff",
-        "property": "#20c0ff"
+        "parameter": "#20c0ff"
     }
 }

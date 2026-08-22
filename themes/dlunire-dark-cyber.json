@@ -425,6 +425,12 @@
         "editorHoverWidget.foreground": "#78f3ff", // Texto del cuadro flotante de información
         "editorHoverWidget.highlightForeground": "#00e8ff", // Texto resaltado en información hover
         "editorHoverWidget.statusBarBackground": "#05080c", // Barra de estado dentro del cuadro hover
+        "editorInlayHint.background": "#00e8ff08", // Fondo de pistas en línea (tipos/parámetros)
+        "editorInlayHint.foreground": "#78f3ff", // Texto de pistas en línea
+        "editorInlayHint.parameterBackground": "#00ffaa08", // Fondo de pistas para parámetros
+        "editorInlayHint.parameterForeground": "#00ffaa60", // Texto de pistas para parámetros
+        "editorInlayHint.typeBackground": "#00e8ff08", // Fondo de pistas para tipos implícitos
+        "editorInlayHint.typeForeground": "#00e8ff", // Texto de pistas para tipos implícitos
         "editorLink.activeForeground": "#00e8ff", // Color de enlaces activos dentro del código
         "editorMultiCursor.primary.foreground": "#00e8ff", // Cursor primario en edición múltiple
         "editorMultiCursor.secondary.foreground": "#00e8ff", // Cursores secundarios en edición múltiple
@@ -1177,8 +1183,8 @@
         },
         // =========================================================================
         // 7. VALORES LITERALES
-        //    Strings: Blanco semi-opaco (#ffffffd0)
-        //    Números: Naranja coral (#ff6030)
+        //    Strings: Blanco semi-opaco (#ffffffd0) | JSON Strings: Amarillo Ámbar (#ffc000)
+        //    JSON Propiedades: Verde Lima (#00ff00) | Números: Naranja coral (#ff6030)
         // =========================================================================
         {
             "name": "Cadenas de texto (Strings)",
@@ -1192,6 +1198,27 @@
             ],
             "settings": {
                 "foreground": "#ffffffd0"
+            }
+        },
+        {
+            "name": "JSON - Cadenas de texto / Strings",
+            "scope": [
+                "string.json",
+                "string.quoted.double.json",
+                "string.quoted.single.json"
+            ],
+            "settings": {
+                "foreground": "#ffc000"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Propiedades de tipos y JSON / Object Keys",
+            "scope": [
+                "support.type.property-name",
+                "support.type.property-name.json"
+            ],
+            "settings": {
+                "foreground": "#00ff00"
             }
         },
         {
@@ -1411,7 +1438,6 @@
         "variable.local": "#20c0ff",
         "variable.readonly": "#20c0ff",
         "variable.declaration": "#20c0ff",
-        "parameter": "#20c0ff",
-        "property": "#20c0ff"
+        "parameter": "#20c0ff"
     }
 }
