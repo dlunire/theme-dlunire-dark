@@ -1309,7 +1309,7 @@
         {
             "name": "HTML/XML - String (comillas simples)",
             "scope": [
-                "string.quoted.single.html",
+                "string.quoted.single.html"
             ],
             "settings": {
                 "foreground": "#ff9000"
