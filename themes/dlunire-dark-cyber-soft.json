@@ -1105,8 +1105,11 @@
         {
             "name": "UNIVERSAL - Funciones nativas del lenguaje",
             "scope": [
+                // En algunos casos, incluyen la extensión del lenguaje
+                // para dejar las que son nativas.
                 "support.function",
-                "support.function.rust"
+                "support.function.rust",
+                "entity.name.function.ts"
             ],
             "settings": {
                 "foreground": "#ff40ff"
