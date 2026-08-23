@@ -428,7 +428,7 @@
         "editorInlayHint.background": "#00e8ff08", // Fondo de pistas en línea (tipos/parámetros)
         "editorInlayHint.foreground": "#78f3ff", // Texto de pistas en línea
         "editorInlayHint.parameterBackground": "#00ffaa08", // Fondo de pistas para parámetros
-        "editorInlayHint.parameterForeground": "#00ffaa60", // Texto de pistas para parámetros
+        "editorInlayHint.parameterForeground": "#00ffaaa0", // Texto de pistas para parámetros
         "editorInlayHint.typeBackground": "#00e8ff08", // Fondo de pistas para tipos implícitos
         "editorInlayHint.typeForeground": "#00b3ff", // Texto de pistas para tipos implícitos
         "editorLink.activeForeground": "#00e8ff", // Color de enlaces activos dentro del código
@@ -520,7 +520,7 @@
         // 18. CONTROL DE VERSIONES Y GIT (Git & SCM)
         // =========================================================================
         "git.blame.editorDecorationForeground": "#78f3ff80", // Texto de información Git Blame en el editor
-        "gitDecoration.addedResourceForeground": "#00e8ff", // Archivos nuevos agregados (Untracked / Staged)
+        "gitDecoration.addedResourceForeground": "#00ff00", // Archivos nuevos agregados (Untracked / Staged)
         "gitDecoration.conflictingResourceForeground": "#ff6d00", // Archivos en conflicto de fusión
         "gitDecoration.deletedResourceForeground": "#ff0050", // Archivos eliminados
         "gitDecoration.ignoredResourceForeground": "#656565", // Archivos ignorados por .gitignore
@@ -528,9 +528,10 @@
         "gitDecoration.renamedResourceForeground": "#ffc600", // Archivos renombrados
         "gitDecoration.stageDeletedResourceForeground": "#ff0050", // Archivos eliminados en Staged
         "gitDecoration.stageModifiedResourceForeground": "#ffffff", // Archivos modificados en Staged
-        "gitDecoration.submoduleResourceForeground": "#00b3ff", // Recurso de submódulo Git
-        "gitDecoration.untrackedResourceForeground": "#00e8ff", // Archivos sin rastrear
+        "gitDecoration.submoduleResourceForeground": "#00ff00", // Recurso de submódulo Git
+        "gitDecoration.untrackedResourceForeground": "#00ff00", // Archivos sin rastrear
         "gitlens.gutterBackgroundColor": "#00090d", // Fondo del margen reservado para GitLens
+        "gitlens.decorations.addedForegroundColor": "#00ff00",
         // =========================================================================
         // 19. ATAJOS DE TECLADO Y MENÚS (Keybindings & Menus)
         // =========================================================================
@@ -897,13 +898,13 @@
         "terminal.ansiBrightBlack": "#2a4050", // Color ANSI: Negro brillante
         "terminal.ansiBrightBlue": "#00e8ff", // Color ANSI: Azul brillante
         "terminal.ansiBrightCyan": "#78f3ff", // Color ANSI: Cian brillante
-        "terminal.ansiBrightGreen": "#00ffd5", // Color ANSI: Verde brillante
+        "terminal.ansiBrightGreen": "#00ff00", // Color ANSI: Verde brillante
         "terminal.ansiBrightMagenta": "#ff2a85", // Color ANSI: Magenta brillante
         "terminal.ansiBrightRed": "#ff5588", // Color ANSI: Rojo brillante
         "terminal.ansiBrightWhite": "#ffffff", // Color ANSI: Blanco brillante
         "terminal.ansiBrightYellow": "#ffe066", // Color ANSI: Amarillo brillante
         "terminal.ansiCyan": "#00ffcc", // Color ANSI: Cian
-        "terminal.ansiGreen": "#00e8ff", // Color ANSI: Verde
+        "terminal.ansiGreen": "#00ff00", // Color ANSI: Verde brillante
         "terminal.ansiMagenta": "#f50057", // Color ANSI: Magenta
         "terminal.ansiRed": "#ff0050", // Color ANSI: Rojo
         "terminal.ansiWhite": "#e0f8ff", // Color ANSI: Blanco
@@ -1130,6 +1131,15 @@
             }
         },
         {
+            "name": "UNIVERSAL - Clases nativas del lenguaje",
+            "scope": [
+                "support.class"
+            ],
+            "settings": {
+                "foreground": "#00ff00"
+            }
+        },
+        {
             "name": "UNIVERSAL - Tipos definido por el usuario",
             "scope": [
                 "entity.name.type.rust",
@@ -1260,6 +1270,65 @@
             "settings": {
                 "foreground": "#8CA3BA",
                 "fontStyle": "italic"
+            }
+        },
+        // ------------ CÓDIGO HTML -------------
+        {
+            "name": "HTML/XML - Etiquetas",
+            "scope": [
+                "punctuation.definition.tag.begin.html",
+                "punctuation.definition.tag.end.html",
+                "entity.name.tag.html"
+            ],
+            "settings": {
+                "foreground": "#00ffff"
+            }
+        },
+        {
+            "name": "HTML/XML - Atributos",
+            "scope": [
+                "entity.other.attribute-name.html"
+            ],
+            "settings": {
+                "foreground": "#ff20d0"
+            }
+        },
+        {
+            "name": "HTML/XML - String (comillas dobles)",
+            "scope": [
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html",
+                "punctuation.definition.string.end.html"
+            ],
+            "settings": {
+                "foreground": "#ffc000"
+            }
+        },
+        {
+            "name": "HTML/XML - String (comillas simples)",
+            "scope": [
+                "string.quoted.single.html",
+            ],
+            "settings": {
+                "foreground": "#ff9000"
+            }
+        },
+        {
+            "name": "HTML/XML - String (sin comillas)",
+            "scope": [
+                "string.unquoted.html"
+            ],
+            "settings": {
+                "foreground": "#ffff00"
+            }
+        },
+        {
+            "name": "HTML/XML - Operador de asignación de valor de abributos",
+            "scope": [
+                "punctuation.separator.key-value.html"
+            ],
+            "settings": {
+                "foreground": "#ffa0ff"
             }
         },
         // ------------ DLUNIRE DL TYPED ENVIRONMENT -------------
