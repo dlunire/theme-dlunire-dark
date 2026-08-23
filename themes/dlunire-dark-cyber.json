@@ -1085,10 +1085,12 @@
             }
         },
         {
-            "name": "UNIVERSAL- Variables definidas por el usuario",
+            "name": "UNIVERSAL- Variables y constantes definidas por el usuario",
             "scope": [
                 "variable.other",
-                "variable"
+                "variable",
+                "constant",
+                "constant.other"
             ],
             "settings": {
                 "foreground": "#20c0ff"
