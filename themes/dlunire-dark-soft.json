@@ -1,5 +1,5 @@
 {
-    "": "vscode://schemas/color-theme",
+    "$schema": "vscode://schemas/color-theme",
     "name": "DLUnire Dark Soft",
     "colors": {
         // =========================================================================
@@ -1042,11 +1042,16 @@
             }
         },
         {
-            "name": "UNIVERSAL- Declaradores de variables, funciones y/o clases",
+            "name": "UNIVERSAL- Declaradores de variables, funciones y/o clases u otras declaraciones",
             "scope": [
                 "storage.type",
                 "support.function.constructor.php",
-                "storage.modifier.c"
+                "storage.modifier.c",
+                "keyword.declaration.trait.rust",
+                "keyword.declaration.struct.rust",
+                "meta.function.definition.rust",
+                "storage.type.rust",
+                "keyword.operator.borrow.and.rust"
             ],
             "settings": {
                 "foreground": "#FF4B00"
@@ -1156,7 +1161,10 @@
                 "keyword.type.string.cs",
                 "keyword.type.bool.cs",
                 "keyword.type.object.cs",
-                "keyword.type.dynamic.cs"
+                "keyword.type.dynamic.cs",
+                "entity.name.type.primitive",
+                "entity.name.type.primitive.rust",
+                "entity.name.type.parameter"
             ],
             "settings": {
                 "foreground": "#00ff00"
@@ -1769,6 +1777,37 @@
             "settings": {
                 "foreground": "#00ff00"
             }
+        },
+        // --------------------------- RUST -----------------------------
+        //             Algunos colores personalizados para Rust
+        // --------------------------------------------------------------
+        {
+            "name": "Rust - Tiempo de vida",
+            "scope": [
+                "storage.modifier.lifetime.rust",
+                "entity.name.type.lifetime.rust"
+            ],
+            "settings": {
+                "foreground": "#fff700",
+            }
+        },
+        {
+            "name": "Rust - Miembro del enumerador",
+            "scope": [
+                "variable.other.enummember"
+            ],
+            "settings": {
+                "foreground": "#7bff42",
+            }
+        },
+        {
+            "name": "Rust - Estructuras",
+            "scope": [
+                "entity.name.type.struct.rust"
+            ],
+            "settings": {
+                "foreground": "#00ff00",
+            }
         }
     ],
     "semanticHighlighting": true,
@@ -1790,6 +1829,7 @@
         "variable.declaration": "#20c0ff",
         "parameter": "#20c0ff",
         "type.primitive": "#00ff00",
-        "unresolvedReference": "#ff0050"
+        "unresolvedReference": "#ff0050",
+        "builtinType": "#00ff00"
     }
 }
