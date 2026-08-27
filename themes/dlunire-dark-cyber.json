@@ -1631,7 +1631,7 @@
         "type": "#00ffaa",
         "enum": "#00ffaa",
         "interface": "#00ffaa",
-        "function.defaultLibrary": "#ff00ff",
+        "function.defaultLibrary": "#A090FF",
         "function": "#00ffff",
         "method": "#00ffff",
         "variable.defaultLibrary": "#a0ffff",
