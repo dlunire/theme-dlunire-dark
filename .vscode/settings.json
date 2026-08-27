@@ -1,5 +1,19 @@
 {
     "editor.formatOnSave": false,
     "editor.inlineSuggest.enabled": true,
-    "js/ts.experimental.useTsgo": false
+    "js/ts.experimental.useTsgo": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "Modificadores de estado y comportamiento",
+                "scope": [
+                    "storage.modifier.readonly",
+                    "storage.modifier.static",
+                ],
+                "settings": {
+                    "foreground": "#ff8400",
+                }
+            }
+        ]
+    }
 }

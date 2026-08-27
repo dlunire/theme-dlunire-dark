@@ -1111,7 +1111,7 @@
                 "support.function.rust"
             ],
             "settings": {
-                "foreground": "#ff40b0"
+                "foreground": "#a090ff"
             }
         },
         {
@@ -1128,16 +1128,18 @@
             "name": "UNIVERSAL - Primitivas",
             "scope": [
                 "support.type.primitive",
-                "storage.type.primitive"
+                "storage.type.primitive",
+                "keyword.other.phpdoc.php"
             ],
             "settings": {
                 "foreground": "#00ff00"
             }
         },
         {
-            "name": "UNIVERSAL - Clases nativas del lenguaje",
+            "name": "UNIVERSAL - Clases nativas del lenguaje o estructura Rust",
             "scope": [
-                "support.class"
+                "support.class",
+                "entity.name.type.rust"
             ],
             "settings": {
                 "foreground": "#00ff00"
@@ -1579,6 +1581,16 @@
             ],
             "settings": {
                 "foreground": "#ffffff60"
+            }
+        },
+        {
+            "name": "Modificadores de estado y comportamiento",
+            "scope": [
+                "storage.modifier.readonly",
+                "storage.modifier.static"
+            ],
+            "settings": {
+                "foreground": "#ff8400"
             }
         }
     ],
