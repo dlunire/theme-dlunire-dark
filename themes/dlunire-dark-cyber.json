@@ -1827,6 +1827,7 @@
         "variable.readonly": "#20c0ff",
         "variable.declaration": "#20c0ff",
         "parameter": "#20c0ff",
-        "type.primitive": "#00ff00"
+        "type.primitive": "#00ff00",
+        "unresolvedReference": "#ff0050"
     }
 }
