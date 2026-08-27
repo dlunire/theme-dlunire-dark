@@ -1,5 +1,94 @@
 {
     "editor.formatOnSave": false,
     "editor.inlineSuggest.enabled": true,
-    "js/ts.experimental.useTsgo": false
+    "js/ts.experimental.useTsgo": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "CSS/SCSS - Propiedades CSS",
+                "scope": [
+                    "support.type.property-name.css"
+                ],
+                "settings": {
+                    "foreground": "#00ff00"
+                }
+            },
+            {
+                "name": "CSS/SCSS - Valor de la propiedad y colores",
+                "scope": [
+                    "support.constant.property-value.css",
+                    "support.constant.color.w3c-standard-color-name.css",
+                    "constant.other.color.rgb-value.hex.css",
+                    "support.constant.color.current.css",
+                    "support.constant.color.w3c-extended-color-name.css",
+                ],
+                "settings": {
+                    "foreground": "#ff5000"
+                }
+            },
+            {
+                "name": "CSS/SCSS - Selectores de pseudo-clases y pseudo-elementos",
+                "scope": [
+                    "entity.other.attribute-name.pseudo-class.css",
+                    "entity.other.attribute-name.pseudo-element.css",
+                    "punctuation.definition.entity.css",
+                    "keyword.operator.scss"
+                ],
+                "settings": {
+                    "foreground": "#ffff00"
+                }
+            },
+            {
+                "name": "CSS/SCSS - Variables personalizadas (--*)",
+                "scope": [
+                    "meta.property-value.css",
+                    "meta.property-value.scss",
+                    "keyword.other.unit.css",
+                    "keyword.other.unit.scss"
+                ],
+                "settings": {
+                    "foreground": "#ff6000"
+                }
+            },
+            {
+                "name": "CSS/SCSS - Directivas o reglas CSS",
+                "scope": [
+                    "keyword.control.at-rule",
+                    "punctuation.definition.keyword",
+                    "keyword.other.important"
+                ],
+                "settings": {
+                    "foreground": "#ff0060"
+                }
+            },
+            {
+                "name": "CSS/SCSS - Selectores de identificadores y de atributos y anidamiento",
+                "scope": [
+                    "entity.other.attribute-name.id.css",
+                    "meta.attribute-selector.css",
+                    "storage.modifier.ignore-case.css",
+                    "entity.other.attribute-name.css",
+                    "entity.name.tag.nesting.css",
+                    "entity.name.tag.nesting.css"
+                ],
+                "settings": {
+                    "foreground": "#ff6000"
+                }
+            },
+            {
+                "name": "CSS/SCSS - Selector universal",
+                "scope": [
+                    "entity.other.attribute-name.id.css",
+                    "meta.attribute-selector.css",
+                    "storage.modifier.ignore-case.css",
+                    "entity.other.attribute-name.css",
+                    "entity.name.tag.nesting",
+                    "entity.name.tag.wildcard"
+                ],
+                "settings": {
+                    "foreground": "#ff6000"
+                }
+            },
+        ]
+    }
 }
