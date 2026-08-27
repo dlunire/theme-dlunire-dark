@@ -1166,7 +1166,9 @@
             "name": "UNIVERSAL - Clases nativas del lenguaje o estructura Rust",
             "scope": [
                 "support.class",
-                "entity.name.type.rust"
+                "entity.name.type.rust",
+                "meta.class.java",
+                "storage.type.java"
             ],
             "settings": {
                 "foreground": "#00ff00"
@@ -1618,6 +1620,163 @@
             ],
             "settings": {
                 "foreground": "#ff8400"
+            }
+        },
+        {
+            "name": "Shell- Comandos",
+            "scope": [
+                "entity.name.command",
+                "entity.name.command.shell"
+            ],
+            "settings": {
+                "foreground": "#ff4000"
+            }
+        },
+        {
+            "name": "Shell - Función",
+            "scope": [
+                "entity.name.function.shell"
+            ],
+            "settings": {
+                "foreground": "#00ff00"
+            }
+        },
+        {
+            "name": "Shell - Parámetros - Expansión y posicional",
+            "scope": [
+                "variable.other.normal.shell",
+                "variable.other.normal.shell",
+                "variable.parameter.positional.shell"
+            ],
+            "settings": {
+                "foreground": "#ffb030"
+            }
+        },
+        {
+            "name": "Batch - Comandos",
+            "scope": [
+                "keyword.command.batchfile"
+            ],
+            "settings": {
+                "foreground": "#00ff00"
+            }
+        },
+        {
+            "name": "Batch - Variables",
+            "scope": [
+                "variable.other.readwrite.batchfile"
+            ],
+            "settings": {
+                "foreground": "#00b0ff"
+            }
+        },
+        {
+            "name": "Batch - Expresiones",
+            "scope": [
+                "meta.expression.set.batchfile"
+            ],
+            "settings": {
+                "foreground": "#ff5000"
+            }
+        },
+        {
+            "name": "Batch - Método especial",
+            "scope": [
+                "keyword.other.special-method.batchfile"
+            ],
+            "settings": {
+                "foreground": "#ff5000"
+            }
+        },
+        // LENGUAJE C++
+        {
+            "name": "C++ - Color base",
+            "scope": [
+                "source.c"
+            ],
+            "settings": {
+                "foreground": "#a0ffff"
+            }
+        },
+        {
+            "name": "C++ - Includes",
+            "scope": [
+                "string.quoted.other.lt-gt.include.c",
+                "meta.preprocessor.include.c",
+                "punctuation.definition.string.begin.c",
+                "punctuation.definition.string.end.c"
+            ],
+            "settings": {
+                "foreground": "#ffffffa0"
+            }
+        },
+        {
+            "name": "C++ - Directivas",
+            "scope": [
+                "keyword.control.directive.include.c",
+                "punctuation.definition.directive.c",
+                "keyword.control.directive"
+            ],
+            "settings": {
+                "foreground": "#00ffff"
+            }
+        },
+        {
+            "name": "C++ - Funciones nativas",
+            "scope": [
+                // "entity.name.function.c"
+                "meta.function-call.c"
+            ],
+            "settings": {
+                "foreground": "#A090FF"
+            }
+        },
+        {
+            "name": "C++ - Bloques en C",
+            "scope": [
+                "meta.block.c"
+            ],
+            "settings": {
+                "foreground": "#ffffa0"
+            }
+        },
+        {
+            "name": "C++ - Primitivas en C",
+            "scope": [
+                "storage.type.built-in.primitive.c",
+                "storage.type.built-in"
+            ],
+            "settings": {
+                "foreground": "#00ff00"
+            }
+        },
+        {
+            "name": "C++ - Reservadas",
+            "scope": [
+                "support.type.posix-reserved"
+            ],
+            "settings": {
+                "foreground": "#ffff00"
+            }
+        },
+        // FRAGMENTO SQL
+        {
+            "name": "SQL - Color base",
+            "scope": [
+                "source.sql"
+            ],
+            "settings": {
+                "foreground": "#a0ffff"
+            }
+        },
+        // FRAGMENTO YAML
+        {
+            "name": "SQL - Color base",
+            "scope": [
+                "entity.name.tag.yaml"
+            ],
+            "settings": {
+                "foreground": "#00ff00"
             }
         }
     ],

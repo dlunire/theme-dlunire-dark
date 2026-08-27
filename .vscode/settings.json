@@ -142,6 +142,30 @@
                 }
             },
 
+            // FRAGMENTO SQL
+            {
+                "name": "SQL - Color base",
+                "scope": [
+                    "source.sql"
+                ],
+                "settings": {
+                    "foreground": "#a0ffff"
+                }
+            },
+
+            // FRAGMENTO YAML
+            {
+                "name": "SQL - Color base",
+                "scope": [
+                    "entity.name.tag.yaml"
+                ],
+                "settings": {
+                    "foreground": "#00ff00"
+                }
+            }
+
+
+
         ]
     }
 }
