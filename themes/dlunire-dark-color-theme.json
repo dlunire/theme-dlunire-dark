@@ -1838,7 +1838,6 @@
         "variable.declaration": "#20c0ff",
         "parameter": "#20c0ff",
         "type.primitive": "#00ff00",
-        "unresolvedReference": "#ff0050",
-        "builtinType": "#00ff00"
+        "unresolvedReference": "#ff0050"
     }
 }
