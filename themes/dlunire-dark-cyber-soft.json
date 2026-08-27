@@ -1168,6 +1168,16 @@
             }
         },
         {
+            "name": "UNIVERSAL - Exportación de módulos",
+            "scope": [
+                "keyword.control.export.ts",
+                "keyword.control.export"
+            ],
+            "settings": {
+                "foreground": "#ffa0a0"
+            }
+        },
+        {
             "name": "Cadenas de texto (Strings)",
             "scope": [
                 "string",
