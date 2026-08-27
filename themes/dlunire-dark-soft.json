@@ -1045,7 +1045,8 @@
             "name": "UNIVERSAL- Declaradores de variables, funciones y/o clases",
             "scope": [
                 "storage.type",
-                "support.function.constructor.php"
+                "support.function.constructor.php",
+                "storage.modifier.c"
             ],
             "settings": {
                 "foreground": "#FF4B00"
@@ -1076,15 +1077,12 @@
                 "variable.other",
                 "variable",
                 "constant",
-                "constant.other"
-            ],
-            "settings": {
-                "foreground": "#20c0ff"
-            }
-        },
-        {
-            "name": "UNIVERSAL- Propiedades definidas por el usuario",
-            "scope": [
+                "constant.other",
+                "entity.name.variable.local.cs",
+                "entity.name.variable.field.cs",
+                "entity.name.variable.property.cs",
+                "entity.name.variable.parameter.cs",
+                "variable.other.object.property.cs",
                 "variable.other.property"
             ],
             "settings": {
@@ -1092,11 +1090,21 @@
             }
         },
         {
+            "name": "UNIVERSAL - Funciones definidas por el usuario",
+            "scope": [
+                "entity.name.function",
+                "entity.name.function.php"
+            ],
+            "settings": {
+                "foreground": "#00ffff"
+            }
+        },
+        {
             "name": "UNIVERSAL - Nombre de espacios",
             "scope": [
                 "entity.name.type.namespace",
                 "keyword.control.import",
-                "keyword.control.export.ts"
+                "keyword.control.export.ts",
             ],
             "settings": {
                 "foreground": "#ff4f00ff"
@@ -1118,10 +1126,11 @@
             "name": "UNIVERSAL - Nombre de espacios, namespace e instancias nativas",
             "scope": [
                 "support",
-                "keyword.other.namespace"
+                "keyword.other.namespace",
+                "storage.type.namespace.cs"
             ],
             "settings": {
-                "foreground": "#00afff"
+                "foreground": "#40dfff"
             }
         },
         {
@@ -1129,7 +1138,25 @@
             "scope": [
                 "support.type.primitive",
                 "storage.type.primitive",
-                "keyword.other.phpdoc.php"
+                "keyword.other.phpdoc.php",
+                "keyword.type.sbyte.cs",
+                "keyword.type.byte.cs",
+                "keyword.type.short.cs",
+                "keyword.type.ushort.cs",
+                "keyword.type.int.cs",
+                "keyword.type.uint.cs",
+                "keyword.type.long.cs",
+                "keyword.type.ulong.cs",
+                "keyword.type.nint.cs",
+                "keyword.type.nuint.cs",
+                "keyword.type.float.cs",
+                "keyword.type.double.cs",
+                "keyword.type.decimal.cs",
+                "keyword.type.char.cs",
+                "keyword.type.string.cs",
+                "keyword.type.bool.cs",
+                "keyword.type.object.cs",
+                "keyword.type.dynamic.cs"
             ],
             "settings": {
                 "foreground": "#00ff00"
@@ -1594,9 +1621,10 @@
         "enum": "#00ffaa",
         "interface": "#00ffaa",
         "function.defaultLibrary": "#A090FF",
+        "method.defaultLibrary": "#A090FF",
         "function": "#00ffff",
         "method": "#00ffff",
-        "variable.defaultLibrary": "#a0ffff",
+        "variable.defaultLibrary": "#ffa000",
         "variable": "#20c0ff",
         "variable.local": "#20c0ff",
         "variable.readonly": "#20c0ff",
