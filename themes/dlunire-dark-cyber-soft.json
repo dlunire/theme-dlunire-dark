@@ -1688,8 +1688,9 @@
             }
         },
         // LENGUAJE C++
+        // LENGUAJE C/C++
         {
-            "name": "C++ - Color base",
+            "name": "C/C++ - Color base",
             "scope": [
                 "source.c"
             ],
@@ -1698,7 +1699,7 @@
             }
         },
         {
-            "name": "C++ - Includes",
+            "name": "C/C++ - Includes",
             "scope": [
                 "string.quoted.other.lt-gt.include.c",
                 "meta.preprocessor.include.c",
@@ -1710,20 +1711,28 @@
             }
         },
         {
-            "name": "C++ - Directivas",
+            "name": "C/C++ - Directivas",
             "scope": [
                 "keyword.control.directive.include.c",
                 "punctuation.definition.directive.c",
                 "keyword.control.directive"
             ],
             "settings": {
-                "foreground": "#00ffff"
+                "foreground": "#ffff00"
             }
         },
         {
-            "name": "C++ - Funciones nativas",
+            "name": "C/C++ - Función preprocesador",
             "scope": [
-                // "entity.name.function.c"
+                "entity.name.function.preprocessor.c"
+            ],
+            "settings": {
+                "foreground": "#f4a0ff"
+            }
+        },
+        {
+            "name": "C/C++ - Funciones",
+            "scope": [
                 "meta.function-call.c"
             ],
             "settings": {
@@ -1731,7 +1740,7 @@
             }
         },
         {
-            "name": "C++ - Bloques en C",
+            "name": "C/C++ - Bloques",
             "scope": [
                 "meta.block.c"
             ],
@@ -1740,7 +1749,7 @@
             }
         },
         {
-            "name": "C++ - Primitivas en C",
+            "name": "C/C++ - Primitivas",
             "scope": [
                 "storage.type.built-in.primitive.c",
                 "storage.type.built-in"
@@ -1750,7 +1759,7 @@
             }
         },
         {
-            "name": "C++ - Reservadas",
+            "name": "C/C++ - Reservadas",
             "scope": [
                 "support.type.posix-reserved"
             ],
@@ -1765,12 +1774,21 @@
                 "source.sql"
             ],
             "settings": {
-                "foreground": "#a0ffff"
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "SQL - Algunas setencias",
+            "scope": [
+                "keyword.other.DML.sql"
+            ],
+            "settings": {
+                "foreground": "#00ff00"
             }
         },
         // FRAGMENTO YAML
         {
-            "name": "SQL - Color base",
+            "name": "YAMM - Color base",
             "scope": [
                 "entity.name.tag.yaml"
             ],
@@ -1829,6 +1847,7 @@
         "variable.declaration": "#20c0ff",
         "parameter": "#20c0ff",
         "type.primitive": "#00ff00",
-        "unresolvedReference": "#ff0050"
+        "unresolvedReference": "#ff0050",
+        "lifetime": "#FFF700"
     }
 }
