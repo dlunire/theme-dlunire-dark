@@ -1102,7 +1102,6 @@
                 "entity.name.variable.property.cs",
                 "entity.name.variable.parameter.cs",
                 "variable.other.object.property.cs",
-                "variable.other.property"
             ],
             "settings": {
                 "foreground": "#20c0ff"
@@ -1314,6 +1313,17 @@
             ],
             "settings": {
                 "foreground": "#ffffa0"
+            }
+        },
+        {
+            "name": "Propiedades",
+            "scope": [
+                "variable.other.property",
+                "variable.other.class",
+                "meta.embedded.block"
+            ],
+            "settings": {
+                "foreground": "#a0ffff"
             }
         },
         // =========================================================================
