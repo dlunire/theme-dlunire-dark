@@ -986,6 +986,10 @@
         // TODO: Probar algunas claves:
     },
     "tokenColors": [
+        // =========================================================================
+        // 1. COMENTARIOS
+        //    Color: Blanco translúcido (#ffffff60) — baja saliencia visual
+        // =========================================================================
         {
             "name": "Comentarios",
             "scope": [
@@ -1000,6 +1004,11 @@
                 "fontStyle": ""
             }
         },
+        // =========================================================================
+        // 2. PALABRAS RESERVADAS DEL LENGUAJE (Base Cromática: Cálidos)
+        //    Rango en rueda de color: Rojo Bermellón (#FF4B00) → Amarillo (#FFE500)
+        //    Uso: Controlan la estructura, flujo y declaración del programa
+        // =========================================================================
         {
             "name": "UNIVERSAL - Palabras reservadas | Keywords",
             "scope": [
@@ -1057,6 +1066,11 @@
                 "foreground": "#FF4B00"
             }
         },
+        // =========================================================================
+        // 3. VARIABLES E IDENTIFICADORES (Base Cromática: Fríos / Cian)
+        //    Rango: Cian Pastel (#a0ffff) → Celeste (#20c0ff)
+        //    Uso: Datos almacenados y referenciados por el programador
+        // =========================================================================
         {
             "name": "UNIVERSAL- Variables nativas",
             "scope": [
@@ -1077,7 +1091,7 @@
             }
         },
         {
-            "name": "UNIVERSAL- Variables y constantes definidas por el usuario",
+            "name": "UNIVERSAL - Variables y constantes definidas por el usuario",
             "scope": [
                 "variable.other",
                 "variable",
@@ -1104,6 +1118,11 @@
                 "foreground": "#00ffff"
             }
         },
+        // =========================================================================
+        // 4. NAMESPACES, FUNCIONES NATIVAS Y SOPORTE
+        //    Funciones nativas: Magenta (#ff00ff)
+        //    Soporte/Namespace: Azul (#00afff)
+        // =========================================================================
         {
             "name": "UNIVERSAL - Nombre de espacios",
             "scope": [
@@ -1138,6 +1157,11 @@
                 "foreground": "#40dfff"
             }
         },
+        // =========================================================================
+        // 5. TIPOS Y CONTRATOS (Base Cromática: Verdes / Esmeralda)
+        //    Nativo/Primitivo: Verde Lima (#00ff00)
+        //    Definido por usuario: Verde Menta (#00ffaa)
+        // =========================================================================
         {
             "name": "UNIVERSAL - Primitivas",
             "scope": [
@@ -1185,7 +1209,6 @@
         {
             "name": "UNIVERSAL - Tipos definido por el usuario",
             "scope": [
-                "entity.name.type.rust",
                 "entity.name.type.class",
                 "new.expr",
                 "support.class.php",
@@ -1195,6 +1218,10 @@
                 "foreground": "#00ffaa"
             }
         },
+        // =========================================================================
+        // 6. DECORADORES Y ANOTACIONES
+        //    Color: Amarillo (#FFE500)
+        // =========================================================================
         {
             "name": "UNIVERSAL - Decoradores",
             "scope": [
@@ -1206,35 +1233,11 @@
                 "foreground": "#FFE500"
             }
         },
-        {
-            "name": "UNIVERSAL - Exportación de módulos",
-            "scope": [
-                "keyword.control.export.ts",
-                "keyword.control.export"
-            ],
-            "settings": {
-                "foreground": "#ffa0a0"
-            }
-        },
-        {
-            "name": "UNIVERSAL - Módulos importados",
-            "scope": [
-                "variable.other.readwrite.alias.ts"
-            ],
-            "settings": {
-                "foreground": "#a0ffaa"
-            }
-        },
-        {
-            "name": "UNIVERSAL - Variables como valor (contexto: módulos importados)",
-            "scope": [
-                "variable.other.readwrite",
-                "variable.other.readwrite.ts"
-            ],
-            "settings": {
-                "foreground": "#ffffa0"
-            }
-        },
+        // =========================================================================
+        // 7. VALORES LITERALES
+        //    Strings: Blanco semi-opaco (#ffffffd0) | JSON Strings: Amarillo Ámbar (#ffc000)
+        //    JSON Propiedades: Verde Lima (#00ff00) | Números: Naranja coral (#ff6030)
+        // =========================================================================
         {
             "name": "Cadenas de texto (Strings)",
             "scope": [
@@ -1281,9 +1284,44 @@
                 "constant.numeric.binary"
             ],
             "settings": {
-                "foreground": "#ff6030"
+                "foreground": "#ffff00"
             }
         },
+        {
+            "name": "UNIVERSAL - Exportación de módulos",
+            "scope": [
+                "keyword.control.export.ts",
+                "keyword.control.export"
+            ],
+            "settings": {
+                "foreground": "#ffa060"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Módulos importados",
+            "scope": [
+                "variable.other.readwrite.alias.ts"
+            ],
+            "settings": {
+                "foreground": "#a0ffaa"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Variables como valor (contexto: módulos importados)",
+            "scope": [
+                "variable.other.readwrite",
+                "variable.other.readwrite.ts"
+            ],
+            "settings": {
+                "foreground": "#ffffa0"
+            }
+        },
+        // =========================================================================
+        // 8. MARKDOWN
+        //    Encabezados: Naranja (#ff6000) | Negrita: Verde Menta (#00ffaa)
+        //    Cursiva: Verde Lima (#00ff00) | Enlaces: Azul (#00b0ff)
+        //    Listas: Cian Pastel (#a0ffff) | Citas: Gris Pizarra (#8CA3BA)
+        // =========================================================================
         {
             "name": "Markdown - Encabezados",
             "scope": [
@@ -1501,8 +1539,7 @@
                 "dlunire.illegal"
             ],
             "settings": {
-                "foreground": "#ff0050",
-                "fontStyle": ""
+                "foreground": "#ff0050"
             }
         },
         {
@@ -1512,8 +1549,7 @@
                 "punctuation"
             ],
             "settings": {
-                "foreground": "#20c0ff",
-                "fontStyle": ""
+                "foreground": "#20c0ff"
             }
         },
         {
@@ -1530,8 +1566,7 @@
             "name": "DLUnire - Tipos primitivos",
             "scope": "dlunire.type",
             "settings": {
-                "foreground": "#00ff00",
-                "fontStyle": ""
+                "foreground": "#00ff00"
             }
         },
         {
@@ -1553,16 +1588,14 @@
                 "dlunire.heredoc"
             ],
             "settings": {
-                "foreground": "#fffffff0",
-                "fontStyle": ""
+                "foreground": "#fffffff0"
             }
         },
         {
             "name": "DLUnire - Números",
             "scope": "dlunire.value.numeric",
             "settings": {
-                "foreground": "#ff6030",
-                "fontStyle": ""
+                "foreground": "#ffff00"
             }
         },
         {
@@ -1572,8 +1605,7 @@
                 "constant.language"
             ],
             "settings": {
-                "foreground": "#FF8538",
-                "fontStyle": ""
+                "foreground": "#FF8538"
             }
         },
         {
@@ -1584,8 +1616,7 @@
                 "constant.other.uuid"
             ],
             "settings": {
-                "foreground": "#00ffff",
-                "fontStyle": ""
+                "foreground": "#00ffff"
             }
         },
         {
@@ -1595,8 +1626,7 @@
                 "dlunire.block-documentation"
             ],
             "settings": {
-                "foreground": "#90ffff70",
-                "fontStyle": ""
+                "foreground": "#90ffff70"
             }
         },
         {
@@ -1687,7 +1717,6 @@
                 "foreground": "#ff5000"
             }
         },
-        // LENGUAJE C++
         // LENGUAJE C/C++
         {
             "name": "C/C++ - Color base",
@@ -1806,7 +1835,7 @@
                 "entity.name.type.lifetime.rust"
             ],
             "settings": {
-                "foreground": "#fff700",
+                "foreground": "#fff700"
             }
         },
         {
@@ -1815,7 +1844,7 @@
                 "variable.other.enummember"
             ],
             "settings": {
-                "foreground": "#7bff42",
+                "foreground": "#7bff42"
             }
         },
         {
@@ -1824,7 +1853,7 @@
                 "entity.name.type.struct.rust"
             ],
             "settings": {
-                "foreground": "#00ff00",
+                "foreground": "#00ff00"
             }
         }
     ],

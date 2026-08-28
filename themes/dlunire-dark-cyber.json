@@ -1284,7 +1284,7 @@
                 "constant.numeric.binary"
             ],
             "settings": {
-                "foreground": "#ff6030"
+                "foreground": "#ffff00"
             }
         },
         {
@@ -1539,8 +1539,7 @@
                 "dlunire.illegal"
             ],
             "settings": {
-                "foreground": "#ff0050",
-                "fontStyle": ""
+                "foreground": "#ff0050"
             }
         },
         {
@@ -1550,8 +1549,7 @@
                 "punctuation"
             ],
             "settings": {
-                "foreground": "#20c0ff",
-                "fontStyle": ""
+                "foreground": "#20c0ff"
             }
         },
         {
@@ -1568,8 +1566,7 @@
             "name": "DLUnire - Tipos primitivos",
             "scope": "dlunire.type",
             "settings": {
-                "foreground": "#00ff00",
-                "fontStyle": ""
+                "foreground": "#00ff00"
             }
         },
         {
@@ -1591,16 +1588,14 @@
                 "dlunire.heredoc"
             ],
             "settings": {
-                "foreground": "#fffffff0",
-                "fontStyle": ""
+                "foreground": "#fffffff0"
             }
         },
         {
             "name": "DLUnire - Números",
             "scope": "dlunire.value.numeric",
             "settings": {
-                "foreground": "#ff6030",
-                "fontStyle": ""
+                "foreground": "#ffff00"
             }
         },
         {
@@ -1610,8 +1605,7 @@
                 "constant.language"
             ],
             "settings": {
-                "foreground": "#FF8538",
-                "fontStyle": ""
+                "foreground": "#FF8538"
             }
         },
         {
@@ -1622,8 +1616,7 @@
                 "constant.other.uuid"
             ],
             "settings": {
-                "foreground": "#00ffff",
-                "fontStyle": ""
+                "foreground": "#00ffff"
             }
         },
         {
@@ -1633,8 +1626,7 @@
                 "dlunire.block-documentation"
             ],
             "settings": {
-                "foreground": "#90ffff70",
-                "fontStyle": ""
+                "foreground": "#90ffff70"
             }
         },
         {
@@ -1843,7 +1835,7 @@
                 "entity.name.type.lifetime.rust"
             ],
             "settings": {
-                "foreground": "#fff700",
+                "foreground": "#fff700"
             }
         },
         {
@@ -1852,7 +1844,7 @@
                 "variable.other.enummember"
             ],
             "settings": {
-                "foreground": "#7bff42",
+                "foreground": "#7bff42"
             }
         },
         {
@@ -1861,7 +1853,7 @@
                 "entity.name.type.struct.rust"
             ],
             "settings": {
-                "foreground": "#00ff00",
+                "foreground": "#00ff00"
             }
         }
     ],
