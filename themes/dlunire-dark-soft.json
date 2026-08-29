@@ -426,11 +426,11 @@
         "editorHoverWidget.highlightForeground": "#38A9FF", // Texto resaltado en información hover
         "editorHoverWidget.statusBarBackground": "#05080c", // Barra de estado dentro del cuadro hover
         "editorInlayHint.background": "#00e8ff08", // Fondo de pistas en línea (tipos/parámetros)
-        "editorInlayHint.foreground": "#70C8FF", // Texto de pistas en línea
-        "editorInlayHint.parameterBackground": "#00ffaa08", // Fondo de pistas para parámetros
-        "editorInlayHint.parameterForeground": "#00ffaaa0", // Texto de pistas para parámetros
-        "editorInlayHint.typeBackground": "#00e8ff08", // Fondo de pistas para tipos implícitos
-        "editorInlayHint.typeForeground": "#2684FF", // Texto de pistas para tipos implícitos
+        "editorInlayHint.foreground": "#78f3ff", // Texto de pistas en línea
+        "editorInlayHint.parameterBackground": "#ffffff08", // Fondo de pistas para parámetros
+        "editorInlayHint.parameterForeground": "#ffffff50", // Texto de pistas para parámetros
+        "editorInlayHint.typeBackground": "#ffffff08", // Fondo de pistas para tipos implícitos
+        "editorInlayHint.typeForeground": "#ffffff70", // Texto de pistas para tipos implícitos
         "editorLink.activeForeground": "#38A9FF", // Color de enlaces activos dentro del código
         "editorMultiCursor.primary.foreground": "#38A9FF", // Cursor primario en edición múltiple
         "editorMultiCursor.secondary.foreground": "#38A9FF", // Cursores secundarios en edición múltiple

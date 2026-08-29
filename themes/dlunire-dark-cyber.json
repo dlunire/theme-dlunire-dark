@@ -427,10 +427,10 @@
         "editorHoverWidget.statusBarBackground": "#05080c", // Barra de estado dentro del cuadro hover
         "editorInlayHint.background": "#00e8ff08", // Fondo de pistas en línea (tipos/parámetros)
         "editorInlayHint.foreground": "#78f3ff", // Texto de pistas en línea
-        "editorInlayHint.parameterBackground": "#00ffaa08", // Fondo de pistas para parámetros
-        "editorInlayHint.parameterForeground": "#00ffaaa0", // Texto de pistas para parámetros
-        "editorInlayHint.typeBackground": "#00e8ff08", // Fondo de pistas para tipos implícitos
-        "editorInlayHint.typeForeground": "#00e8ff", // Texto de pistas para tipos implícitos
+        "editorInlayHint.parameterBackground": "#ffffff08", // Fondo de pistas para parámetros
+        "editorInlayHint.parameterForeground": "#ffffff50", // Texto de pistas para parámetros
+        "editorInlayHint.typeBackground": "#ffffff08", // Fondo de pistas para tipos implícitos
+        "editorInlayHint.typeForeground": "#ffffff70", // Texto de pistas para tipos implícitos
         "editorLink.activeForeground": "#00e8ff", // Color de enlaces activos dentro del código
         "editorMultiCursor.primary.foreground": "#00e8ff", // Cursor primario en edición múltiple
         "editorMultiCursor.secondary.foreground": "#00e8ff", // Cursores secundarios en edición múltiple
@@ -1026,7 +1026,7 @@
                 "keyword.control.rust"
             ],
             "settings": {
-                "foreground": "#FFBD00"
+                "foreground": "#ffa600"
             }
         },
         {
@@ -1054,7 +1054,6 @@
             "name": "UNIVERSAL- Declaradores de variables, funciones y/o clases u otras declaraciones",
             "scope": [
                 "storage.type",
-                "support.function.constructor.php",
                 "storage.modifier.c",
                 "keyword.declaration.trait.rust",
                 "keyword.declaration.struct.rust",
@@ -1064,6 +1063,15 @@
             ],
             "settings": {
                 "foreground": "#FF4B00"
+            }
+        },
+        {
+            "name": "UNIVERSAL- Constructores",
+            "scope": [
+                "support.function.constructor.php",
+            ],
+            "settings": {
+                "foreground": "#f97137"
             }
         },
         {
@@ -1197,7 +1205,10 @@
                 "keyword.type.dynamic.cs",
                 "entity.name.type.primitive",
                 "entity.name.type.primitive.rust",
-                "entity.name.type.parameter"
+                "entity.name.type.parameter",
+                "keyword.type.string.cs",
+                "keyword.other.type",
+                "keyword.other.type.php"
             ],
             "settings": {
                 "foreground": "#00ff00"
@@ -1896,6 +1907,7 @@
         "type.primitive": "#00ff00",
         "unresolvedReference": "#ff0050",
         "lifetime": "#FFF700",
+        "constructor": "#f97137",
         "method": {
             "foreground": "#ffd900"
         },
@@ -1907,6 +1919,7 @@
         },
         "method.declaration.static": {
             "foreground": "#00FFFF"
-        }
+        },
+        "class.typeHint": "#00ff00"
     }
 }
