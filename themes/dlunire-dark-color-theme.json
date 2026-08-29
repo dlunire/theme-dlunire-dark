@@ -1066,6 +1066,15 @@
                 "foreground": "#FF4B00"
             }
         },
+        {
+            "name": "PHP - Invocación o llamada a métodos",
+            "scope": [
+                "meta.method-call entity.name.function.php"
+            ],
+            "settings": {
+                "foreground": "#ffd900"
+            }
+        },
         // =========================================================================
         // 3. VARIABLES E IDENTIFICADORES (Base Cromática: Fríos / Cian)
         //    Rango: Cian Pastel (#a0ffff) → Celeste (#20c0ff)
@@ -1878,7 +1887,7 @@
         "function.defaultLibrary": "#A090FF",
         "method.defaultLibrary": "#A090FF",
         "function": "#00ffff",
-        "method": "#00ffff",
+        "method": "#ffd900",
         "variable.defaultLibrary": "#ffa000",
         "variable": "#20c0ff",
         "variable.local": "#20c0ff",
