@@ -1075,6 +1075,15 @@
                 "foreground": "#ffd900"
             }
         },
+        {
+            "name": "PHP - Función constructora",
+            "scope": [
+                "support.function.constructor.php"
+            ],
+            "settings": {
+                "foreground": "#ff8000"
+            }
+        },
         // =========================================================================
         // 3. VARIABLES E IDENTIFICADORES (Base Cromática: Fríos / Cian)
         //    Rango: Cian Pastel (#a0ffff) → Celeste (#20c0ff)
@@ -1257,7 +1266,7 @@
                 "string.regexp"
             ],
             "settings": {
-                "foreground": "#ffffffd0"
+                "foreground": "#ffffffe0"
             }
         },
         {
@@ -1293,6 +1302,15 @@
             ],
             "settings": {
                 "foreground": "#ffff00"
+            }
+        },
+        {
+            "name": "JSON - Valores constantes formato JSON",
+            "scope": [
+                "constant.language.json"
+            ],
+            "settings": {
+                "foreground": "#f196ff",
             }
         },
         {
@@ -1407,7 +1425,10 @@
             "scope": [
                 "punctuation.definition.tag.begin.html",
                 "punctuation.definition.tag.end.html",
-                "entity.name.tag.html"
+                "punctuation.definition.tag.begin",
+                "punctuation.definition.tag.end",
+                "entity.name.tag.html",
+                "entity.name.tag",
             ],
             "settings": {
                 "foreground": "#00ffff"
@@ -1416,7 +1437,8 @@
         {
             "name": "HTML/XML - Atributos",
             "scope": [
-                "entity.other.attribute-name.html"
+                "entity.other.attribute-name.html",
+                "entity.other.attribute-name"
             ],
             "settings": {
                 "foreground": "#ff20d0"
@@ -1427,7 +1449,10 @@
             "scope": [
                 "string.quoted.double.html",
                 "punctuation.definition.string.begin.html",
-                "punctuation.definition.string.end.html"
+                "punctuation.definition.string.end.html",
+                "string.quoted.double.svelte",
+                "punctuation.definition.string.begin.svelte",
+                "punctuation.definition.string.end.svelte"
             ],
             "settings": {
                 "foreground": "#ffc000"
@@ -1436,7 +1461,8 @@
         {
             "name": "HTML/XML - String (comillas simples)",
             "scope": [
-                "string.quoted.single.html"
+                "string.quoted.single.html",
+                "string.quoted.single.svelte"
             ],
             "settings": {
                 "foreground": "#ff9000"
@@ -1445,7 +1471,8 @@
         {
             "name": "HTML/XML - String (sin comillas)",
             "scope": [
-                "string.unquoted.html"
+                "string.unquoted.html",
+                "string.unquoted.svelte",
             ],
             "settings": {
                 "foreground": "#ffff00"
@@ -1454,7 +1481,8 @@
         {
             "name": "HTML/XML - Operador de asignación de valor de abributos",
             "scope": [
-                "punctuation.separator.key-value.html"
+                "punctuation.separator.key-value.html",
+                "punctuation.separator.key-value.svelte"
             ],
             "settings": {
                 "foreground": "#ffa0ff"
@@ -1874,28 +1902,93 @@
             "settings": {
                 "foreground": "#00ff00"
             }
+        },
+        {
+            "name": "UNIVESAL - Métodos Mágicos",
+            "scope": [
+                "support.function.magic",
+                "support.function.magic.python",
+                "support.function.magic.php",
+            ],
+            "settings": {
+                "foreground": "#fc3bff"
+            }
+        },
+        {
+            "name": "UNIVESAL - Color de parámetros",
+            "scope": [
+                "meta.function-call variable.other",
+                "variable.parameter",
+                "meta.function.parameters variable.other",
+                "variable.other.object.ts"
+            ],
+            "settings": {
+                "foreground": "#FFD900",
+            }
         }
     ],
     "semanticHighlighting": true,
     "semanticTokenColors": {
+        // ===== Tipos, clases, estructuras =====
         "class.defaultLibrary": "#00ff00",
         "class": "#00ffaa",
         "type.defaultLibrary": "#00ff00",
         "type": "#00ffaa",
-        "enum": "#00ffaa",
+        "type.primitive": "#00ff00",
         "interface": "#00ffaa",
-        "function.defaultLibrary": "#A090FF",
-        "method.defaultLibrary": "#A090FF",
+        "interface.defaultLibrary": "#00ff00",
+        "struct": "#00ffaa",
+        "struct.defaultLibrary": "#00ff00",
+        "enum": "#00ffaa",
+        "enum.defaultLibrary": "#00ff00",
+        "builtinType": "#00ff00",
+        "class.static": "#00ff00",
+        // ===== Funciones y métodos =====
+        "function.defaultLibrary": "#a090ff",
+        "method.defaultLibrary": "#a090ff",
         "function": "#00ffff",
         "method": "#00ffff",
+        "method.declaration": "#00ffff",
+        "method:typescript": "#ffd900",
+        "function.associated.static": "#ffd900",
+        "function.declaration.associated": "#00ffff",
+        "function.associated.static.library": "#a090ff",
+        // ===== Variables, parámetros, propiedades =====
         "variable.defaultLibrary": "#ffa000",
         "variable": "#20c0ff",
         "variable.local": "#20c0ff",
         "variable.readonly": "#20c0ff",
         "variable.declaration": "#20c0ff",
-        "parameter": "#20c0ff",
-        "type.primitive": "#00ff00",
+        "variable.macro": "#ffd900",
+        "parameter": "#ffd900",
+        "property": "#a0ffff",
+        // ===== Palabras clave / self =====
+        "selfKeyword": "#a0ffff",
+        "selfTypeKeyword": "#00ff00",
+        "controlKeyword": "#ffa600",
+        "keyword.other.phpdoc.php": "#00ff00",
+        // ===== Macros, decoradores, atributos =====
+        "macro": "#00ffff",
+        "decorator": "#00ffaa",
+        "attributeBracket": "#00ffaa",
+        "derive": "#ffe500",
+        // ===== Miembros de enum =====
+        "enumMember": "#7bff42",
+        // ===== Lifetimes y errores =====
+        "lifetime": "#fff700",
         "unresolvedReference": "#ff0050",
-        "lifetime": "#FFF700"
+        // ===== Colores específicos para Rust =====
+        "keyword:rust": "#ff8538",
+        "keyword.unsafe:rust": "#ff4B00",
+        "keyword.constant:rust": "#c0ff00",
+        "selfKeyword:rust": "#00ff00",
+        "selfTypeKeyword:rust": "#00ff00",
+        // ===== Colores semánticos para C# =====
+        "method:csharp": {
+            "foreground": "#00ffff"
+        },
+        "field:csharp": {
+            "foreground": "#ff7700"
+        }
     }
 }
