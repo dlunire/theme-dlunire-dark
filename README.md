@@ -1,11 +1,8 @@
 # DLUnire Dark
 
- **A modern high-contrast color theme suite for Visual Studio Code.** 
+**A modern high-contrast color theme suite for Visual Studio Code.**
 
-<video autoplay controls loop muted playsinline width="100%" src="https://raw.githubusercontent.com/dlunire/theme-dlunire-dark/master/preview.mp4">
-  <source src="https://raw.githubusercontent.com/dlunire/theme-dlunire-dark/master/preview.mp4" type="video/mp4">
-  Navegador no soportado
-</video>
+![DLUnire Dark Preview](./images/preview.webp "DLUnire Dark Preview")
 
 Preview from `DLUnire Dark`
 
@@ -75,7 +72,7 @@ The theme started with PHP in mind, then was tested extensively with modern fron
 
 ### Theme Variants
 
-Version **1.0.4** expands the suite into four specialized variants tailored for different display setups, lighting environments, and aesthetic preferences:
+Version **1.0.5** expands the suite into four specialized variants tailored for different display setups, lighting environments, and aesthetic preferences:
 
 1. **DLUnire Dark** 
    The original high-contrast theme with an ultra-dark background ( `#010305` ) and crisp semantic highlighting.
@@ -92,61 +89,9 @@ Version **1.0.4** expands the suite into four specialized variants tailored for 
 
 ### Gallery
 
-The screenshots below come from real projects in the **DLUnire** ecosystem — production code, not toy demos.
+The screenshot below illustrates the cohesive chromatic hierarchy across real projects and modern language ecosystems:
 
-#### TypeScript
-
-Core modules, imports, type declarations, functions, and comments.
-
-![TypeScript](./images/preview-01.webp)
-
----
-
-#### Svelte
-
-Components, layouts, embedded TypeScript, and application structure.
-
-![Svelte](./images/preview-02.webp)
-
----
-
-#### SCSS
-
-Variables, selectors, nested rules, properties, and mixins.
-
-![SCSS](./images/preview-03.webp)
-
----
-
-#### TypeScript — Routing Engine
-
-A larger TypeScript sample showing routing, modules, and application architecture.
-
-![TypeScript Routing](./images/preview-04.webp)
-
----
-
-#### Rust
-
-Traits, ownership, modules, macros, and modern Rust syntax.
-
-![Rust](./images/preview-05.webp)
-
----
-
-#### PHP
-
-Namespaces, classes, methods, attributes, and modern PHP syntax.
-
-![PHP](./images/preview-06.webp)
-
----
-
-#### PHP Controller
-
-A production controller built with the DLUnire Framework.
-
-![PHP Controller](./images/preview-07.webp)
+![DLUnire Dark Suite Overview](./images/preview.webp "DLUnire Dark Suite Overview")
 
 ---
 
@@ -161,28 +106,15 @@ DLUnire Dark uses a semantic color system rather than arbitrary syntax highlight
 * Multiple dark backgrounds (Ultra-dark `#010305`, Soft `#07090b`, Cyber `#04080C`)
 * High-contrast syntax highlighting
 * Balanced, carefully tuned palette
-* Precise distinction between class declarations and inherited types
+* Precise distinction between native classes/primitives and user-defined types
+* Specialized tokens for Rust (lifetimes, enum members, unsafe), C/C++ (preprocessor, POSIX), C# (.NET primitives, namespaces), and web stacks
+* Comprehensive HTML/XML and CSS/SCSS token colorization
+* Parameter Inlay Hints tuned for legibility without visual clutter
+* Semantic diagnostic highlighting for unresolved references (`#FF0050`)
 * Comfortable for long coding sessions
-* Clear visual identity for:
-  + Keywords
-  + Classes
-  + Inherited Classes
-  + Interfaces
-  + Traits
-  + Enums
-  + Functions
-  + Methods
-  + Variables
-  + Properties
-  + Attributes
-  + Primitive types
-  + Constants
-  + Numeric literals
-  + Comments
 * Comments without italics
-* Consistent editor chrome
+* Consistent editor chrome and Terminal ANSI colors
 * Minimal visual distractions
-* Tuned for modern languages
 
 ---
 
@@ -190,23 +122,26 @@ DLUnire Dark uses a semantic color system rather than arbitrary syntax highlight
 
 ### Color Palette
 
-| Element          |   Color   | Purpose                                    |
-| ---------------- | :-------: | ------------------------------------------ |
-| Background       | `#010305` | Ultra-dark editor background               |
-| Default Text     | `#FFFFFF` | Strings and editor foreground              |
-| Keywords         | `#FF6D00` | Flow control and modifiers                 |
-| Declarations     | `#00D0FF` | Functions, namespaces, and declarations    |
-| Defined Classes  | `#00FFAA` | Active class definitions and namespaces    |
-| Inherited Types  | `#00F5FF` | Inherited classes and extended types       |
-| Functions        | `#FF7AC6` | Functions and methods                      |
-| Variables        | `#00E8FF` | Variables and parameters                   |
-| Properties       | `#FF9100` | Object properties                          |
-| Attributes       | `#F50057` | Language attributes                        |
-| Primitive Types  | `#1DE9B6` | Built-in language types                    |
-| HTML/XML Tags    | `#1DE9B6` | HTML/XML elements                          |
-| Constants        | `#A0A0FF` | Language constants and booleans            |
-| Numbers          | `#FAA859` | Numeric literals                           |
-| Comments         | `#656565` | Non-italic comments                        |
+| Element                      |   Color   | Purpose                                      |
+| ---------------------------- | :-------: | -------------------------------------------- |
+| Background (Ultra-dark)      | `#010305` | Ultra-dark editor background                 |
+| Default Text                 | `#FFFFFF` | Strings (`#FFFFFFE0`) and editor foreground  |
+| Keywords & Flow Control      | `#FF8538` | Language keywords and modifiers              |
+| Sequential / Return Control  | `#FFBD00` | Return, yield, output constructs (`echo`)    |
+| Conditionals                 | `#FFE500` | If, else, switch, and conditional branches   |
+| Declarations & Storage       | `#FF4B00` | Functions, structs, traits, and storage types|
+| Defined Classes / User Types | `#00FFAA` | User classes, interfaces, enums, and types   |
+| Native Classes & Primitives  | `#00FF00` | Built-in classes (`support.class`), types    |
+| Functions & Methods          | `#00FFFF` | User functions, method declarations          |
+| Variables & Constants        | `#20C0FF` | Variables, local fields, user constants      |
+| Properties                   | `#A0FFFF` | Object properties and class members          |
+| HTML/XML Tags                | `#00FFFF` | HTML/XML element tags                        |
+| HTML/XML Attributes          | `#FF20D0` | Tag attributes                               |
+| HTML / JSON String Values    | `#FFC000` | Strings in HTML and JSON values              |
+| Magic Methods                | `#FC3BFF` | Special lifecycle methods (`__construct`)    |
+| Numbers                      | `#FFFF00` | Numeric literals (decimal, hex, float)       |
+| Inlay Hint Parameters        | `#00FFAA` | Inline parameter hints (subtle opacity)      |
+| Comments                     | `#FFFFFF60`| Non-italic translucent comments             |
 
 ---
 
@@ -217,17 +152,20 @@ DLUnire Dark uses a semantic color system rather than arbitrary syntax highlight
 DLUnire Dark works with every language Visual Studio Code supports. Extra attention went into:
 
 * PHP
-* TypeScript
-* JavaScript
-* Svelte
+* TypeScript & JavaScript
 * Rust
-* HTML
-* CSS
-* SCSS
+* C & C++
+* C# (.NET)
+* Java
+* Svelte
+* HTML & XML
+* CSS & SCSS
 * JSON
+* Shell (Bash) & Windows Batch
+* SQL
+* YAML
 * Markdown
-
-Gallery images were captured from real **DLUnire** projects.
+* DL Typed Environment (`.type`)
 
 ---
 
@@ -272,7 +210,7 @@ Instead of giving every token equal weight, the theme highlights what defines ar
 
 Bug reports, feature requests, and contributions are welcome.
 
- **License:** MIT · **Publisher:** [dlunire](https://dlunire.dev) · **Version:** 1.0.4
+ **License:** MIT · **Publisher:** [dlunire](https://dlunire.dev) · **Version:** 1.0.5
 
 ---
 ---
@@ -335,7 +273,7 @@ El tema comenzó pensando en PHP y luego fue probado exhaustivamente con stacks 
 
 ### Variantes del tema
 
-La versión **1.0.4** expande la suite a cuatro variantes especializadas, adaptadas a diferentes configuraciones de pantalla, entornos de iluminación y preferencias estéticas:
+La versión **1.0.5** expande la suite a cuatro variantes especializadas, adaptadas a diferentes configuraciones de pantalla, entornos de iluminación y preferencias estéticas:
 
 1. **DLUnire Dark** 
    El tema original de alto contraste con fondo ultra oscuro ( `#010305` ) y un resaltado semántico nítido.
@@ -352,61 +290,9 @@ La versión **1.0.4** expande la suite a cuatro variantes especializadas, adapta
 
 ### Galería
 
-Las siguientes capturas provienen de proyectos reales en el ecosistema **DLUnire** — código de producción, no demos de juguete.
+La siguiente captura muestra la coherencia cromática y el equilibrio visual en bases de código reales y entornos multilingües modernos:
 
-#### TypeScript
-
-Módulos centrales, importaciones, declaraciones de tipos, funciones y comentarios.
-
-![TypeScript](./images/preview-01.webp)
-
----
-
-#### Svelte
-
-Componentes, layouts, TypeScript embebido y estructura de aplicación.
-
-![Svelte](./images/preview-02.webp)
-
----
-
-#### SCSS
-
-Variables, selectores, reglas anidadas, propiedades y mixins.
-
-![SCSS](./images/preview-03.webp)
-
----
-
-#### TypeScript — Motor de enrutamiento
-
-Un ejemplo más amplio de TypeScript que muestra enrutamiento, módulos y arquitectura de aplicación.
-
-![TypeScript Routing](./images/preview-04.webp)
-
----
-
-#### Rust
-
-Traits, propiedad (ownership), módulos, macros y sintaxis moderna de Rust.
-
-![Rust](./images/preview-05.webp)
-
----
-
-#### PHP
-
-Namespaces, clases, métodos, atributos y sintaxis moderna de PHP.
-
-![PHP](./images/preview-06.webp)
-
----
-
-#### Controlador PHP
-
-Un controlador de producción construido con DLUnire Framework.
-
-![Controlador PHP](./images/preview-07.webp)
+![Vista general de la suite DLUnire Dark](./images/preview.webp "Vista general de la suite DLUnire Dark")
 
 ---
 
@@ -421,28 +307,15 @@ DLUnire Dark utiliza un sistema de color semántico en lugar de un resaltado de 
 * Múltiples fondos oscuros (Ultra oscuro `#010305`, Suave `#07090b`, Ciber `#04080C`)
 * Resaltado sintáctico de alto contraste
 * Paleta equilibrada y minuciosamente ajustada
-* Distinción precisa entre declaraciones de clases y tipos heredados
+* Distinción precisa entre clases nativas/primitivas y tipos definidos por el usuario
+* Tokens especializados para Rust (lifetimes, enum members, unsafe), C/C++ (preprocesador, POSIX), C# (primitivas .NET, namespaces) y entornos web
+* Coloreado exhaustivo de tokens para HTML/XML y CSS/SCSS
+* Pistas de parámetros en línea (*Inlay Hints*) ajustadas para máxima legibilidad sin generar ruido visual
+* Detección visual inmediata para referencias no resueltas (`#FF0050`)
 * Cómodo para largas jornadas de programación
-* Identidad visual clara para:
-  + Palabras clave
-  + Clases
-  + Clases heredadas
-  + Interfaces
-  + Traits
-  + Enums
-  + Funciones
-  + Métodos
-  + Variables
-  + Propiedades
-  + Atributos
-  + Tipos primitivos
-  + Constantes
-  + Literales numéricos
-  + Comentarios
 * Comentarios sin cursiva
- * Interfaz del editor (*chrome* ) consistente
+* Interfaz del editor (*chrome*) y colores ANSI de terminal consistentes
 * Mínimas distracciones visuales
-* Optimizado para lenguajes modernos
 
 ---
 
@@ -450,23 +323,26 @@ DLUnire Dark utiliza un sistema de color semántico en lugar de un resaltado de 
 
 ### Paleta de colores
 
-| Elemento          |   Color   | Propósito                                    |
-| ----------------- | :-------: | -------------------------------------------- |
-| Fondo             | `#010305` | Fondo de editor ultra oscuro                 |
-| Texto por defecto | `#FFFFFF` | Cadenas de texto y primer plano del editor   |
-| Palabras clave    | `#FF6D00` | Control de flujo y modificadores             |
-| Declaraciones     | `#00D0FF` | Funciones, namespaces y declaraciones        |
-| Clases definidas  | `#00FFAA` | Definiciones activas de clases y namespaces  |
-| Tipos heredados   | `#00F5FF` | Clases heredadas y tipos extendidos          |
-| Funciones         | `#FF7AC6` | Funciones y métodos                          |
-| Variables         | `#00E8FF` | Variables y parámetros                       |
-| Propiedades       | `#FF9100` | Propiedades de objetos                       |
-| Atributos         | `#F50057` | Atributos del lenguaje                       |
-| Tipos primitivos  | `#1DE9B6` | Tipos nativos del lenguaje                   |
-| Etiquetas HTML/XML| `#1DE9B6` | Elementos HTML/XML                           |
-| Constantes        | `#A0A0FF` | Constantes del lenguaje y booleanos          |
-| Números           | `#FAA859` | Literales numéricos                         |
-| Comentarios       | `#656565` | Comentarios sin cursiva                      |
+| Elemento                      |   Color   | Propósito                                      |
+| ----------------------------- | :-------: | ---------------------------------------------- |
+| Fondo (Ultra oscuro)          | `#010305` | Fondo de editor ultra oscuro                   |
+| Texto por defecto             | `#FFFFFF` | Cadenas de texto (`#FFFFFFE0`) y primer plano  |
+| Palabras clave y control      | `#FF8538` | Palabras reservadas y modificadores            |
+| Retorno y control secuencial  | `#FFBD00` | Return, yield, constructores de salida (`echo`)|
+| Estructuras condicionales     | `#FFE500` | If, else, switch y bifurcaciones condicionales |
+| Declaraciones y almacenamiento| `#FF4B00` | Funciones, structs, traits y declaradores      |
+| Clases de usuario / Tipos     | `#00FFAA` | Clases, interfaces, enums y tipos de usuario   |
+| Clases nativas y primitivas   | `#00FF00` | Clases del sistema (`support.class`), tipos    |
+| Funciones y métodos           | `#00FFFF` | Funciones y declaraciones de métodos           |
+| Variables y constantes        | `#20C0FF` | Variables, campos locales, constantes usuario  |
+| Propiedades                   | `#A0FFFF` | Propiedades de objetos y miembros de clase     |
+| Etiquetas HTML/XML            | `#00FFFF` | Elementos y etiquetas HTML/XML                 |
+| Atributos HTML/XML            | `#FF20D0` | Atributos de etiquetas                         |
+| Strings en HTML y JSON        | `#FFC000` | Cadenas en HTML y valores de cadenas JSON      |
+| Métodos mágicos               | `#FC3BFF` | Métodos especiales de ciclo de vida            |
+| Números                       | `#FFFF00` | Literales numéricos (decimal, hex, float)      |
+| Parámetros Inlay Hints        | `#00FFAA` | Pistas de parámetros (opacidad atenuada)       |
+| Comentarios                   | `#FFFFFF60`| Comentarios translúcidos sin cursiva          |
 
 ---
 
@@ -477,17 +353,20 @@ DLUnire Dark utiliza un sistema de color semántico en lugar de un resaltado de 
 DLUnire Dark funciona con todos los lenguajes compatibles con Visual Studio Code. Se puso especial atención en:
 
 * PHP
-* TypeScript
-* JavaScript
-* Svelte
+* TypeScript y JavaScript
 * Rust
-* HTML
-* CSS
-* SCSS
+* C y C++
+* C# (.NET)
+* Java
+* Svelte
+* HTML y XML
+* CSS y SCSS
 * JSON
+* Shell (Bash) y Windows Batch
+* SQL
+* YAML
 * Markdown
-
-Las imágenes de la galería fueron capturadas de proyectos reales de **DLUnire** .
+* DL Typed Environment (`.type`)
 
 ---
 
@@ -532,4 +411,4 @@ En lugar de darle el mismo peso a cada token, el tema destaca aquello que define
 
 Reportes de errores, solicitudes de características y contribuciones son bienvenidos.
 
- **Licencia:** MIT · **Publicador:** [dlunire](https://dlunire.dev) · **Versión:** 1.0.4
+ **Licencia:** MIT · **Publicador:** [dlunire](https://dlunire.dev) · **Versión:** 1.0.5

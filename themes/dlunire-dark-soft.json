@@ -1019,10 +1019,28 @@
             }
         },
         {
-            "name": "UNIVERSAL - Tokens que alteran el orden secuencial del programa",
+            "name": "PHP - Tokens que alteran el orden secuencial del programa",
+            "scope": [
+                "support.function.construct.output.php"
+            ],
+            "settings": {
+                "foreground": "#FFBD00"
+            }
+        },
+        {
+            "name": "PHP - Placeholder - Parámetros",
+            "scope": [
+                "entity.name.variable.parameter",
+                "entity.name.variable.parameter.php"
+            ],
+            "settings": {
+                "foreground": "#a4e1ff"
+            }
+        },
+        {
+            "name": "UNIVERSAL - Retorno o control",
             "scope": [
                 "keyword.control",
-                "support.function.construct.output.php",
                 "keyword.control.rust"
             ],
             "settings": {
@@ -1119,7 +1137,7 @@
                 "entity.name.variable.field.cs",
                 "entity.name.variable.property.cs",
                 "entity.name.variable.parameter.cs",
-                "variable.other.object.property.cs",
+                "variable.other.object.property.cs"
             ],
             "settings": {
                 "foreground": "#20c0ff"
@@ -1310,7 +1328,7 @@
                 "constant.language.json"
             ],
             "settings": {
-                "foreground": "#f196ff",
+                "foreground": "#f196ff"
             }
         },
         {
@@ -1428,7 +1446,7 @@
                 "punctuation.definition.tag.begin",
                 "punctuation.definition.tag.end",
                 "entity.name.tag.html",
-                "entity.name.tag",
+                "entity.name.tag"
             ],
             "settings": {
                 "foreground": "#00ffff"
@@ -1472,7 +1490,7 @@
             "name": "HTML/XML - String (sin comillas)",
             "scope": [
                 "string.unquoted.html",
-                "string.unquoted.svelte",
+                "string.unquoted.svelte"
             ],
             "settings": {
                 "foreground": "#ffff00"
@@ -1908,7 +1926,7 @@
             "scope": [
                 "support.function.magic",
                 "support.function.magic.python",
-                "support.function.magic.php",
+                "support.function.magic.php"
             ],
             "settings": {
                 "foreground": "#fc3bff"
@@ -1923,7 +1941,7 @@
                 "variable.other.object.ts"
             ],
             "settings": {
-                "foreground": "#FFD900",
+                "foreground": "#FFD900"
             }
         }
     ],

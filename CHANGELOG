@@ -2,20 +2,35 @@
 
 All notable changes to the "DLUnire Dark" extension will be documented in this file.
 
-## [1.0.5] - 2026-08-22
+## [1.0.5] - 2026-08-29
 
 ### Added
 - **DL Typed Environment Support:** Full, dedicated token colorization and grammar rules for the DL Typed Environment (`dlunire.type`, `dlunire.varname`, `dlunire.colon`, `dlunire.operator.assign`, `dlunire.value.numeric`, `dlunire.value.boolean`, `dlunire.value.email`, `dlunire.value.uuid`, and block/documentation comments).
+- **Multi-Language Syntax Specialization:**
+  - **Rust:** Lifetimes (`#fff700`), enum members (`#7bff42`), native structs (`#00ff00`), declaration traits/structs and borrow operators (`#FF4B00`), plus dedicated semantic tokens (`keyword:rust`, `keyword.unsafe:rust`, `keyword.constant:rust`, `selfKeyword:rust`).
+  - **C / C++:** Preprocessor includes (`#ffffffa0`), directives (`#ffff00`), preprocessor functions (`#f4a0ff`), function calls (`#a090ff`), code blocks (`#ffffa0`), built-in primitives (`#00ff00`), and POSIX reserved types (`#ffff00`).
+  - **C# (.NET):** Exhaustive primitive types (`keyword.type.*.cs` in `#00ff00`), identifiers/fields/properties/parameters (`#20c0ff`), namespaces (`#40dfff`), and semantic tokens for `method:csharp` (`#00ffff`) and `field:csharp` (`#ff7700`).
+  - **CSS / SCSS / Svelte:** Properties (`#00ff00`), values/colors (`#ff5000`), pseudo-classes/elements (`#ffff00`), custom variables `--*` (`#ff6000`), at-rules/directives (`#ff0060`), and full Svelte template token support.
+  - **HTML / XML:** Tags (`#00ffff`), attributes (`#ff20d0`), double-quoted strings (`#ffc000`), single-quoted strings (`#ff9000`), unquoted strings (`#ffff00`), and attribute assignment operators (`#ffa0ff`).
+  - **Shell (Bash) & Windows Batch:** Commands, functions, expansion and positional parameters for Shell; Batch commands, variables, and expressions.
+  - **SQL & YAML:** DML statements and YAML tags highlighted in `#00ff00`.
+  - **PHP & Python:** Magic methods (`#fc3bff`), PHP parameter placeholders (`#a4e1ff`), constructor functions (`#ff8000`), method invocations (`#ffd900`), and output constructs (`echo`/`print` in `#ffbd00`).
+  - **JSON:** Keys (`#00ff00`), string values (`#ffc000`), and language constants/booleans (`#f196ff`).
+- **Universal Native Classes:** Added universal scope rule for native language classes (`support.class` in `#00ff00`).
+- **Semantic Diagnostics:** Added `unresolvedReference` highlighted in crimson red (`#ff0050`) for immediate visual error feedback.
 - **In-Depth Syntax Documentation:** Added comprehensive chromatic hierarchy and scope documentation directly inside `DLUnire Dark Cyber`.
 
 ### Changed
 - **Unified Syntax Highlighting Architecture:** Overhauled and synchronized `tokenColors` and `semanticTokenColors` across all 4 theme variants (`DLUnire Dark`, `DLUnire Dark Soft`, `DLUnire Dark Cyber`, `DLUnire Dark Cyber Soft`), removing obsolete legacy token structures.
-- **Universal Scopes & Semantics:** Standardized universal token mappings for keywords, sequential control flow, conditionals, storage modifiers/declarators, native/user variables & properties, namespaces, native/user functions, primitives, user types, and decorators.
-- **JSON Highlighting Enhancements:** Dedicated scope rules for JSON keys (`#00ff00`) and JSON string values (`#ffc000`).
-- **Parameter Inlay Hints:** Tuned `editorInlayHint.parameterForeground` (`#00ffaa60`) and `editorInlayHint.parameterBackground` (`#00ffaa08`) for subtle, distraction-free inline parameter hints.
-- **Markdown Highlighting:** Refined Markdown tokens including headings, bold, italic, links, lists, and quotes.
+- **Universal Scopes & Semantics:** Mapped user-defined constants (`constant`, `constant.other`) to the identifier palette (`#20c0ff`).
+- **Numbers & Numeric Literals:** Standardized numeric literals to pure yellow `#ffff00` across TextMate and DL Typed Environment.
+- **Parameter Inlay Hints:** Tuned `editorInlayHint.parameterForeground` (`#00ffaaa0`) and `editorInlayHint.parameterBackground` (`#00ffaa08`) for optimal legibility without visual clutter.
+- **UI & Terminal Polish:** Harmonized Git and GitLens decoration colors for added/untracked resources (`#00ff00`), and updated terminal ANSI green and bright green palette (`#00ff00`).
 - **Build System & Tooling:** Migrated build and publishing workflows in `Makefile` to use **Bun** (`bun run package`, `bun run publish:*`).
-- **Formatting & Sanitation:** Cleaned trailing commas and strict JSON formatting across all theme files and workspace configuration.
+- **Formatting & Sanitation:** Cleaned trailing commas and strict JSON formatting across all theme files.
+
+### Removed
+- **Asset Optimization:** Cleaned up redundant preview screenshots and video, consolidating preview assets into a single lightweight, high-resolution [`images/preview.webp`](./images/preview.webp).
 
 ## [1.0.4] - 2026-08-08
 
