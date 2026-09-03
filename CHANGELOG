@@ -2,9 +2,23 @@
 
 All notable changes to the "DLUnire Dark" extension will be documented in this file.
 
+## [1.0.6] - 2026-09-03
+
+### Changed
+
+- Color de comentarios de línea (`comment`, `comment.line.double-slash`, etc.) cambiado de `#ffffff60` a `#6b7490`, reduciendo el contraste general para mitigar el choque visual con anotaciones resaltadas por extensiones externas (Todo Tree, Better Comments) sobre `TODO`/`FIXME`, dado que la gramática TextMate de PHP no distingue esas anotaciones con un scope propio.
+
+### Added
+
+- Color dedicado para comentarios de bloque y documentación (`comment.block.documentation`, `comment.block`) en `#456e7e`, separándolos semánticamente de los comentarios de línea.
+- Soporte para las nuevas claves de tema `modernEditorTab.*` y `modernTab.*` (pestañas del editor y de la terminal).
+- `editor.border` (`#00aaff50`).
+- `editor.snippetTabstopHighlightBackground` (`#0091ff33`).
+
 ## [1.0.5] - 2026-08-29
 
 ### Added
+
 - **DL Typed Environment Support:** Full, dedicated token colorization and grammar rules for the DL Typed Environment (`dlunire.type`, `dlunire.varname`, `dlunire.colon`, `dlunire.operator.assign`, `dlunire.value.numeric`, `dlunire.value.boolean`, `dlunire.value.email`, `dlunire.value.uuid`, and block/documentation comments).
 - **Multi-Language Syntax Specialization:**
   - **Rust:** Lifetimes (`#fff700`), enum members (`#7bff42`), native structs (`#00ff00`), declaration traits/structs and borrow operators (`#FF4B00`), plus dedicated semantic tokens (`keyword:rust`, `keyword.unsafe:rust`, `keyword.constant:rust`, `selfKeyword:rust`).
@@ -21,6 +35,7 @@ All notable changes to the "DLUnire Dark" extension will be documented in this f
 - **In-Depth Syntax Documentation:** Added comprehensive chromatic hierarchy and scope documentation directly inside `DLUnire Dark Cyber`.
 
 ### Changed
+
 - **Unified Syntax Highlighting Architecture:** Overhauled and synchronized `tokenColors` and `semanticTokenColors` across all 4 theme variants (`DLUnire Dark`, `DLUnire Dark Soft`, `DLUnire Dark Cyber`, `DLUnire Dark Cyber Soft`), removing obsolete legacy token structures.
 - **Universal Scopes & Semantics:** Mapped user-defined constants (`constant`, `constant.other`) to the identifier palette (`#20c0ff`).
 - **Numbers & Numeric Literals:** Standardized numeric literals to pure yellow `#ffff00` across TextMate and DL Typed Environment.
@@ -30,11 +45,13 @@ All notable changes to the "DLUnire Dark" extension will be documented in this f
 - **Formatting & Sanitation:** Cleaned trailing commas and strict JSON formatting across all theme files.
 
 ### Removed
+
 - **Asset Optimization:** Cleaned up redundant preview screenshots and video, consolidating preview assets into a single lightweight, high-resolution [`images/preview.webp`](./images/preview.webp).
 
 ## [1.0.4] - 2026-08-08
 
 ### Added
+
 - **New Variant: "DLUnire Dark Cyber"** — a high-saturation cyberpunk take on the base palette, sharing the same ultra-dark `#010305` background but with a distinct accent system: cyan for variables, magenta for functions, green for classes, violet for interfaces, and amber for strings. Structs, enums, and interfaces each get their own color instead of collapsing into "Classes."
 - **New Variant: "DLUnire Dark Cyber Soft"** — the Cyber palette on a softer, blue-teal-tinted dark background, for long sessions where the full-contrast Cyber background feels too intense.
 - **Diagnostics coloring:** `editorError`/`editorWarning`/`editorInfo`/`editorHint` foreground and matching Problems panel icons, previously falling back to VS Code defaults in the Cyber variants.
@@ -42,6 +59,7 @@ All notable changes to the "DLUnire Dark" extension will be documented in this f
 - **Git decoration:** added missing `addedResourceForeground` and `renamedResourceForeground`.
 
 ### Fixed
+
 - **Invalid syntax highlighting** was the same color as the editor foreground, making syntax errors effectively invisible in the Cyber variants. Now rendered in red with an underline.
 - **String literals** shared their color with the default editor foreground, reducing readability. Strings now have their own amber tone.
 - **Semantic differentiation:** `class`, `interface`, `struct`, and `enum` previously resolved to near-identical hues in Cyber. Each now has a distinct, consistent color.
@@ -50,6 +68,7 @@ All notable changes to the "DLUnire Dark" extension will be documented in this f
 ## [1.0.3] - 2026-08-07
 
 ### Changed
+
 - **UI/UX Consistency & Polish:** Comprehensive visual overhaul of auxiliary IDE components to maintain strict alignment with the DLUnire ecosystem:
   - **Peek View:** Complete thematic redesign of definition and reference panels (`peekViewTitle`, `peekViewEditor`, `peekViewResult`) to eliminate default blue/gray elements.
   - **Git & GitLens:** Integrated native git decorations and GitLens inline blame annotations / status indicators directly into the ultra-dark palette.
@@ -59,4 +78,5 @@ All notable changes to the "DLUnire Dark" extension will be documented in this f
 ## [1.0.2] - 2026-08-05
 
 ### Added
+
 - **New Variant:** Introduced **"DLUnire Dark Soft"**, featuring a slightly elevated graphite/slate background (`#07090b`) designed to reduce visual fatigue during long coding sessions while preserving strict dark-mode principles.
