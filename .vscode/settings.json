@@ -1,0 +1,18 @@
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "DLUnire - Comentarios de bloques y documentación",
+                "scope": [
+                    "comment.block.documentation",
+                    "dlunire.block-documentation",
+                    "dlunire.block-comment",
+                    "comment.block"
+                ],
+                "settings": {
+                    "foreground": "#456e7e"
+                }
+            },
+        ]
+    }
+}

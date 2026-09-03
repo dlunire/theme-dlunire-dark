@@ -982,8 +982,20 @@
         "textPreformat.foreground": "#00e8ff", // Texto preformateado
         "textSeparator.foreground": "#00b3ff30", // Separadores de texto
         "walkThrough.embeddedEditorBackground": "#00000066", // Editor incrustado en guías paso a paso
-        "walkthrough.stepTitle.foreground": "#81f4ff" // Título de paso en guías de bienvenida
-        // TODO: Probar algunas claves:
+        "walkthrough.stepTitle.foreground": "#81f4ff", // Título de paso en guías de bienvenida
+        // NUEVAS CLAVES AGREGADAS
+        // Borde del editor
+        "editor.border": "#00aaff50",
+        // Pestañas del editor
+        "modernEditorTab.hoverForeground": "#00ffff",
+        "modernEditorTab.activeActionBackground": "#00aaff30",
+        "modernEditorTab.activeBackground": "#00a0ff30",
+        "modernEditorTab.activeForeground": "#ffffff",
+        // Pestañas de la terminal
+        "modernTab.activeBackground": "#003040",
+        "modernTab.activeForeground": "#ffffff",
+        // Resaltado del color de fondo para una ficha de un fragmento de código.
+        "editor.snippetTabstopHighlightBackground": "#0091ff33"
     },
     "tokenColors": [
         // =========================================================================
@@ -1000,7 +1012,7 @@
                 "punctuation.definition.comment"
             ],
             "settings": {
-                "foreground": "#ffffff60",
+                "foreground": "#6b7490",
                 "fontStyle": ""
             }
         },
@@ -1688,22 +1700,22 @@
             "name": "DLUnire - Comentarios de bloques y documentación",
             "scope": [
                 "comment.block.documentation",
-                "dlunire.block-documentation"
+                "dlunire.block-documentation",
+                "dlunire.block-comment",
+                "comment.block"
             ],
             "settings": {
-                "foreground": "#90ffff70"
+                "foreground": "#456e7e"
             }
         },
         {
             "name": "Otros comentarios",
             "scope": [
                 "dlunire.double-slash",
-                "dlunire.line-number-sign",
-                "dlunire.block-comment",
-                "comment.block"
+                "dlunire.line-number-sign"
             ],
             "settings": {
-                "foreground": "#ffffff60"
+                "foreground": "#6b7490"
             }
         },
         {
