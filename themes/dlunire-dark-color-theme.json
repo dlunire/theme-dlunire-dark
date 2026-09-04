@@ -1449,6 +1449,13 @@
                 "fontStyle": "italic"
             }
         },
+        {
+            "name": "Markdown - Código en línea (Inline Code)",
+            "scope": "markup.inline.raw",
+            "settings": {
+                "foreground": "#ffb95c",
+            }
+        },
         // ------------ CÓDIGO HTML -------------
         {
             "name": "HTML/XML - Etiquetas",
